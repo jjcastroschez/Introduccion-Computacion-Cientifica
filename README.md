@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> Introducción a la Computación Científica</h1>
+  <h1> Introducción a la Computación Científica (ICC)</h1>
 
   <sub>Autor:
 <a href="https://www.esi.uclm.es/www/jjcastro/" target="_blank">J.J. Castro-Schez</a><br>
@@ -12,7 +12,7 @@
 
 </div>
 
-# Introducción a la Computación Científica 🧮 💻
+# Presentación ICC 🧮 💻
 Bienvenido al repositorio de la asignatura de **Introducción a la Computación Científica** del *[Grado en Matemáticas](https://www.uclm.es/estudios/grados/matematicas)* de la [Universidad de Castilla-La Mancha](https://www.uclm.es).
 
 La Computación Científica es un campo interdisciplinario que utiliza capacidades avanzadas de computación para comprender y resolver problemas complejos de la vida real. A diferencia de la informática orientada a la gestión de datos o al desarrollo de aplicaciones comerciales, su objetivo principal es la **construcción de modelos matemáticos y simulaciones numéricas** para analizar sistemas científicos y de ingeniería.
@@ -25,7 +25,7 @@ La computación científica surge de la convergencia de tres áreas del conocimi
 
 - **Ciencias Aplicadas** (Física, Biología, Química, Astronomía, etc.): proporcionan el problema a resolver y el contexto teórico.
 
-- **Matemáticas y Análisis Numérico**: aportan las ecuaciones y los algoritmos necesarios para transformar problemas continuos en cálculos que una computadora pueda procesar.
+- **Matemáticas y Análisis Numérico**: aportan las ecuaciones y los algoritmos necesarios para transformar problemas frecuentes en cálculos que una computadora pueda procesar.
 
 - **Ciencias de la Computación**: proveen el software, la arquitectura de hardware (como la Computación de Alto Rendimiento o HPC) y la optimización de código para ejecutar cálculos masivos.
 
@@ -33,7 +33,7 @@ La computación científica surge de la convergencia de tres áreas del conocimi
 
 ## 📍 Objetivo 
 
-Desde el área de conocimiento de las **Ciencias de la Computación**, esta asignatura aporta los conocimientos necesarios para resolver problemas mediante computadores. Se centra en el desarrollo de programas bajo el **paradigma de la programación imperativa** -uno de los enfoques más arraigados y fundamentales- aunque también se explorará la programación funcional y la orientada a objetos. 
+Desde el área de conocimiento de las **Ciencias de la Computación**, esta asignatura aporta los conocimientos necesarios para resolver problemas mediante computadores. Se centra en el desarrollo de programas bajo el **paradigma de la programación imperativa** --uno de los enfoques más arraigados y fundamentales-- aunque también se explorará la programación funcional y la orientada a objetos. 
 
 El curso cubre los fundamentos de la programación y de los lenguajes de programación, así como técnicas de elaboración de algoritmos, que pueden ser de utilidad en el futuro profesional del graduado o graduada en Matemáticas. Estos conocimientos permitirán abordar con éxito las prácticas de gran parte de las asignaturas del plan de estudios del título.
 
@@ -58,18 +58,26 @@ Este espacio contiene parte del material necesario para el seguimiento de la mat
 - 🔗 **/recursos**. Enlaces a herramientas y documentación complementaria.
 - 🌅 **/imagenes**. Figuras y rescursos visuales empleadas los documentos.
 
-> [!NOTE]
-> La estructura de carpetas se mantiene constante en todos los temas para facilitar la navegación, aunque algunas secciones puedan aparecer vacías si el contenido no es aplicable a esa unidad específica. 
+> [!NOTA]
+> La estructura de carpetas se mantiene igual en todos los temas para facilitar la navegación, aunque en algún tema alguna carpeta puede aparecer vacía, si el contenido no es aplicable a esa unidad en concreto. 
 
+> [!PRECAUCION]
+> Este material complementa, no sustituye, al que se usa en las clases presenciales.
 ---
 
 ## 🛠️ Requisitos
 
 Para trabajar con este material, asegúrate de tener instalado:
 * **Python** (versión recomendada en el curso).
-* Un **IDE** o editor de código (puedes empezar con el IDLE de Python y evolucionar, aunque recomiendo evolucionar a VSCode).
+* Un **IDE** o editor de código (puedes empezar con el IDLE de Python y evolucionar, aunque recomiendo evolucionar a **VSCode**).
 * **Git**.
 * **GitHub Desktop** (opcional).
+
+> [!IMPORTANTE]
+> Visita la sección de [Recursos](./01_introduccion/recursos/T1_RE_ICC.md) para obtener los enlaces a las herramientas citadas.
+
+> [!ADVERTENCIA]
+> Será también necesario que te abras una cuenta en [**GitHub**](https://github.com/).
 
 ---
 
@@ -77,7 +85,7 @@ Para trabajar con este material, asegúrate de tener instalado:
 
 Si detectas algún error en los documentos o algoritmos, o si tienes alguna propuesta de mejora, ¡no dudes en abrir un **Issue** o enviar un **Pull Request**! 
 
-Para otras consultas, puedes contactar conmigo directamente en clase o de cualquiera de las otras formas que tienes a tu disposición a través del siguiente enlace: 📍[Información contacto J.J. Castro-Schez](https://www.esi.uclm.es/www/jjcastro/contacta.html).
+Para otras consultas, puedes contactar conmigo directamente en clase o de cualquiera de las otras formas que tienes a tu disposición en el siguiente enlace: 📍[Información contacto J.J. Castro-Schez](https://www.esi.uclm.es/www/jjcastro/contacta.html).
 
 ---
 
