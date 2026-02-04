@@ -67,7 +67,6 @@ python --version
 ```
 
 > [!NOTE]
-> # Nota
 > Puedes probar también con ``python3``.
 
 Si no lo tienes instalado, visita la página oficial de [Python](https://python.org) y busca la zona de descarga (Downloads). Si la página no detecta tu SO automáticamente, vete a la zona de tu SO para descargarte la versión apropiada. 
