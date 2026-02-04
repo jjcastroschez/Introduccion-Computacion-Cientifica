@@ -67,7 +67,7 @@ python --version
 ```
 
 > [!NOTE]
-> #Nota
+> # Nota
 > Puedes probar también con ``python3``.
 
 Si no lo tienes instalado, visita la página oficial de [Python](https://python.org) y busca la zona de descarga (Downloads). Si la página no detecta tu SO automáticamente, vete a la zona de tu SO para descargarte la versión apropiada. 
@@ -89,7 +89,7 @@ Conceptos clave que escucharás siempre cuando trabajas con VCS:
 3. **Rama (Branch)**: Una línea de tiempo paralela. Útil para probar funciones nuevas sin romper la versión principal.
 4. **Merge:** Unir los cambios de una rama a otra.
 
-### Instalación de Git 📥
+### 📥 Instalación de Git 
 Para poder usar el control de versiones, necesitas el "motor" de Git corriendo en tu sistema operativo.
 
 1. **Descarga**. Debes ir a la página oficial de [Git](git-scm.com) y descargar el instalador correspondiente a tu sistema (Windows, macOS o Linux).
