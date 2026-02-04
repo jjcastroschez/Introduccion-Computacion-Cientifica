@@ -58,10 +58,12 @@ Este espacio contiene parte del material necesario para el seguimiento de la mat
 - 🔗 **/recursos**. Enlaces a herramientas y documentación complementaria.
 - 🌅 **/imagenes**. Figuras y rescursos visuales empleadas los documentos.
 
-> [!NOTA]
+> [!NOTE]
+> #Nota
 > La estructura de carpetas se mantiene igual en todos los temas para facilitar la navegación, aunque en algún tema alguna carpeta puede aparecer vacía, si el contenido no es aplicable a esa unidad en concreto. 
 
-> [!PRECAUCION]
+> [!WARNING]
+> #Advertencia
 > Este material complementa, no sustituye, al que se usa en las clases presenciales.
 ---
 
@@ -73,10 +75,12 @@ Para trabajar con este material, asegúrate de tener instalado:
 * **Git**.
 * **GitHub Desktop** (opcional).
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
+> #Importante
 > Visita la sección de [Recursos](./01_introduccion/recursos/T1_RE_ICC.md) para obtener los enlaces a las herramientas citadas.
 
-> [!ADVERTENCIA]
+> [!WARNING]
+> #Advertencia
 > Será también necesario que te abras una cuenta en [**GitHub**](https://github.com/).
 
 ---

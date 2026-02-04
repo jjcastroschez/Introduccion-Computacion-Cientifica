@@ -18,7 +18,8 @@
 
 ---
 
-## 🏛️ Sección 1: Programación
+## 🏛️ Sección 1: Programación
+
 Los computadores son máquinas “universales” que pueden resolver cualquier **problema “computable”**. Es decir, problemas para los cuales existe un algoritmo (un conjunto finito de instrucciones) que permite encontrar una solución correcta en un número finito de pasos.
 
 Para que un computador resuelva un problema concreto, hay que *“especializarlo”*. Esta especialización implica **programarlo** para que ejecute las tareas deseadas.
@@ -130,7 +131,7 @@ Para observar cómo varía la **sintaxis** manteniendo la misma **semántica**, 
 
 ### 1. Python (Lenguaje Interpretado)
 
-```python
+```python copy
 # hola.py
 print("¡Hola, mundo!")
 
@@ -138,7 +139,7 @@ print("¡Hola, mundo!")
 
 ### 2. Lenguaje C (Lenguaje Compilado)
 
-```c
+```c copy
 // hola.c
 #include <stdio.h>
 
@@ -149,13 +150,13 @@ int main() {
 ```
 
 ### 3. JavaScript (Lenguaje de la Web)
-```javascript
+```javascript copy
 // hola.js
 console.log("¡Hola, mundo!");
 ```
 
 ### 4. Java 
-```java
+```java copy
 
 // hola.java
 class HelloWorld {
