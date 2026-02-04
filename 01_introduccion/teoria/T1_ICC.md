@@ -1,4 +1,18 @@
-## Tema 1: Introducción a la Computación Científica 🎓 
+<div align="center">
+  <h1> Introducción a la Computación Científica (ICC)</h1>
+
+  <sub>Autor:
+<a href="https://www.esi.uclm.es/www/jjcastro/" target="_blank">J.J. Castro-Schez</a><br>
+<small> Primera edición: febrero de 2026</small>
+</sub>
+
+  <a class="header-badge" target="_blank" href="https://jjcastroschez.github.io">
+  <img alt="GitHub Page" src="https://img.shields.io/badge/github%20page-grey?style=for-the-badge&logo=github">
+  </a>
+
+</div>
+
+# Teoría - Tema 1: Introducción 🎓 
 
 ¡Bienvenido! En este primer tema, dejarás de ver el ordenador como una simple herramienta de oficina o entretenimiento para entenderlo como una **máquina universal** que podrás moldear a través del lenguaje para resolver problemas matemáticos complejos.
 
