@@ -1,16 +1,14 @@
 <div align="center">
   <h1> Introducción a la Computación Científica</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/jjcastro/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/JjCastroSchez">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/JjCastroSchez">
-  </a>
 
-<sub>Autor:
+  <sub>Autor:
 <a href="https://www.esi.uclm.es/www/jjcastro/" target="_blank">J.J. Castro-Schez</a><br>
 <small> Primera edición: febrero de 2026</small>
 </sub>
+
+  <a class="header-badge" target="_blank" href="https://jjcastroschez.github.io">
+  <img alt="GitHub Page" src="https://img.shields.io/badge/github%20page-grey?style=for-the-badge&logo=github">
+  </a>
 
 </div>
 
