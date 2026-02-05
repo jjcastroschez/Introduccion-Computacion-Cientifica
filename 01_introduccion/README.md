@@ -14,19 +14,19 @@
 
 # 🎓 Tema 1: Introducción 🚀
 
-Bienvenido al primer paso de tu viaje en el campo de la computación científica. En este tema, descubriremos cómo transformar una máquina de propósito general en una herramienta de cálculo avanzada, capaz de resolver prácticamente cualquier problema.
+Bienvenido a este primer paso de tu viaje en el campo de la computación científica. En este tema, descubriremos cómo transformar una máquina de propósito general en una potente unidad de computación polivalente. 
 
 ---
 
 ## 📖 Contenido del Tema
 
 ### 🧠 El Computador como Máquina “Universal”
-Los **computadores** son máquinas universales capaces de resolver cualquier problema “computable”. Aprenderemos que la **programación** es el proceso de “especialización” necesario para que ejecuten tareas específicas mediante el uso de **lenguajes de programación**. 
+Los **computadores** son máquinas universales capaces de resolver cualquier problema “computable”. Aprenderemos que la **programación**, mediante el uso de **lenguajes de programación**, es el proceso de “especialización” necesario para que ejecuten tareas específicas. 
 
-### 🗣️ Evolución de los Lenguajes de programación
+### 🗣️ Comunicación con la máquina
 Exploraremos cómo nos comunicamos con la máquina (el hardware):
 * **Lenguaje máquina.** El lenguaje nativo, basado en código binario, que entiende el procesador.
-* **Lenguajes de alto nivel.** Herramientas modernas que facilitan la creación de software con un vocabulario y sintaxis cercana al lenguaje humano.  
+* **Lenguajes de alto nivel.** Herramientas modernas que facilitan la creación de instrucciones con un vocabulario y sintaxis cercana al lenguaje humano.  
 * **El proceso de traducción.** El papel crítico de los **intérpretes o compiladores** para mediar entre nuestras instrucciones y el computador.
 
 ### ✨ Uso de los Lenguajes de Programación
@@ -38,11 +38,11 @@ Analizaremos la vasta diversidad de lenguajes de programación existentes y cóm
 ### 🏗️ Anatomía de un Lenguaje de Alto Nivel
 Aprenderemos que todo lenguaje de programación de alto nivel se define por tres elementos críticos:
 1.  **Léxico.** El vocabulario (conjunto de símbolos y palabras permitidas).
-2.  **Sintaxis.** Las reglas que rigen la estructura de las sentencias.
+2.  **Sintaxis.** Las reglas que rigen la estructura de las sentencias (cómo combinar los elementos del lenguaje).
 3.  **Semántica.** El significado lógico y el efecto de dichas sentencias.
 
 ### 🛠️ Herramientas y Entorno
-Pasaremos de la teoría a la práctica entendiento y configurando nuestro ecosistema de trabajo:
+Pasaremos de la teoría a la práctica entendiendo y configurando nuestro ecosistema de trabajo:
 * **Hardware y Software.** Su relación intrínseca y el papel del **Sistema Operativo**.
 * **La Línea de Comandos (CLI)**. Uso de la terminal para gestionar archivos y directorios con agilidad.
 * **Python e IDE:** Instalación y uso del intérprete de Python y primer contacto con el entorno IDLE.
@@ -82,7 +82,8 @@ Al finalizar el tema, serás capaz de:
 
 | Orden  | Material                                  | Tiempo       | 
 |:------:|:------------------------------------------|:------------:|
-| 1      | [Teoría](./teoria/T1_ICC.md)              |              |
-| 2      | [Recursos](./recursos/T1_RE_ICC.md)       |              |
-| 3      | [Ejemplos](./ejemplos/)                   |              |
-| 4      | [Ejercicios](./ejercicios/T1_Ejer_ICC.md) |              |
+| 1      | [Teoría](./teoria/T1_ICC.md)              |      8       |
+| 2      | [Recursos](./recursos/T1_RE_ICC.md)       |      7       |
+| 3      | [Ejemplos](./ejemplos/)                   |      -       |
+| 4      | [Ejercicios](./ejercicios/T1_Ejer_ICC.md) |      -       |
+|        | [Menu de Temas](../README.md)             |      -       | 
