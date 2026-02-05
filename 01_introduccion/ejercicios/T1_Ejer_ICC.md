@@ -62,11 +62,11 @@ Guarda y ejecuta en el IDLE de Python...
 
 | Orden  | Material                                   | Tiempo       | 
 |:------:|:-------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T1_ICC.md)              |    8       |
+| 1      | [Teoría](../teoria/T1_ICC.md)              |    8         |
 | 2      | [Recursos](../recursos/T1_RE_ICC.md)       |      7       |
 | 3      | [Ejemplos](../ejemplos/)                   |      -       |
 | 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
-|        | [Menu del Tema actual](../../README.md)    |      -       | 
+|        | [Menu del Tema actual](../README.md)       |      -       | 
 
 
 
