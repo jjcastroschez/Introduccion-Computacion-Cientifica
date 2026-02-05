@@ -218,12 +218,12 @@ python --version
 
 ## 🧭 Menú de Navegación
 
-| Orden  | Material                                  | Tiempo       | 
-|:------:|:------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T1_ICC.md)             |      8       |
-| 2      | **Recursos**                             |      7       |
+| Orden  | Material                                   | Tiempo       | 
+|:------:|:-------------------------------------------|:------------:|
+| 1      | [Teoría](../teoria/T1_ICC.md)              |      8       |
+| 2      | **Recursos**                               |      7       |
 | 3      | [Ejemplos](../ejemplos/)                   |      -       |
 | 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
-|        | [Menu de Temas](../../README.md)             |      -       | 
+|        | [Menu del Tema actual](../README.md)       |      -       | 
 
 
