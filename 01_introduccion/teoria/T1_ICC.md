@@ -179,10 +179,10 @@ Ahora te animo a que pongas a prueba tus conocimientos... ¡Ejecuta los programa
 
 ## 🧭 Menú de Navegación
 
-| Orden  | Material                                  | Tiempo       | 
-|:------:|:------------------------------------------|:------------:|
-| 1      | [Teoría](./teoria/T1_ICC.md)              |      8       |
-| 2      | [Recursos](./recursos/T1_RE_ICC.md)       |      7       |
-| 3      | [Ejemplos](./ejemplos/)                   |      -       |
-| 4      | [Ejercicios](./ejercicios/T1_Ejer_ICC.md) |      -       |
-|        | [Menu de Temas](../README.md)             |      -       | 
+| Orden  | Material                                   | Tiempo       | 
+|:------:|:-------------------------------------------|:------------:|
+| 1      | **Teoría**                                 |      8       |
+| 2      | [Recursos](../recursos/T1_RE_ICC.md)       |      7       |
+| 3      | [Ejemplos](../ejemplos/)                   |      -       |
+| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
+|        | [Menu de Temas](../../README.md)           |      -       | 
