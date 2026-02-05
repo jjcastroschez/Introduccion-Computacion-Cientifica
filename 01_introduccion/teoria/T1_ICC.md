@@ -39,7 +39,7 @@ Según la arquitectura **John von Neumann**, los componentes hardware fundamenta
 * **Sistemas de Entrada/Salida**: periféricos que permiten la interacción entre el usuario y el computador.
 * **Buses de comunicación**: canales que conectan los distintos componentes.
 
-La ALU y la CU forman la **Unidad Central de Proceso** (CPU, *Central Processing Unit*). Junto a ellas, existen los **registros**, que son celdas de memoria de alta velocidad ubicadas dentro del propio procesador:
+La ALU y la CU forman la **Unidad Central de Proceso** (CPU, *Central Processing Unit*). Junto a ellas, en la CPU, encontramos los **registros**, que son celdas de memoria de alta velocidad:
 
 * **Contador de Programa** (**PC**): guarda la dirección de memoria de la *próxima* instrucción que se va a ejecutar.
 * **Registro de Instrucción** (**IR**): almacena la instrucción que se está ejecutando en ese momento.
@@ -47,19 +47,19 @@ La ALU y la CU forman la **Unidad Central de Proceso** (CPU, *Central Processing
 * **Registro de Datos de Memoria** (**MDR**): almacena el dato real recien traído de la memoria o a punto de ser enviado. 
 * **Acumulador** (**ACC**): registro principal de la ALU para guardar resultados inmediatos. 
 
-Debido a que la RAM es volátil -se borra al apagar el equipo y por tanto está vacía al arrancarlo-, el computador requiere de una **memoria ROM** (*Read-Only Memory*) que contiene el *firmware* o **BIOS** con las instrucciones iniciales para comprobar que todo está bien y arrancar el [sistema operativo](#seccion_sistema_perativo_y_terminal). 
+Debido a que la RAM es volátil, se borra al apagar el equipo y por tanto está vacía al arrancarlo, el computador requiere de una **memoria ROM** (*Read-Only Memory*) que contiene el *firmware* o **BIOS** con las instrucciones iniciales para comprobar que todo está bien y arrancar el [sistema operativo](#-sección-5-sistema-operativo-y-terminal). 
 
-Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacidad “limitada” -ten en cuenta que cuanto más rápida es una memoria, más costosa y pequeña es-, es la necesidad de la existencia de dispositivos de almacenamiento permanente, de gran capacidad pero más lentos, como por ejemplo: discos duros, unidades USB... Estos dispositivos almacenarán los programas y datos con los que va a trabajar el computador.  
+Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacidad “limitada” ——ten en cuenta que cuanto más rápida es una memoria, más costosa y pequeña es——, es la necesidad de la existencia de dispositivos de almacenamiento permanente, de gran capacidad pero más lentos, como por ejemplo: discos duros, unidades USB... Estos dispositivos almacenarán los programas y datos con los que va a trabajar el computador.  
 
 ![Diagrama de bloques de un ordenador básico con CPU uniprocesador (John von Neumann)](../imagenes/arquitectura_JvonNeumann.jpg "Arquitectura Von Neumann")
 
 ---
 
 ## 🚀 Sección 2: Lenguajes de Programación de Alto Nivel
-Un **lenguaje de programación** es un **conjunto de reglas, símbolos y palabras** que nos permiten dar instrucciones precisas al computador en un formato cercano al lenguaje humano.
+Un **lenguaje de programación** es un **conjunto de reglas, símbolos y palabras** que nos permiten especificar instrucciones precisas al computador en un formato cercano al lenguaje humano.
 
 ### 🗣️ Los Tres Pilares de un Lenguaje
-Al igual que los lenguajes naturales -los empleados por los humanos-, los lenguajes de programación (lenguajes formales) se definen mediante tres pilares:
+Al igual que los lenguajes empleados por los humanos (lenguajes naturales), los lenguajes de programación (lenguajes formales) se definen mediante tres pilares:
 
 1. El **Léxico (Vocabulario)**. El conjunto de símbolos y palabras permitidas (palabras reservadas como `if`, `while` o `return`, nombres de variables, operadores como `+` o `==`, o símbolos como `{`, `;` o `,`).
 
@@ -78,20 +78,20 @@ Existen miles de lenguajes de programación, cada uno con su léxico, sintaxis y
 ---
 
 ## 🧭 Sección 3: Clasificación de los Lenguajes
-Podemos clasificar los lenguajes según distintos criterios, cada uno de ellos resaltando un aspecto distinto del lenguaje:
+Podemos clasificar los lenguajes de programación según distintos criterios, cada uno de ellos resaltando un aspecto distinto del lenguaje:
 
 * **Nivel de abstracción**: *Bajo nivel* (cercanos al hardware, como Ensamblador) o *Alto nivel* (cercanos al humano, como Python o Java).
 
 * **Paradigma (Filosofía)**: 
 
   * *Imperativos*. Basados en describir cómo la computadora debe realizar una tarea paso a paso, modificando el estado del sistema mediante una secuencia ordenada de instrucciones (p.e. C).
-  * *Orientados a Objetos*. Basados en “objetos” y “clases” (p.e. Java, C++).
+  * *Orientados a Objetos*. Basados en “objetos” y “clases” (p.e. Java o C++).
   * *Funcionales*. Basados en funciones matemáticas (p.e. Haskell).
   * *Lógicos*. Basado en reglas y hechos (p.e. Prolog).
 
-* **Ejecución**: *Compilados* (se traducen enteros a código máquina antes de ejecutarse, como C++), *Interpretados* (se analizan y ejecutan línea a línea, como Python) e *Híbridos* (se traducen por completo a un lenguaje intermedio que luego se ejecuta línea a línea, como Java que compila a bytedoce para luego interpretarlo).
+* **Ejecución**: *Compilados* (se traducen completamente a código máquina antes de ejecutarse, como C++), *Interpretados* (se analizan y ejecutan línea a línea, como Python) e *Híbridos* (se traducen por completo a un lenguaje intermedio que luego se ejecuta línea a línea, como Java, que compila a bytedoce para luego interpretarse).
 
-* **Propósito**: *De propósito general* (sirven para resolver casi cualquier tipo de problema, como Python, C) o *De propósito específico* (sirven para resolver un tipo de problema, como SQL para bases de datos o MATLAB para cálculo numérico).
+* **Propósito**: *De propósito general* (sirven para resolver casi cualquier tipo de problema, como Python o C) o *De propósito específico* (sirven para resolver un tipo de problema, como SQL para bases de datos o MATLAB para cálculo numérico).
 
 Incluso se pueden establecer clasificaciones en base a características del lenguaje, como por ejemplo su **sistema de tipado** (i.e. *estático*, *dinámico*, *fuerte*, *débil*), pero de esto hablaremos más adelante...
 
@@ -101,7 +101,7 @@ Incluso se pueden establecer clasificaciones en base a características del leng
 Recuerda que los computadores, en su nivel más básico, solo entienden impulsos eléctricos (lo que conocemos como código binario: 0 y 1). Para que tus programas escritos en un lenguaje de alto nivel (texto legible) lleguen a la CPU (código máquina), necesitamos un “traductor”:
 
 1. **Compilador**. Traduce el código fuente (el programa escrito usando lenguajes como Python, Java o C++) en código máquina (ceros y unos). 
-2. **Itérprete**. Analiza y ejecuta el código fuente línea a línea en tiempo real (sin generación de código máquina). 
+2. **Intérprete**. Analiza y ejecuta el código fuente línea a línea en tiempo real (sin generación de código máquina). 
 
 Para trabajar eficientemente, a la hora de programar emplearemos un **Entorno de Desarrollo Integrado** (**IDE**, *Integrated Development Environment*), que incluye:
 
@@ -169,8 +169,20 @@ Hay una web muy interesante, [The Hello World Collection](https://helloworldcoll
 
 Otra web muy interesante para ver las diferencias entre los distintos lenguajes, y las capacidades de los programadores, es [99 Bottles of Beer](https://99-bottles-of-beer.spielmannspiel.com). Este sitio web contiene una colección de la canción "99 Botellas de Cerveza" programada en diferentes lenguajes de programación.
 
-En la carpeta de ejemplos tienes otros programas desarrollados con la misma finalidad, ver la diferencia entre distintos paradigmas. 
+En la carpeta de [ejemplos](../ejemplos/) tienes otros programas desarrollados con la misma finalidad, esto es: analizar la diferencia entre los distintos lenguajes y paradigmas. 
 
 Ahora te animo a que pongas a prueba tus conocimientos... ¡Ejecuta los programas dados como ejemplo!
 
 [^1]: [*¿Qué es un sistema operativo?*](https://www.ibm.com/es-es/think/topics/operating-systems), Stephanie Susnjara and Ian Smalley. IBM Homepage. 
+
+---
+
+## 🧭 Menú de Navegación
+
+| Orden  | Material                                  | Tiempo       | 
+|:------:|:------------------------------------------|:------------:|
+| 1      | [Teoría](./teoria/T1_ICC.md)              |      8       |
+| 2      | [Recursos](./recursos/T1_RE_ICC.md)       |      7       |
+| 3      | [Ejemplos](./ejemplos/)                   |      -       |
+| 4      | [Ejercicios](./ejercicios/T1_Ejer_ICC.md) |      -       |
+|        | [Menu de Temas](../README.md)             |      -       | 

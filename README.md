@@ -15,7 +15,7 @@
 # Presentación ICC 🧮 💻
 Bienvenido al repositorio de la asignatura de **Introducción a la Computación Científica** del *[Grado en Matemáticas](https://www.uclm.es/estudios/grados/matematicas)* de la [Universidad de Castilla-La Mancha](https://www.uclm.es).
 
-La Computación Científica es un campo interdisciplinario que utiliza capacidades avanzadas de computación para comprender y resolver problemas complejos de la vida real. A diferencia de la informática orientada a la gestión de datos o al desarrollo de aplicaciones comerciales, su objetivo principal es la **construcción de modelos matemáticos y simulaciones numéricas** para analizar sistemas científicos y de ingeniería.
+La Computación Científica es un campo interdisciplinar que utiliza capacidades avanzadas de computación para comprender y resolver problemas complejos de la vida real. A diferencia de la informática orientada a la gestión de datos o al desarrollo de aplicaciones comerciales, su objetivo principal es la **construcción de modelos matemáticos y simulaciones numéricas** para analizar sistemas científicos y de ingeniería.
 
 ---
 
@@ -33,9 +33,9 @@ La computación científica surge de la convergencia de tres áreas del conocimi
 
 ## 📍 Objetivo 
 
-Desde el área de conocimiento de las **Ciencias de la Computación**, esta asignatura aporta los conocimientos necesarios para resolver problemas mediante computadores. Se centra en el desarrollo de programas bajo el **paradigma de la programación imperativa** --uno de los enfoques más arraigados y fundamentales-- aunque también se explorará la programación funcional y la orientada a objetos. 
+Desde el área de conocimiento de las **Ciencias de la Computación**, esta asignatura aporta los conocimientos básicos necesarios para resolver problemas mediante computadores. Se centra en el desarrollo de programas bajo el **paradigma de la programación imperativa** —uno de los enfoques más arraigados y fundamentales— aunque también se explorarán brevemente los paradigmas de la programación funcional y la orientada a objetos.
 
-El curso cubre los fundamentos de la programación y de los lenguajes de programación, así como técnicas de elaboración de algoritmos, que pueden ser de utilidad en el futuro profesional del graduado o graduada en Matemáticas. Estos conocimientos permitirán abordar con éxito las prácticas de gran parte de las asignaturas del plan de estudios del título.
+El curso cubre los fundamentos de la programación y de los lenguajes de programación, así como técnicas de elaboración de algoritmos, que pueden ser de utilidad en el futuro profesional del graduado o graduada en Matemáticas. Estos conocimientos permitirán abordar con éxito las prácticas del resto de las asignaturas del plan de estudios del título.
 
 ---
 
@@ -50,16 +50,16 @@ También puedes usar la opción *Clone a Repository from Internet* en **Github D
 
 ## 📂 Estructura del Repositorio
 
-Este espacio contiene parte del material necesario para el seguimiento de la materia, organizado en **9 carpetas** temáticas. Cada carpeta incluye:
+Este espacio contiene, organizado en **9 carpetas** temáticas, parte del material necesario para el estudio y aprendizaje de la materia. Cada carpeta incluye otras subcarpetas:
 
-- 📘 **/teoria**. Notebooks explicativos con fundamentos teóricos y códigos usados en clase.
+- 📘 **/teoria**. Notebooks y documentos explicativos (en formato Markdown) con fundamentos teóricos y ejemplos usados en clase.
 - 🐍 **/ejemplos**. Scripts y programas de Python (`.py`) listos para ejecutar.
 - 📝 **/ejercicios**. Enunciados (y soluciones) de los ejercicios propuestos.
 - 🔗 **/recursos**. Enlaces a herramientas y documentación complementaria.
-- 🌅 **/imagenes**. Figuras y rescursos visuales empleadas los documentos.
+- 🌅 **/imagenes**. Figuras y recursos visuales empleados en el resto de los documentos.
 
 > [!NOTE]
-> La estructura de carpetas se mantiene igual en todos los temas para facilitar la navegación, aunque en algún tema alguna carpeta puede aparecer vacía, si el contenido no es aplicable a esa unidad en concreto. 
+> La estructura de carpetas se mantiene igual en todos los temas para facilitar la navegación, aunque puede haber temas en los que algunas subcarpetas puede aparecer vacías, esto es debido a que el contenido no es aplicable a esa unidad en concreto. 
 
 > [!WARNING]
 > Este material complementa, no sustituye, al que se usa en las clases presenciales.
@@ -69,8 +69,8 @@ Este espacio contiene parte del material necesario para el seguimiento de la mat
 
 Para trabajar con este material, asegúrate de tener instalado:
 * **Python** (versión recomendada en el curso).
-* Un **IDE** o editor de código (puedes empezar con el IDLE de Python y evolucionar, aunque recomiendo evolucionar a **VSCode**).
-* **Git**.
+* Un **IDE** o editor de código (te recomiendo empezar con el IDLE de Python, y evolucionar más adelante a **VSCode**).
+* **Git**.  
 * **GitHub Desktop** (opcional).
 
 > [!IMPORTANT]
@@ -102,3 +102,5 @@ Para otras consultas, puedes contactar conmigo directamente en clase o de cualqu
 | 7      | [Entradas de Datos](./07_entrada_datos/README.md)                             |
 | 8      | [Programación Orientada a Objetos](./08_poo/README.md)                        |
 | 9      | [Paquetes de Interés (matemáticos)](./09_paquetes_matematicos/README.md)      |
+
+🛫 ¡Despegamos! 
