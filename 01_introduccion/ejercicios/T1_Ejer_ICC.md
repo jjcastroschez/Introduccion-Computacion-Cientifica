@@ -33,34 +33,34 @@ Veamos si has aprendido a moverte por el árbol de directorios y a interactuar c
 
 ```sh
 Introduccion_Computacion_Cientifica
-│ 
-├── Guia_INTRODUCCION_A_LA_COMPUTACION_CIENTIFICA.pdf
-├── Libros
-│    ├── pythonlearn.pdf
-│    └── Python para todos.pdf
-└── Tema 1
-    ├── Transparencias
-    │   ├── Teoria
-    │   │    └── Tema1_ICC.pdf
-    │   └── Practicas
-    │        ├── Sesion1A_ICC_Practicas.pdf
-    │        └── Sesion1B_ICC_Practicas.pdf
-    ├── Ejemplos
-    ├── Ejercicios
-    ├── Otros
-    └── Entregables
+ │ 
+ ├── Guia_INTRODUCCION_A_LA_COMPUTACION_CIENTIFICA.pdf
+ ├── Libros
+ │    ├── pythonlearn.pdf
+ │    └── Python para todos.pdf
+ └── Tema 1
+     ├── Transparencias
+     │   ├── Teoria
+     │   │    └── Tema1_ICC.pdf
+     │   └── Practicas
+     │        ├── Sesion1A_ICC_Practicas.pdf
+     │        └── Sesion1B_ICC_Practicas.pdf
+     ├── Ejemplos
+     ├── Ejercicios
+     ├── Otros
+     └── Entregables
 ```
 
 > [!NOTE]
 > La guía de la asignatura (*Guia_INTRODUCCION_A_LA_COMPUTACION_CIENTIFICA.pdf*) te la puedes descargar de la web. 
 > Los archivos de la carpeta `Libros` son algunos de acceso libre, como **Python para todos** escrito por Charles R. Severance (*pythonlearn.pdf*) o el del mismo título escrito por Raúl González Duque (*Python para todos.pdf*), ambos son  tutoriales de Python adecuado para todos los niveles que puedes descargar totalmente grátis de la web (mira el apartado [**Recursos**](../recursos/T1_RE_ICC.md)). Hay muchos en la web, pero no te obsesiones en tener muchos libros, lo importante es leerlos, por lo menos uno.
-> El resto de documentos que aparecen te los puedes descargar del espacio de la asignatura en Campus Virtual.
+> El resto de documentos que aparecen en la estructura te los puedes descargar del espacio de la asignatura en Campus Virtual.
 
 4. **Generacion:** Crea un archivo de texto dentro de la carpeta ``Ejemplos`` llamado ``opinion.txt`` que contenga una frase oculta (ej. "Encantado de conocer al SO, el boss").
 
-5. **Copia:** Copia el archivo `opinion.txt` a la carpeta "Otros" y elimínalo de la carpeta "Ejemplos".
+5. **Copia:** Copia el archivo `opinion.txt` a la carpeta `Otros` y elimínalo de la carpeta `Ejemplos`.
 
-6. **Limpieza:** Elimina la carpeta "Otros". 
+6. **Limpieza:** Elimina la carpeta `Otros`. 
 
 > [!TIP]
 > Para realizar el ejercicio consulta la 📋[**Chuleta de Comandos Básicos (CLI)**](../recursos/T1_RE_ICC.md#-chuleta-de-comandos-básicos-cli) y la 📂[**Chuleta de Navegación: Comando `cd` (Change Directory)**](../recursos/T1_RE_ICC.md#-chuleta-de-navegación-comando-cd-change-directory).
