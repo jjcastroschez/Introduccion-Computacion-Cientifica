@@ -32,6 +32,8 @@ Veamos si has aprendido a moverte por el árbol de directorios y a interactuar c
 3. **Anidación:** Crea la siguiente estructura de carpetas, que cuelga desde la recien creada ``Introduccion_Computacion_Cientifica``:
 
 ```sh
+Introduccion_Computacion_Cientifica
+│ 
 ├── Guia_INTRODUCCION_A_LA_COMPUTACION_CIENTIFICA.pdf
 ├── Libros
 │    ├── pythonlearn.pdf
@@ -60,7 +62,7 @@ Veamos si has aprendido a moverte por el árbol de directorios y a interactuar c
 
 6. **Limpieza:** Elimina la carpeta "Otros". 
 
-[!TIPS]
+[!TIP]
 > Para realizar el ejercicio consulta la 📋**Chuleta de Comandos Básicos (CLI)** y la 📂 **Chuleta de Navegación: Comando `cd` (Change Directory)**. 
 
 
