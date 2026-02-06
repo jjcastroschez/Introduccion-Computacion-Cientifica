@@ -62,7 +62,7 @@ Introduccion_Computacion_Cientifica
 
 6. **Limpieza:** Elimina la carpeta "Otros". 
 
-[!TIP]
+> [!TIP]
 > Para realizar el ejercicio consulta la 📋**Chuleta de Comandos Básicos (CLI)** y la 📂 **Chuleta de Navegación: Comando `cd` (Change Directory)**. 
 
 
