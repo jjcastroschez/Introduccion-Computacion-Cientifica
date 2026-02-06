@@ -31,6 +31,7 @@ Durante tu trabajo práctico en la asignatura, utilizarás en la terminal los si
 
 | Comando | Acción | Uso |
 | :--- | :--- | :--- |
+| `pwd`/ `cd`| Informar de la ruta actual en la terminal. | [Info. comando cd (Windows)](https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/cd) |
 | `cd` | Cambiar de carpeta / moverse por el sistema. | [Info. comando cd (Windows)](https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/cd) |
 | `ls` / `dir` | Listar archivos y carpetas. | [Info. comando dir (Windows)](https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/dir)  |
 | `mkdir` | Crear carpetas nuevas. | [Info. comando mkdir (Windows)](https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/mkdir) | 
@@ -45,6 +46,29 @@ Durante tu trabajo práctico en la asignatura, utilizarás en la terminal los si
 
 > [!TIP]
 > Para acceder a las ayudas sobre los comandos UNIX (macOS) puedes usar desde la línea de comandos el comando `man` seguido del nombre del comando sobre el que deseas obtener información. Por ejemplo, la ejecución del comando `man cp` te mostrará una página de ayuda sobre el comando `cp`.  
+
+### 📂 Chuleta de Navegación: Comando `cd` (Change Directory)
+
+| Acción | Unix (Linux / macOS) | Windows (PowerShell / CMD) | Concepto |
+| :--- | :--- | :--- | :--- |
+| **Entrar en carpeta** | `cd carpeta` | `cd carpeta` | Entra en un directorio dentro del actual. |
+| **Subir un nivel** | `cd ..` | `cd ..` | Sube a la carpeta "padre". |
+| **Subir varios niveles** | `cd ../..` | `cd ..\..` | Sube dos o más niveles de golpe. |
+| **Ir a la raíz** | `cd /` | `cd \` | Va al inicio del disco/partición actual. |
+| **Carpeta de usuario** | `cd ~` | `cd ~` (PS) / `cd %USERPROFILE%` (CMD) | Va a tu carpeta personal (Documentos, Escritorio, etc.). |
+| **Cambiar de disco** | *(No aplica)* | `D:` (Solo la letra y dos puntos) | Cambia la unidad de almacenamiento. |
+| **Ruta con espacios** | `cd "Carpeta A"` | `cd "Carpeta A"` | Las comillas son obligatorias si hay espacios. |
+| **Volver atrás** | `cd -` | `cd -` (Solo en PowerShell) | Regresa al último directorio donde estuviste. |
+| **Directorio actual** | `.` | `.` | Representa el lugar donde estás ahora mismo. |
+| **Directorio superior** | `..`| `..` | Representa una carpeta superior. |
+
+---
+
+### 💡 Tips de Productividad
+1. **Autocompletado:** Escribe las primeras letras y pulsa `Tabulador` ↹. La terminal escribirá el resto por ti.
+2. **Rutas Absolutas vs Relativas:**
+   - **Absoluta:** Empieza desde la raíz (`/` o `C:\`). Ej: `cd /home/usuario/descargas` (Unix) o `cd documentos\proyectos` (Windows).
+   - **Relativa:** Empieza desde donde estás. Ej: `cd descargas`.
 
 ---
 
@@ -213,6 +237,7 @@ python --version
 * [Python España](https://es.python.org/)
 * [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
 * [30-Dias-de-Python](https://github.com/jjcastroschez/30-Dias-de-Python/blob/master/readme.md)
+* [Python para todos](https://es.py4e.com)
 
 ---
 
@@ -225,5 +250,3 @@ python --version
 | 3      | [Ejemplos](../ejemplos/)                   |      -       |
 | 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       | 
-
-
