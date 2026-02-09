@@ -51,7 +51,14 @@ Debido a que la RAM es volátil, se borra al apagar el equipo y por tanto está 
 
 Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacidad “limitada” ——ten en cuenta que cuanto más rápida es una memoria, más costosa y pequeña es——, es la necesidad de la existencia de dispositivos de almacenamiento permanente, de gran capacidad pero más lentos, como por ejemplo: discos duros, unidades USB... Estos dispositivos almacenarán los programas y datos con los que va a trabajar el computador.  
 
+<!--
 ![Diagrama de bloques de un ordenador básico con CPU uniprocesador (John von Neumann)](../imagenes/arquitectura_JvonNeumann.jpg "Arquitectura Von Neumann")
+-->
+
+<figure>
+  <img src="../imagenes/arquitectura_JvonNeumann.jpg" alt="Arquitectura Von Neumann">
+  <figcaption>Diagrama de bloques de un ordenador básico con CPU uniprocesador (John von Neumann)</figcaption>
+</figure>
 
 ---
 
@@ -112,8 +119,15 @@ Para trabajar eficientemente, a la hora de programar emplearemos un **Entorno de
 
 Algunos IDE muy usados son: IDLE o PyCharm (para Python) y Visual Studio Code (multilenguaje).
 
+<!--
 ![Infografía resumen sobre el proceso de programación](../imagenes/infografia_PL_JJCastroSchez.png "Infografía Proceso Programación")
 
+--> 
+
+<figure>
+  <img src="../imagenes/infografia_PL_JJCastroSchez.png" alt="Infografía Proceso Programación">
+  <figcaption>Infografía resumen sobre el proceso de programación</figcaption>
+</figure>
 
 ---
 
