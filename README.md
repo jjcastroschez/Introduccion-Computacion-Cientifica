@@ -58,10 +58,10 @@ Este espacio contiene, organizado en **9 carpetas** temáticas, parte del materi
 - 🔗 **/recursos**. Enlaces a herramientas y documentación complementaria.
 - 🌅 **/imagenes**. Figuras y recursos visuales empleados en el resto de los documentos.
 
-> [!NOTE]
+> \[!NOTE]
 > La estructura de carpetas se mantiene igual en todos los temas para facilitar la navegación, aunque puede haber temas en los que algunas subcarpetas puede aparecer vacías, esto es debido a que el contenido no es aplicable a esa unidad en concreto. 
 
-> [!WARNING]
+> \[!WARNING]
 > Este material complementa, no sustituye, al que se usa en las clases presenciales.
 ---
 
@@ -73,10 +73,10 @@ Para trabajar con este material, asegúrate de tener instalado:
 * **Git**.  
 * **GitHub Desktop** (opcional).
 
-> [!IMPORTANT]
+> \[!IMPORTANT]
 > Visita la sección de [Recursos](./01_introduccion/recursos/T1_RE_ICC.md) para obtener los enlaces a las herramientas citadas.
 
-> [!WARNING]
+> \[!WARNING]
 > Será también necesario que te abras una cuenta en [**GitHub**](https://github.com/).
 
 ---
