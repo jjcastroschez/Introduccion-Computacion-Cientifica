@@ -88,6 +88,9 @@ Ejecuta el siguiente programa...
 }
 ```
 <!-- Defino un estilo para poner preguntas Desplegables con formnato 😜 -->
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+ <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
 
 <style>
 .faq-container {    
@@ -164,6 +167,7 @@ details[open] summary::before {
 
 </style>
 
+
 <!-- Código HTML para usar el estido previamente definido -->
 
 <div class="faq-container">
@@ -194,6 +198,9 @@ details[open] summary::before {
 </details>
   
 </div>
+    </div>
+  </foreignObject>
+</svgg
 
 ---
 
