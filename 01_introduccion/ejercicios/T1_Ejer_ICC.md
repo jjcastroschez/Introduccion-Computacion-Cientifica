@@ -91,24 +91,25 @@ Ejecuta el siguiente programa...
 
 ### Responde a las siguientes consultas
   <details>
-  <summary><h3>¿Qué necesitas para poder ejecutar el programa en C?<h3></summary>
+  <summary><h4>¿Qué necesitas para poder ejecutar el programa en C?<h4></summary>
+  <br>
   <p>¡Muy bien! C es un lenguaje compilado, por lo que te tendrías que descargar un compilador de C en tu ordenador. Ya lo harás, no es el momento... Empleemos para este ejercicio un <a href="../recursos/T1_RE_ICC.md#-compiladores-e-intérpretes-online">compilador online</a>.</p>
 </details>
 
 <details>
-  <summary><h3>¿Qué ha ocurrido?¿Se genera código máquina?</h3></summary>
+  <summary><h4>¿Qué ha ocurrido?¿Se genera código máquina?</h4></summary>
   <br>
   <p>Al usar un compilador online no hay, no puede haber, generación de código máquina. La herramienta que has usado, analiza tu programa y simula el trabajo del compilador, analiza y ejecuta, pero no hay generación.</p>
 </details>
   
   <details>
-  <summary><h3>Si sustituyes en el código en C el contenido de la línea 8, por:  <em>multiplica = 1000;</em> ¿qué tipo de error ocurrirá?<h3></summary>
+  <summary><h4>Si sustituyes en el código en C el contenido de la línea 8, por:  <em>multiplica = 1000;</em> ¿qué tipo de error ocurrirá?<h4></summary>
   <br>
   <p>No es un error de vocabulario, ni es un error de sintaxis. Está ocurriendo un error semántico, estás intentando asignar un valor a una variable que no está declarada. Ya aprenderás más sobre esto... 😜</p>
 </details>
   
   <details>
-  <summary><h3>Y si sustituyes en el código C original el contenido de esa misma línea ahora con <em>multiplicador = 1000</em> ¿qué tipo de error ocurre ahora?</h3></summary>
+  <summary><h4>Y si ahora el contenido de esa misma línea es <em>multiplicador = 1000</em> ¿qué tipo de error ocurre?</h4></summary>
   <br>
   <p>Efectivamente, es un error de sintaxis, ya que se ahora se espera el símbolo ';' para que tenga una estructura correcta.</p>
 </details>
