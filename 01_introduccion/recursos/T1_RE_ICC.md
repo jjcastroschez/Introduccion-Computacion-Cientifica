@@ -247,6 +247,6 @@ python --version
 |:------:|:-------------------------------------------|:------------:|
 | 1      | [Teoría](../teoria/T1_ICC.md)              |      8       |
 | 2      | **Recursos**                               |      7       |
-| 3      | [Ejemplos](../ejemplos/)                   |      -       |
+| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)     |      -       |
 | 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       | 
