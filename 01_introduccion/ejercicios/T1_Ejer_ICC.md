@@ -83,7 +83,7 @@ Ejecuta el siguiente programa...
     multiplicador = 1000; 
     multiplicando=2;
     res=multiplicador*multiplicando;
-    printf("Resultado (%d x %d) = %d\n",multiplicador,multiplicando,res); /*se muestra el resultado */ 
+    printf("Resultado (%d x %d) = %d\n",multiplicador,multiplicando,res);
     return 0;
 }
 ```
@@ -97,7 +97,7 @@ Ejecuta el siguiente programa...
 
 <details>
   <summary><h4>¿Qué ha ocurrido?¿Se genera código máquina?</h4></summary>
-  <p>Al usar un compilador online no hay, no puede haber, generación de código máquina. La herramienta que has usado, analiza tu programa y simula el trabajo del compilador, analiza y ejecuta, pero no hay generación.</p>
+  <p>Al usar un compilador online no hay, no puede haber, generación de código máquina. La herramienta que has usado, lee tu programa y simula el trabajo del compilador, analizando y ejecutando las instrucciones, pero no hay generación.</p>
 </details>
   
   <details>
@@ -107,12 +107,12 @@ Ejecuta el siguiente programa...
   
   <details>
   <summary><h4>Y si ahora el contenido de esa misma línea es <em>multiplicador = 1000</em> ¿qué tipo de error ocurre?</h4></summary>
-  <p>Efectivamente, es un error de sintaxis, ya que se ahora se espera el símbolo ';' para que tenga una estructura correcta.</p>
+  <p>Efectivamente, es un error de sintaxis. Se espera el símbolo ';' para que tenga una estructura correcta, al no estar se produce un error.</p>
 </details>
   
   <details>
   <summary><h4>Una última pregunta, y si en el original cambias la línea 5 por <em>int 1numero;</em> ¿qué ocurre ahora?<h4></summary>
-  <p>¡Puf! Parece el fin... ¿eh? Y eso que solo has tocado una cosa. Tranquilidad, hay un error que luego provoca otros, que realmente no existen. El primer error se produce por el uso de 1numero, ahí se está produciendo un error en el vocabulario. Ya hablaremos de esto más adelante.</p>
+  <p>¡Puf! Parece el fin, ¿eh?. Y eso que solo has tocado una cosa. Tranquilidad, efectivamente solo hay un error que luego provoca otros, que realmente no existen. El primer error se produce por el uso de <em>1numero</em>, ahí se está produciendo un error en el léxico. Ya hablaremos de lo que ocurre más adelante.</p>
 </details>
   
 
@@ -120,19 +120,58 @@ Ejecuta el siguiente programa...
 
 ## Python
 
-Crea y ejecuta...
+Veamos ahora qué ocurre con Python...
+
+```python
+
+print("Script en Python\n")
+multiplicador = 1000 
+multiplicando=2
+res=multiplicador*multiplicando
+print(f"Resultado ({multiplicador} * {multiplicando}) = {res}\n") 
+
+```
+
+### Responde a las siguientes consultas
+  <details>
+  <summary><h4>¿Qué necesitas para poder ejecutar el programa en Python?<h4></summary>
+  <p>¡Muy bien! Python es un lenguaje interpretado, por lo que te tendrías que descargar un intérprete de Python en tu ordenador. ¡Ya lo has hecho! Así que empléalo para este ejecutar este script.</p>
+</details>
+
+<details>
+  <summary><h4>¿Qué ha ocurrido ahora?¿Se genera código máquina?</h4></summary>
+  <p>Al usar un intérprete no hay generación de código máquina. El intérprete ha ido recibiendo instrucción a instrucción, cada una de ellas ha sido analizada y ejecutada, pero no hay generación.</p>
+</details>
+  
+  <details>
+  <summary><h4>Si sustituyes en el código en Python el contenido de la línea 2, por:  <em>multiplica = 1000;</em> ¿qué tipo de error ocurrirá?<h4></summary>
+  <p>¿Qué has hecho? Si has ejecutado este script desde la línea de comandos de Python, e inmediatamente después de ejecutar el anterior, ¡no ha pasado nada! 😜. Si lo has ejecutado por primera vez, tampoco ocurre nada después de ejecutarlo. Pero si inicias Python o lo cierras, y vuelves a ejecutarlo línea a línea, al introducir la línea 4 se producirá un error semántico. Esto se debe a que no está definida la variable <em>multiplicador</em>.</p>
+</details>
+  
+  <details>
+  <summary><h4>Y si cambiamos la línea 5 por <em>res=multiplicador x multiplicando</em> ¿qué ocurre?</h4></summary>
+  <p>Efectivamente, es un error de sintaxis. El intérprete cuando analiza la instrucción no entiende la presencia del carácter <em>x</em>.</p>
+</details>
+  
+  <details>
+  <summary><h4>Una última pregunta, y si en el original cambiamos la línea 2 por <em><em>1numero=1000</em></em> ¿qué ocurre ahora?<h4></summary>
+  <p>El intérprete encuentra un error al analizarla, es un error léxico, aunque lo está reportando como un error sintáctico, al construir un elemento de vocabulario, en concreto un número.</p>
+</details>
+  
 
 ---
 
 ## Software de Control de Versiones 
 
-Crea el siguiente repositorio...
+Crea un repositorio sobre la raíz de la estructura que has construido <strong>Introduccion_Computacion_Cientifica</strong> y súbelo a tu cuenta de GitHub.  
 
 ---
 
 ## ⚙️ Entorno de Desarrollo Integrado (IDE)
 
-Guarda y ejecuta en el IDLE de Python...
+Guarda el script anterior de Python en un archivo nombrado ``multiplicacion.py`` y sitúalo en una nueva carpeta de nombre ``Pruebas`` que cuelgue de la raíz. Ahora es tiempo de ejecutarlo en el IDLE de Python.
+
+Sube ahora los cambios a tu repositorio en GitHub.
 
 ---
 
@@ -140,10 +179,10 @@ Guarda y ejecuta en el IDLE de Python...
 
 | Orden  | Material                                   | Tiempo       | 
 |:------:|:-------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T1_ICC.md)              |    8         |
+| 1      | [Teoría](../teoria/T1_ICC.md)              |      8       |
 | 2      | [Recursos](../recursos/T1_RE_ICC.md)       |      7       |
 | 3      | [Ejemplos](../ejemplos/)                   |      -       |
-| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
+| 4      | **Ejercicios**                             |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       | 
 
 
