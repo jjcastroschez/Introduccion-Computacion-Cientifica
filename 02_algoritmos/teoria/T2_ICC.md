@@ -202,6 +202,6 @@ Antes de dar por bueno tu algoritmo, comprueba:
 |:------:|:-------------------------------------------|:------------:|
 | 1      | **Teoría**                                 |      6       |
 | 2      | [Recursos](../recursos/T2_RE_ICC.md)       |      5       |
-| 3      | [Ejemplos](../ejemplos/)                   |      -       |
+| 3      | [Ejemplos](../ejemplos/T2_Ejem_ICC.md)     |      -       |
 | 4      | [Ejercicios](../ejercicios/T2_Ejer_ICC.md) |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       |

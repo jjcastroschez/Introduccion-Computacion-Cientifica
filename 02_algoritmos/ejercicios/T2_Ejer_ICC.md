@@ -151,6 +151,6 @@ Diseña en pseudocódigo el algoritmo para calcular el **máximo común divisor*
 |:------:|:-------------------------------------------|:------------:|
 | 1      | [Teoría](../teoria/T2_ICC.md)              |      6       |
 | 2      | [Recursos](../recursos/T2_RE_ICC.md)       |      5       |
-| 3      | [Ejemplos](../ejemplos/)                   |      -       |
+| 3      | [Ejemplos](../ejemplos/T2_Ejem_ICC.md)     |      -       |
 | 4      | **Ejercicios**                             |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       |

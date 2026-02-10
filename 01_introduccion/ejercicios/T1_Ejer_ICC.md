@@ -181,15 +181,9 @@ Sube ahora los cambios a tu repositorio en GitHub.
 |:------:|:-------------------------------------------|:------------:|
 | 1      | [Teoría](../teoria/T1_ICC.md)              |      8       |
 | 2      | [Recursos](../recursos/T1_RE_ICC.md)       |      7       |
-<<<<<<< HEAD
-| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)                   |      -       |
+| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)     |      -       |
 | 4      | **Ejercicios**                             |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       |  
-=======
-| 3      | [Ejemplos](../ejemplos/)                   |      -       |
-| 4      | **Ejercicios**                             |      -       |
-|        | [Menu del Tema actual](../README.md)       |      -       | 
->>>>>>> 85d3258b111e8424a6c44ecef5016a7616c42efc
 
 
 
