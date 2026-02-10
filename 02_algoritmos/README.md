@@ -83,6 +83,6 @@ Al finalizar el tema, serás capaz de:
 |:------:|:------------------------------------------|:------------:|
 | 1      | [Teoría](./teoria/T2_ICC.md)              |      6       |
 | 2      | [Recursos](./recursos/T2_RE_ICC.md)       |      5       |
-| 3      | [Ejemplos](./ejemplos/)                   |      -       |
+| 3      | [Ejemplos](./ejemplos/T2_Ejem_ICC.md)     |      -       |
 | 4      | [Ejercicios](./ejercicios/T2_Ejer_ICC.md) |      -       |
 |        | [Menu de Temas](../README.md)             |      -       | 

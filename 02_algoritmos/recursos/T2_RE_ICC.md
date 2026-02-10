@@ -69,6 +69,6 @@ flowchart TD
 |:------:|:-------------------------------------------|:------------:|
 | 1      | [Teoría](../teoria/T2_ICC.md)              |      6       |
 | 2      | **Recursos**                               |      5       |
-| 3      | [Ejemplos](../ejemplos/)                   |      -       |
+| 3      | [Ejemplos](../ejemplos/T2_Ejem_ICC.md)     |      -       |
 | 4      | [Ejercicios](../ejercicios/T2_Ejer_ICC.md) |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       |
