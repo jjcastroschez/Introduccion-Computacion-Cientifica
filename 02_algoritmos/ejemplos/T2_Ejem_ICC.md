@@ -25,3 +25,16 @@ En esta carpeta encontrarás **scripts de Python** que implementan algunos algor
 - [`02_suma_1_a_n.py`](../ejemplos/02_suma_1_a_n.py): comparación de dos algoritmos (bucle vs fórmula).
 - [`03_maximo_tres.py`](../ejemplos/03_maximo_tres.py): selección para obtener el máximo.
 - [`04_mcd_euclides.py`](../ejemplos/04_mcd_euclides.py): algoritmo clásico (Euclides) con iteración.
+
+---
+
+## 🧭 Menú de Navegación
+
+| Orden  | Material                                   | Tiempo       | 
+|:------:|:-------------------------------------------|:------------:|
+| 1      | [Teoría](../teoria/T2_ICC.md)              |      6       |
+| 2      | [Recursos](../recursos/T2_RE_ICC.md)       |      5       |
+| 3      | **Ejemplos**                               |      -       |
+| 4      | [Ejercicios](../ejercicios/T2_Ejer_ICC.md) |      -       |
+|        | [Menu del Tema actual](../README.md)       |      -       |
+
