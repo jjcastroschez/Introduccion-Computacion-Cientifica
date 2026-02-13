@@ -13,7 +13,7 @@
 </div>
 
 
-# 🖥️ Ejercicios - Tema 1: Introducción a la Computación Científica 📝
+# 🖥️ Ejercicios Autocomprobación - Tema 1: Introducción a la Computación Científica 📝
 
 ¡Es hora de practicar lo aprendido! De esta forma acabarás de aprender y adquirir los conocimientos y habilidades de este tema. Te animo a que realices los siguientes ejercicios para acabar de asimilar los contenidos del tema.
 
@@ -25,7 +25,7 @@ Veamos si has aprendido a moverte por el árbol de directorios y a interactuar c
 
 ### 🏗️ Ejercicio: "Construyendo tu espacio de trabajo"
 
-#### Parte Primera: Navegación
+Haz lo que te indico aquí 👇
 
 1. **Exploración:** Abre la terminal, mira en que directorio estás y sitúate en la carpeta "Documents" o "Documentos". 
 2. **Creación:** Crea una carpeta llamada ``Introduccion_Computacion_Cientifica``, entra en ella.
@@ -70,7 +70,11 @@ Introduccion_Computacion_Cientifica
 
 ## 📖 Compiladores e Intérpretes Online
 
-Ejecuta el siguiente programa...
+Es el momento de comprobar si eres consciente de la utilidad/necesidad de los compiladores e intérpretes y eres capaz de entender lo que hacen.
+
+### ⚙️ Ejercicio: "Ejecutando programas"
+
+Ejecuta el siguiente programa escrito en el lenguaje de programación C, y responde a las preguntas que te hago antes de ver la solución... 😜
 
 ```c
 #include <stdio.h>
@@ -89,7 +93,7 @@ Ejecuta el siguiente programa...
 ```
 <!-- Defino un estilo para poner preguntas Desplegables con formnato 😜 -->
 
-### Responde a las siguientes consultas
+#### Responde a las siguientes consultas 👇
   <details>
   <summary><h4>¿Qué necesitas para poder ejecutar el programa en C?<h4></summary>
   <p>¡Muy bien! C es un lenguaje compilado, por lo que te tendrías que descargar un compilador de C en tu ordenador. Ya lo harás, no es el momento... Empleemos para este ejercicio un <a href="../recursos/T1_RE_ICC.md#-compiladores-e-intérpretes-online">compilador online</a>.</p>
@@ -120,7 +124,11 @@ Ejecuta el siguiente programa...
 
 ## Python
 
-Veamos ahora qué ocurre con Python...
+De este lenguaje de programación ya hemos hablado algo en clase y [en este mismo espacio](../teoria/T1_ICC.md#-tu-primer-programa-en-python), así que deberías responder correctamente a las cuestiones que te planteo a continuación.
+
+### 🐍 Ejercicio: "Ejecutando scripts de Python"
+
+Ejecuta el siguiente script escrito en el lenguaje de programación Python, y responde a las preguntas que te hago. Recuerda que es conveniente no mirar la solución... 😜
 
 ```python
 
@@ -132,7 +140,7 @@ print(f"Resultado ({multiplicador} * {multiplicando}) = {res}\n")
 
 ```
 
-### Responde a las siguientes consultas
+#### Responde a las siguientes consultas 👇
   <details>
   <summary><h4>¿Qué necesitas para poder ejecutar el programa en Python?<h4></summary>
   <p>¡Muy bien! Python es un lenguaje interpretado, por lo que te tendrías que descargar un intérprete de Python en tu ordenador. ¡Ya lo has hecho! Así que empléalo para este ejecutar este script.</p>
@@ -163,7 +171,13 @@ print(f"Resultado ({multiplicador} * {multiplicando}) = {res}\n")
 
 ## Software de Control de Versiones 
 
-Crea un repositorio sobre la raíz de la estructura que has construido <strong>Introduccion_Computacion_Cientifica</strong> y súbelo a tu cuenta de GitHub.  
+Como sabes el software de control de versiones te ayuda a registrar cambios en archivos a lo largo del tiempo, permitiendo recuperar estados anteriores de esos archivos y gestionar modificaciones simultáneas por varios usuarios. Vamos a ver si eres capaz de poner en marcha este software sobre tus proyectos.
+
+### 📋 Ejercicio: "Tomando precauciones para evitar daños"
+
+1. Crea un repositorio sobre la raíz de la estructura que has construido <strong>Introduccion_Computacion_Cientifica</strong>. 
+2. Sube tu repositorio a tu cuenta de GitHub.
+3. Comparte tu repositorio en GitHub con el profesor.
 
 ---
 
@@ -177,14 +191,10 @@ Sube ahora los cambios a tu repositorio en GitHub.
 
 ## 🧭 Menú de Navegación
 
-| Orden  | Material                                   | Tiempo       | 
-|:------:|:-------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T1_ICC.md)              |      8       |
-| 2      | [Recursos](../recursos/T1_RE_ICC.md)       |      7       |
-| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)     |      -       |
-| 4      | **Ejercicios**                             |      -       |
-|        | [Menu del Tema actual](../README.md)       |      -       |  
-
-
-
-
+| Orden  | Material                                                                  | Tiempo       | 
+|:------:|:--------------------------------------------------------------------------|:------------:|
+| 1      | [Teoría](../teoria/T1_ICC.md)                                             |      8       |
+| 2      | [Recursos](../recursos/T1_RE_ICC.md)                                      |      7       |
+| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)                                    |      -       |
+| 4      | **Ejercicios**                                                            |      -       |
+|        | [Menu del Tema actual](../README.md#-menú-de-navegación-en-el-tema)       |      -       |  

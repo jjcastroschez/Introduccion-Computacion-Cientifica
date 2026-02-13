@@ -139,7 +139,7 @@ Cuando programamos, para ganar agilidad y eficiencia en las tareas, a menudo tra
 ---
 
 ## 🐍 Tu primer programa en Python
-En este curso usaremos Python, un lenguaje de propósito general, interpretado y de tipado dinámico.
+En este curso usaremos Python, un lenguaje multiparadigma, de propósito general, interpretado y de tipado dinámico.
 
 Para observar cómo varía la **sintaxis** manteniendo la misma **semántica**, vas a realizar tu primer programa en estos tres lenguajes: Python, C, JavaScript y Java. Se trata del primer programa que los programadores solemos escribir cuando aprendemos un nuevo lenguaje: el "¡Hola, mundo!". Este programa da ordenes al computador para que muestre por pantalla ese mensaje en el que saludamos 👋 como personas educadas al mundo 🌍. ¡Nosotros somos así!😜.
 
@@ -193,10 +193,10 @@ Ahora te animo a que pongas a prueba tus conocimientos... ¡Ejecuta los programa
 
 ## 🧭 Menú de Navegación
 
-| Orden  | Material                                   | Tiempo       | 
-|:------:|:-------------------------------------------|:------------:|
-| 1      | **Teoría**                                 |      8       |
-| 2      | [Recursos](../recursos/T1_RE_ICC.md)       |      7       |
-| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)     |      -       |
-| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
-|        | [Menu del Tema actual](../README.md)       |      -       | 
+| Orden  | Material                                                                  | Tiempo       | 
+|:------:|:--------------------------------------------------------------------------|:------------:|
+| 1      | **Teoría**                                                                |      8       |
+| 2      | [Recursos](../recursos/T1_RE_ICC.md)                                      |      7       |
+| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)                                    |      -       |
+| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md)                                |      -       |
+|        | [Menu del Tema actual](../README.md#-menú-de-navegación-en-el-tema)       |      -       | 

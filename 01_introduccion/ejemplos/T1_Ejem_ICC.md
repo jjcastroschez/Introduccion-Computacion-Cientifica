@@ -42,10 +42,10 @@ En esta carpeta encontrarás **programas** escritos en distintos lenguajes de pr
 
 ## 🧭 Menú de Navegación
 
-| Orden  | Material                                   | Tiempo       | 
-|:------:|:-------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T1_ICC.md)              |      8       |
-| 2      | [Recursos](../recursos/T1_RE_ICC.md)       |      7       |
-| 3      | **Ejemplos**                               |      -       |
-| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
-|        | [Menu del Tema actual](../README.md)       |      -       | 
+| Orden  | Material                                                                  | Tiempo       | 
+|:------:|:--------------------------------------------------------------------------|:------------:|
+| 1      | [Teoría](../teoria/T1_ICC.md)                                             |      8       |
+| 2      | [Recursos](../recursos/T1_RE_ICC.md)                                      |      7       |
+| 3      | **Ejemplos**                                                              |      -       |
+| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md)                                |      -       |
+|        | [Menu del Tema actual](../README.md#-menú-de-navegación-en-el-tema)       |      -       | 
