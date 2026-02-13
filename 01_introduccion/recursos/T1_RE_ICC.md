@@ -147,7 +147,15 @@ Para llevar tus proyectos al siguiente nivel y colaborar con otros, necesitas: u
 * [Github](https://github.com/). Es la plataforma principal donde se guardan los repositorios en la nube. Permite gestionar proyectos, realizar Pull Requests y colaborar con programadores de todo el mundo. Otras alternativas profesionales muy potentes son [GitLab](https://gitlab.com/) (muy utilizado en entornos profesionales) y [Bitbucket](https://bitbucket.org/) (opción muy popular con buena integración con otras herramientas, como Jira, una herramienta de gestión de proyectos).
 
 * [Github Desktop](https://github.com/apps/desktop). Es una aplicación oficial que ofrece una interfaz gráfica (GUI) para gestionar Git. Es ideal si prefieres visualizar tus cambios, ramas y commits de forma intuitiva mediante botones en lugar de comandos de texto. Otras alternativas son [GitKraken](https://www.gitkraken.com) (multiplataforma, muy visual), 
-[Sourcetree](https://www.sourcetreeapp.com) (gratuito, popular en Mac/Windows) y [Sublime Merge](https://www.sublimemerge.com) (muy rápido). 
+[Sourcetree](https://www.sourcetreeapp.com) (gratuito, popular en Mac/Windows) y [Sublime Merge](https://www.sublimemerge.com) (muy rápido).
+
+#### ✅ Te recomiendo varias lecturas para empezar tu trabajo con Git y GitHub:
+
+- [ ] [Creación de una cuenta en GiHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github)
+- [ ] [Inicio rápido para repositorios](https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories)
+- [ ] []
+
+
 
 ### 🔄 El Ciclo de Vida Completo del Código
 
@@ -243,10 +251,10 @@ python --version
 
 ## 🧭 Menú de Navegación
 
-| Orden  | Material                                   | Tiempo       | 
-|:------:|:-------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T1_ICC.md)              |      8       |
-| 2      | **Recursos**                               |      7       |
-| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)     |      -       |
-| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md) |      -       |
-|        | [Menu del Tema actual](../README.md)       |      -       | 
+| Orden  | Material                                                                  | Tiempo       | 
+|:------:|:--------------------------------------------------------------------------|:------------:|
+| 1      | [Teoría](../teoria/T1_ICC.md)                                             |      8       |
+| 2      | **Recursos**                                                              |      7       |
+| 3      | [Ejemplos](../ejemplos/T1_Ejem_ICC.md)                                    |      -       |
+| 4      | [Ejercicios](../ejercicios/T1_Ejer_ICC.md)                                |      -       |
+|        | [Menu del Tema actual](../README.md#-menú-de-navegación-en-el-tema)       |      -       | 

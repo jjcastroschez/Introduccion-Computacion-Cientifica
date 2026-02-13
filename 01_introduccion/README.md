@@ -80,10 +80,10 @@ Al finalizar el tema, serás capaz de:
 
 ## 🧭 Menú de Navegación en el Tema
 
-| Orden  | Material                                  | Tiempo       | 
-|:------:|:------------------------------------------|:------------:|
-| 1      | [Teoría](./teoria/T1_ICC.md)              |      8       |
-| 2      | [Recursos](./recursos/T1_RE_ICC.md)       |      7       |
-| 3      | [Ejemplos](./ejemplos/T1_Ejem_ICC.md)     |      -       |
-| 4      | [Ejercicios](./ejercicios/T1_Ejer_ICC.md) |      -       |
-|        | [Menu de Temas](../README.md)             |      -       | 
+| Orden  | Material                                                        | Tiempo       | 
+|:------:|:----------------------------------------------------------------|:------------:|
+| 1      | [Teoría](./teoria/T1_ICC.md)                                    |      8       |
+| 2      | [Recursos](./recursos/T1_RE_ICC.md)                             |      7       |
+| 3      | [Ejemplos](./ejemplos/T1_Ejem_ICC.md)                           |      -       |
+| 4      | [Ejercicios](./ejercicios/T1_Ejer_ICC.md)                       |      -       |
+|        | [Menu de Temas](../README.md#-menú-de-navegación-en-el-curso)   |      -       | 
