@@ -35,7 +35,7 @@ En esta carpeta encontrarás **programas** escritos en distintos lenguajes de pr
 ### Ejemplo 2. Cálculo del máximo de una lista de números: 3, 5, 7, 2, 8, 1.
 
 - [`E2_01_calculo_maximo.py`](../ejemplos/E2_01_calculo_maximo.py): implementación en Python.
-- [`E2_02_calculo_maximo.hs`](../ejemplos/E2_02_calculo_maximo.hs): implentación en Haskell..
+- [`E2_02_calculo_maximo.hs`](../ejemplos/E2_02_calculo_maximo.hs): implentación en Haskell.
 - [`E3_03_calculo_maximo.js`](../ejemplos/E3_03_calculo_maximo.js): implementación en Javascript.
 
 ---
