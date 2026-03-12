@@ -21,13 +21,13 @@ Bienvenido a este primer paso de tu viaje en el campo de la computación cientí
 ## 📖 Contenido del Tema
 
 ### 🧠 El Computador como Máquina “Universal”
-Los **computadores** son máquinas universales capaces de resolver cualquier problema “computable”. Aprenderemos que la **programación**, mediante el uso de **lenguajes de programación**, es el proceso de “especialización” necesario para que ejecuten tareas específicas. 
+Los **computadores** son máquinas universales capaces de resolver cualquier problema “computable”. Aprenderemos que la **programación**, mediante el uso de **lenguajes de programación**, es el proceso de “especialización” necesario para que estos ejecuten tareas específicas. 
 
 ### 🗣️ Comunicación con la máquina
 Exploraremos cómo nos comunicamos con la máquina (el hardware):
-* **Lenguaje máquina.** El lenguaje nativo, basado en código binario, que entiende el procesador.
-* **Lenguajes de alto nivel.** Herramientas modernas que facilitan la creación de instrucciones con un vocabulario y sintaxis cercana al lenguaje humano.  
-* **El proceso de traducción.** El papel crítico de los **intérpretes o compiladores** para mediar entre nuestras instrucciones y el computador.
+* **Lenguaje máquina.** El lenguaje nativo, basado en código binario, que entiende directamente el procesador.
+* **Lenguajes de alto nivel.** Herramientas modernas que facilitan la creación de instrucciones con un vocabulario y sintaxis cercana al lenguaje humano. Para que el computador pueda ejecutarlas hay que “traducirlas” a lenguaje máquina.  
+* **El proceso de traducción.** Los **intérpretes o compiladores** son los mecanismos esenciales para mediar entre nuestras instrucciones escritas en lenguaje de alto nivel y el computador, que solo entiende lenguaje máquina.
 
 ### ✨ Uso de los Lenguajes de Programación
 Veremos que los lenguajes de programación nos permiten especificar de manera formal instrucciones precisas para almacenar, generar y manipular datos con el fin de obtener resultados específicos. 
@@ -37,8 +37,8 @@ Analizaremos la vasta diversidad de lenguajes de programación existentes y cóm
 
 ### 🏗️ Anatomía de un Lenguaje de Alto Nivel
 Aprenderemos que todo lenguaje de programación de alto nivel se define por tres elementos críticos:
-1.  **Léxico.** El vocabulario (conjunto de símbolos y palabras permitidas).
-2.  **Sintaxis.** Las reglas que rigen la estructura de las sentencias (cómo combinar los elementos del lenguaje).
+1.  **Léxico.** El vocabulario, son el conjunto de símbolos y palabras permitidas para construir las cadenas del lenguaje.
+2.  **Sintaxis.** Las reglas que rigen la estructura de las sentencias, determinan cómo combinar los elementos del lenguaje.
 3.  **Semántica.** El significado lógico y el efecto de dichas sentencias.
 
 ### 🛠️ Herramientas y Entorno

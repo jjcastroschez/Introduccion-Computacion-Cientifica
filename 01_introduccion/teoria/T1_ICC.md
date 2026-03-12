@@ -14,19 +14,19 @@
 
 # Teoría - Tema 1: Introducción 🎓 
 
-¡Bienvenido! En este primer tema, dejarás de ver el ordenador como una simple herramienta de oficina o entretenimiento para entenderlo como una **máquina universal** que podrás moldear a través del lenguaje para resolver problemas matemáticos complejos.
+¡Bienvenido! Después de este primer tema, dejarás de ver el ordenador como una simple herramienta de oficina o entretenimiento para entenderlo como una **máquina universal** que podrás moldear, a través del uso de lenguajes de programación, para resolver problemas, incluidos los problemas matemáticos complejos.
 
 ---
 
 ## 🏛️ Sección 1: Programación
 
-Los computadores son máquinas “universales” que pueden resolver cualquier **problema “computable”**. Es decir, problemas para los cuales existe un algoritmo (un conjunto finito de instrucciones) que permite encontrar una solución correcta en un número finito de pasos.
+Los computadores son máquinas “universales” que pueden resolver cualquier **problema “computable”**. Es decir, problemas para los cuales existe un algoritmo (un conjunto finito de instrucciones) que permite encontrar una solución correcta en un número finito de pasos y empleando un número finito de recursos.
 
 Para que un computador resuelva un problema concreto, hay que *“especializarlo”*. Esta especialización implica **programarlo** para que ejecute las tareas deseadas.
 
 La programación consiste en **comunicar a la máquina las instrucciones** que queremos que ejecute (los programas). Este acto de comunicación, como cualquier otro, requiere del uso de un **lenguaje**.
 
-El computador, a nivel físico, solo entiende el **lenguaje máquina** (sucesiones de ceros y unos que cumplen determinadas reglas). Como para un ser humano es ineficiente comunicarse así, utilizamos los **lenguajes de programación de alto nivel**.
+El computador, a nivel físico, solo entiende el **lenguaje máquina** (sucesiones de ceros y unos que cumplen determinadas reglas). Puesto que para un ser humano es difícil e ineficiente comunicarse así, utilizamos los **lenguajes de programación de alto nivel**.
 
 ### 🏷️ Componentes de un computador
 Básicamente, un computador es una máquina electrónica programable diseñada para procesar datos de forma automática. Su función principal es recibir información bruta, transformarla mediante operaciones lógicas y matemáticas, y entregar un resultado útil. Es, en esencia, un sistema capaz de seguir instrucciones (software) utilizando componentes físicos (hardware).
@@ -63,12 +63,12 @@ Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacida
 ---
 
 ## 🚀 Sección 2: Lenguajes de Programación de Alto Nivel
-Un **lenguaje de programación** es un **conjunto de reglas, símbolos y palabras** que nos permiten especificar instrucciones precisas al computador en un formato cercano al lenguaje humano.
+Un **lenguaje de programación** es un **conjunto de símbolos, palabras y reglas para convinarlos**, que nos permiten especificar instrucciones precisas al computador en un formato cercano al lenguaje humano.
 
 ### 🗣️ Los Tres Pilares de un Lenguaje
 Al igual que los lenguajes empleados por los humanos (lenguajes naturales), los lenguajes de programación (lenguajes formales) se definen mediante tres pilares:
 
-1. El **Léxico (Vocabulario)**. El conjunto de símbolos y palabras permitidas (palabras reservadas como `if`, `while` o `return`, nombres de variables, operadores como `+` o `==`, o símbolos como `{`, `;` o `,`).
+1. El **Léxico (Vocabulario)**. El conjunto de símbolos y palabras permitidas (palabras reservadas: como `if`, `while` o `return`; nombres de variables: como `contador`, `dato_1`; operadores, como `+` o `==`; o símbolos como `{`, `;` o `,`).
 
 2. La **Sintaxis (Estructura)**. El **conjunto de reglas que establecen cómo combinar** los elementos del léxico. No basta con usar símbolos y palabras válidas, deben estar en el orden correcto. Si una instrucción requiere que termine con un punto y coma `;` y se nos olvida, ocurrirá un error de sintaxis.
 
@@ -132,16 +132,16 @@ Algunos IDE muy usados son: IDLE o PyCharm (para Python) y Visual Studio Code (m
 ---
 
 ## 💻 Sección 5: Sistema Operativo y Terminal
-El software fundamental para el funciomamiento de un computador es el **Sistema Operativo** (SO)[^1]. Un SO son el conjunto de programas (software) que permiten gestionar los recursos del hardware del computador. Además, proporciona interfaces para invocar la ejecución de otros programas. Ejemplos de SO en los computadores personales, son Windows (el más usado a nivel mundial), Linux (de código abierto, es muy usado en la comunidad de software libre), macOS (el SO de lo computadores Apple). Los dipositivos móviles, como computadores que son, también disponen de SO: Android (el más usado) e iOS (el usado por los dispositivos Apple).  
+El software fundamental para el funciomamiento de un computador es el **Sistema Operativo** (SO)[^1]. Un SO es el conjunto de programas (software) que permiten gestionar los recursos del hardware del computador. Además, proporciona interfaces para invocar la ejecución de otros programas. Ejemplos de SO en los computadores personales, son Windows (el más usado a nivel mundial), Linux (de código abierto, es muy usado en la comunidad de software libre), macOS (el SO de lo computadores Apple). Los dipositivos móviles, como computadores que son, también disponen de SO: Android (el más usado) e iOS (el usado por los dispositivos Apple).  
 
-Cuando programamos, para ganar agilidad y eficiencia en las tareas, a menudo trabajamos en la terminal o consola. Esta, funciona como una **interfaz de línea de comandos (CLI)** para interactuar directamente con el sistema operativo. En ella, un intérprete (o shell) procesa nuestras órdenes directas y las ejecuta sin necesidad de emplear una interfaz gráfica.
+Cuando programamos, para ganar agilidad y eficiencia en las tareas, a menudo trabajamos en la terminal o consola. Esta, funciona como una **interfaz de línea de comandos (CLI)** para interactuar directamente con el SO. En ella, un intérprete (o shell) procesa nuestras órdenes directas y las ejecuta sin necesidad de emplear una interfaz gráfica.
 
 ---
 
 ## 🐍 Tu primer programa en Python
 En este curso usaremos Python, un lenguaje multiparadigma, de propósito general, interpretado y de tipado dinámico.
 
-Para observar cómo varía la **sintaxis** manteniendo la misma **semántica**, vas a realizar tu primer programa en estos tres lenguajes: Python, C, JavaScript y Java. Se trata del primer programa que los programadores solemos escribir cuando aprendemos un nuevo lenguaje: el "¡Hola, mundo!". Este programa da ordenes al computador para que muestre por pantalla ese mensaje en el que saludamos 👋 como personas educadas al mundo 🌍. ¡Nosotros somos así!😜.
+Para observar cómo varía la **sintaxis** manteniendo la misma **semántica**, vas a realizar tu primer programa en estos cuatro lenguajes: Python, C, JavaScript y Java. Se trata del primer programa que los programadores solemos escribir cuando aprendemos un nuevo lenguaje: el "¡Hola, mundo!". Este programa da ordenes al computador para que muestre por pantalla ese mensaje en el que saludamos 👋 como personas educadas al mundo 🌍. ¡Nosotros somos así!😜.
 
 ### 1. Python (Lenguaje Interpretado)
 
@@ -183,7 +183,7 @@ Hay una web muy interesante, [The Hello World Collection](https://helloworldcoll
 
 Otra web muy interesante para ver las diferencias entre los distintos lenguajes, y las capacidades de los programadores, es [99 Bottles of Beer](https://99-bottles-of-beer.spielmannspiel.com). Este sitio web contiene una colección de la canción "99 Botellas de Cerveza" programada en diferentes lenguajes de programación.
 
-En la carpeta de [ejemplos](../ejemplos/) tienes otros programas desarrollados con la misma finalidad, esto es: analizar la diferencia entre los distintos lenguajes y paradigmas. 
+En la carpeta de [ejemplos](../ejemplos/) tienes otros programas desarrollados con la misma finalidad, esto es: mostrar la diferencia entre los distintos lenguajes y paradigmas. 
 
 Ahora te animo a que pongas a prueba tus conocimientos... ¡Ejecuta los programas dados como ejemplo!
 

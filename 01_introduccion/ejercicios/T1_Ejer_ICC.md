@@ -100,7 +100,7 @@ Ejecuta el siguiente programa escrito en el lenguaje de programación C, y respo
 </details>
 
 <details>
-  <summary><h4>¿Qué ha ocurrido?¿Se genera código máquina?</h4></summary>
+  <summary><h4>Ejéculato... ¿Qué ha ocurrido?¿se genera código máquina?</h4></summary>
   <p>Al usar un compilador online no hay, no puede haber, generación de código máquina. La herramienta que has usado, lee tu programa y simula el trabajo del compilador, analizando y ejecutando las instrucciones, pero no hay generación.</p>
 </details>
   
@@ -147,7 +147,7 @@ print(f"Resultado ({multiplicador} * {multiplicando}) = {res}\n")
 </details>
 
 <details>
-  <summary><h4>¿Qué ha ocurrido ahora?¿Se genera código máquina?</h4></summary>
+  <summary><h4>Ejecútal... ¿Qué ha ocurrido ahora?¿se genera código máquina?</h4></summary>
   <p>Al usar un intérprete no hay generación de código máquina. El intérprete ha ido recibiendo instrucción a instrucción, cada una de ellas ha sido analizada y ejecutada, pero no hay generación.</p>
 </details>
   

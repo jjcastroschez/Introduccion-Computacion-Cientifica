@@ -76,7 +76,7 @@ Durante tu trabajo práctico en la asignatura, utilizarás en la terminal los si
 
 Los compiladores e intérpretes son esenciales en programación para comunicar a la máquina qué es lo que queremos que ejecute. Para programar tendremos que tener instalado en nuestro computador un entorno de ejecución o intérprete/compilador del lenguaje en el que programemos. No obstante, en algunos momentos podemos usar compiladores e intérpretes en línea que nos van a permitir escribir, probar, depurar y ejecutar código directamente desde un navegador web, eliminando la necesidad de instalar software pesado en nuestros computadores. Son especialmente útiles para programar desde cualquier lugar, practicar con diferentes lenguajes, compartir código rápidamente y optimizar el rendimiento sin consumir recursos del equipo local.
 
-Existen muchos compiladores e intérpretes en línea, algunos de ellos son:
+Existen muchos compiladores e intérpretes en línea, es decir no requieren de instalación en nuestros computadores para usarlos, con lo que esto implica: no hay generación. Algunos de ellos son:
 
 * [myCompiler](https://www.mycompiler.io/es/)
 * [OneCompiler](https://onecompiler.com)
@@ -88,7 +88,7 @@ Existen muchos compiladores e intérpretes en línea, algunos de ellos son:
 
 ## Python
 
-En este curso se empleará el lenguaje Python para la enseñanza y aprendizaje de los fundamentos de los lenguajes de programación, bajo el paradigma imperativo, pero prestando también atención a los paradigmas orientado a objetos y funcional. Al adquirir fundamentos generales de programación se espera que estés preparado para en un futuro profundizar en características avanzadas de Python, así como aprender más fácilmente otros lenguajes de programación que pudieras necesitar en tu desempeño  profesional. 
+En este curso se empleará el lenguaje Python para la enseñanza y aprendizaje de los fundamentos de los lenguajes de programación, bajo el paradigma imperativo, pero prestando también atención a los paradigmas orientado a objetos y funcional. Al adquirir fundamentos generales de programación se espera que estés preparado para, en un futuro, profundizar en características avanzadas de Python, así como aprender más fácilmente otros lenguajes de programación que pudieras necesitar en tu desempeño profesional. 
 
 Para poder programar en Python, ya sabes… lo primero que necesitas es tener acceso a un intérprete de Python, lo ideal para hacer tu trabajo más eficiente es tenerlo instalado en tu computador. Comprueba si lo tienes instalado, para ello abre la terminal y a través de la línea de comandos ejecuta lo siguiente:
 
@@ -102,11 +102,12 @@ python --version
 Si no lo tienes instalado, visita la página oficial de [Python](https://python.org) y busca la zona de descarga (Downloads). Si la página no detecta tu SO automáticamente, vete a la zona de tu SO para descargarte la versión apropiada. 
 
 Una vez descargado el archivo, ejecútalo… es el instalador. Cuando te de opciones asegúrate de seleccionar la opción "Add Python.exe to PATH", que hará más fácil su uso en el futuro.
+
 ---
 
 ## Software de Control de Versiones 
 
-El **Software de Control de Versiones** (**VCS**, *Version Control System*) es una herramienta esencial en el desarrollo de software. Su misión es rastrear y gestionar cambios en el código fuente a lo largo del tiempo, tomando "fotos instantáneas" (snapshots) de los archivos. Permite a múltiples desarrolladores colaborar simultáneamente, revertir errores, gestionar distintas ramas de desarrollo y mantener un historial seguro del proyecto. A un único programador, le permite evitar experimentar sin miedo, ya que siempre podrá volver al una versión anterior funcional. Sin un VCS tendríamos archivos como ``ejercicio_final.py``, ``ejercicio_final_v2.py``o incluso ``ejercicio_final_este_es_el_bueno.py``. Mientras que con un VCS tendremos todo en un solo archivo y una línea de tiempo invisible, en la que se puede ver quién hizo qué, cuándo lo hizo y revertir cambios específicos sin perder el resto del trabajo.
+El **Software de Control de Versiones** (**VCS**, *Version Control System*) es una herramienta esencial en el desarrollo de software. Su misión es rastrear y gestionar cambios en el código fuente a lo largo del tiempo, tomando "fotos instantáneas" (snapshots) de los archivos. Permite a múltiples desarrolladores colaborar simultáneamente, revertir errores, gestionar distintas ramas de desarrollo y mantener un historial seguro del proyecto. A un único programador, le permite  experimentar sin miedo, ya que siempre podrá volver a una versión anterior funcional. Sin un VCS tendríamos archivos como ``ejercicio_final.py``, ``ejercicio_final_v2.py``o incluso ``ejercicio_final_este_es_el_bueno.py``. Mientras que con un VCS tendremos todo en un solo archivo y una línea de tiempo invisible, en la que se puede ver quién hizo qué, cuándo lo hizo y revertir cambios específicos sin perder el resto del trabajo.
 
 [Git](https://git-scm.com) es un **Sistema de Control de Versiones Distribuido** (**DVCS**, *Distributed Version Control System*), en el que cada usuario que trabaje en el proyecto tiene una copia completa del historial en su propia máquina. Como alternativa, existen **Sistemas de control de Versiones Centralizados** (**CVCS**, *Centralized Version Control System*), donde el historial está en una única máquina (un servidor central).    
 
@@ -114,7 +115,7 @@ Conceptos clave que escucharás siempre cuando trabajas con VCS:
 
 1. **Repositorio (Repo)**: La carpeta de tu proyecto que Git está vigilando.
 2. **Commit**: Una "foto" de tus archivos en un momento dado. Es el punto de guardado.
-3. **Rama (Branch)**: Una línea de tiempo paralela. Útil para probar funciones nuevas sin romper la versión principal.
+3. **Rama (Branch)**: Una línea de tiempo paralela. Útil para probar funciones nuevas sin romper la versión principal. Son fundamentales en el control de versiones. 
 4. **Merge:** Unir los cambios de una rama a otra.
 
 ### 📥 Instalación de Git 
@@ -141,8 +142,41 @@ git config --global user.name "Tu Nombre"
 git config --global user.email "tu@email.com"
 ```
 
+### 🛠️ Chuleta de Git: Comandos Esenciales para el Día a Día
+
+| Acción | Comando | Concepto / Uso |
+| :--- | :--- | :--- | 
+Iniciar repositorio |	``git init``	| Crea un nuevo repositorio de Git local en la carpeta actual. |
+Clonar proyecto	 | ``git clone <url>``|	Descarga una copia completa de un repositorio remoto a tu PC. |
+Ver estado	| ``git status``	| Muestra qué archivos han cambiado y cuáles están listos para enviarse. | 
+Añadir archivo	| ``git add <archivo>``	| Prepara un archivo específico para el siguiente "commit" (Stage). |
+Añadir todo	| ``git add .``|	Prepara todos los archivos modificados y nuevos de golpe. |
+Confirmar cambios	| ``git commit -m "mensaje"`` |	Guarda tus cambios en el historial con un mensaje descriptivo. |
+Deshacer cambios locales | ``git restore <archivo>``| Descarta cambios que no se han guardado con un commit. 
+Ver historial	| ``git log`` |	Muestra la lista de todos los commits realizados anteriormente. |
+Crear rama	| ``git branch <nombre>``| Crea una nueva línea de tiempo (rama) para trabajar en una función. Con la opción *-d* se borra una rama ``git branch -d <nombre>``|
+Cambiar de rama	| ``git switch <nombre>`` |	Salta de una rama a otra (en versiones anteriores se usaba git checkout). Con la opción *-c* se crea la rama ``git switch -c <nombre>``|
+Fusionar ramas	| ``git merge <nombre>`` |	Une los cambios de la rama indicada con la rama actual. |
+Descargar cambios |	``git pull``| Trae las últimas actualizaciones del servidor y las une a tu código. |
+Descargar sin mezclar | ``git fetch``| Descarga el historial del servidor remoto pero no cambia nada en tus archivos de trabajo. |
+Subir cambios |	``git push``|	Sube tus commits locales de la rama activa a la rama del repositorio remoto (GitHub, GitLab, etc.) del mismo nombre. |
+Deshacer un commit público | ``git revert <id_del_commit>``| Crea un nuevo commit para añadir una corrección a un commit anterior. 
+
+¡Ojo! Si la rama ha sido creada recientemente, en local, la primera vez que se suben cambios al repositorio hay que subirlos con el siguiente comando:
+
+``git push --set-upstream <nombre-remoto> <nombre-de-tu-rama>``
+
+o
+
+``git push -u origin <nombre-de-tu-rama>``
+
+Si alguien ha creado una nueva rama en el repositorio remoto, para traerla a tu local y trabajar con ella debes hacer primero un ``git fetch``y luego cambiar a la rama nueva para trabajar sobre ella ``git switch <nombre-de-la-rama>``.
+En resumen, ``git pull`` es para actualizar tu trabajo actual, mientras que ``git fetch`` es para ver todo lo que hay en el servidor. 
+
+https://www.freecodecamp.org/espanol/news/10-comandos-de-git-que-todo-desarrollador-deberia-saber/
+
 ### 🚀 Ecosistema de Colaboración: GitHub
-Para llevar tus proyectos al siguiente nivel y colaborar con otros, necesitas: una plataforma de alojamiento, donde "colgar" el código que sea accesible por todos (tu ordenador no lo es); y, si no eres un usuario avanzado, una herramienta con interfaz gráfica para gestionar Git. 
+Para llevar tus proyectos al siguiente nivel y colaborar con otros, necesitas: una plataforma de alojamiento, donde "colgar" el código para que sea accesible por todos (tu ordenador no lo es); y, si no eres un usuario avanzado, una herramienta con interfaz gráfica para gestionar Git.
 
 * [Github](https://github.com/). Es la plataforma principal donde se guardan los repositorios en la nube. Permite gestionar proyectos, realizar Pull Requests y colaborar con programadores de todo el mundo. Otras alternativas profesionales muy potentes son [GitLab](https://gitlab.com/) (muy utilizado en entornos profesionales) y [Bitbucket](https://bitbucket.org/) (opción muy popular con buena integración con otras herramientas, como Jira, una herramienta de gestión de proyectos).
 
@@ -151,10 +185,10 @@ Para llevar tus proyectos al siguiente nivel y colaborar con otros, necesitas: u
 
 #### ✅ Te recomiendo varias lecturas para empezar tu trabajo con Git y GitHub:
 
+- [ ] [Hoja de comandos de Git](https://git-scm.com/cheat-sheet)
 - [ ] [Creación de una cuenta en GiHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github)
-- [ ] [Inicio rápido para repositorios](https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories)
-- [ ] []
-
+- [ ] [Inicio rápido para repositorios en GitHub](https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories)
+- [ ] [Comenzar con GitHub Desktop](https://docs.github.com/es/desktop/overview/getting-started-with-github-desktop)
 
 
 ### 🔄 El Ciclo de Vida Completo del Código
@@ -178,7 +212,7 @@ Para que comprendas cómo se trabaja profesionalmente, imagina que este es el "p
 4. **Publicar (`git push`)**: Subes tu rama a **GitHub** para que el historial esté seguro en la nube y otros puedan verla.
 5. **Integrar (Pull Request)**: En la web de GitHub, solicitas permiso para unir (merge) tu rama al tronco principal (`main`).
 
-### 🎨 Diagrama del Flujo "Día a Día"
+### 🎨 Diagrama Simplificado del Flujo "Día a Día"
 
 | Orden | Comando | Analogía |
 | :--- | :--- | :--- |
@@ -204,6 +238,10 @@ Comenzaremos usando el **[IDLE](https://docs.python.org/es/3/library/idle.html)*
 
 #### 🔵 Nivel Recomendado / Profesional
 * **[VS Code (Visual Studio Code)](https://code.visualstudio.com)**: Es el editor más popular en la industria actual. No es un IDE "puro" de serie, pero mediante **extensiones** se convierte en la herramienta más potente para Python. Como **ventaja** destacar que se integra perfectamente con Git y GitHub, permitiéndote hacer `commit` y `push` sin salir del programa.
+
+#### ‼️ Otros Lenguajes
+
+Para otros lenguajes de programación existen otros IDEs. Por ejemplo, si vas a usar C o C++ en este curso para hacer pruebas, deberías tener también instalado en tu computador un compilador de C/C++ y un IDE. Existen muchos en el mercado, incluso puedes usar alguno multilenguaje, un ejemplo de IDE para C/C++ es [CLion](https://www.jetbrains.com/clion/). 
 
 ### 💡 ¿Por qué usar un IDE en lugar de un editor de texto simple?
 
