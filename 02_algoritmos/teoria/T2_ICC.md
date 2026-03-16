@@ -196,10 +196,10 @@ Veamos dos ejemplos simples, para representar los algoritmos anteriores:
 ### 🧮 Ejemplo: área de un círculo
 ```mermaid
 flowchart TD    
-    A([Inicio]) --> B[/Escribir: "Introduce el valor del radio del círculo:"/]    
-    B --> C[Leer(radio)]    
+    A([Inicio]) --> B[/Escribir: "Introduce el valor del radio del círculo:"/]
+    B --> C[/"Leer(radio)"/]    
     C --> D[/Escribir: "Introduce el valor de pi:"/]    
-    D --> E[Leer(pi)]    
+    D --> E[/"Leer(pi)"/]    
     E --> F[area ← pi * radio * radio]    
     F --> G[/Escribir: "El área del círculo es:", area/]    
     G --> H([Fin])
@@ -208,9 +208,9 @@ flowchart TD
 ```mermaid
 flowchart TD
     A([Inicio]) --> B[/Escribir: "Introduce el primer número:"/]
-    B --> C[Leer(a)]
+    B --> C[/"Leer(a)"/]
     C --> D[/Escribir: "Introduce el segundo número:"/]
-    D --> E[Leer(b)]
+    D --> E[/"Leer(b)"/]
     E --> F[suma ← a + b]
     F --> G[media ← suma / 2]
     G --> H[/Escribir: "La media de los dos números es:", media/]
@@ -220,7 +220,7 @@ flowchart TD
 
 ## 🧭 Sección 8: Recordatorio importante: del problema al programa
 
-Fujo de trabajo habitual:
+El fujo de trabajo habitual será:
 
 1. **Análisis del problema**: datos de entrada, salida esperada, casos especiales, restricciones.
 2. **Diseño del algoritmo**: redacta el algoritmo y verifica sus propiedades.

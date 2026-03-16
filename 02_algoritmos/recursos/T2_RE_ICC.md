@@ -38,17 +38,8 @@ A continuación se listan herramientas y recursos útiles para practicar el **di
 - **Miro**: pizarra colaborativa (ideal para trabajar en grupo).
 
 ### Herramientas “ligeras” para apuntes y GitHub
-- **Mermaid**: permite escribir diagramas en texto y renderizarlos (GitHub soporta Mermaid).
-- **PlantUML**: diagramas a partir de texto, muy usado en entornos técnicos.
-
-#### Ejemplo rápido con Mermaid (flowchart)
-```mermaid
-flowchart TD
-  A[Inicio] --> B[Leer radio]
-  B --> C[area = pi * radio * radio]
-  C --> D[Escribir area]
-  D --> E[Fin]
-```
+- **Mermaid**: permite escribir diagramas en texto y renderizarlos (GitHub soporta Mermaid) [Acceso a la herramienta online](https://www.mermaidonline.live/es/flowchart)
+- **PlantUML**: diagramas a partir de texto, muy usado en entornos técnicos. [Acceso a la herramienta descarga](https://plantuml.com/es/)
 
 > [!TIP]
 > Si te interesa documentar algoritmos dentro del repositorio, **Mermaid** suele ser la opción más cómoda porque el diagrama se “versiona” como texto.
