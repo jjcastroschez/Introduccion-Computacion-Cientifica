@@ -42,6 +42,8 @@ Si quieres explicar una receta, el algoritmo sería la lista de instrucciones:
 4. Cocinar durante X minutos  
 5. Servir  
 
+Los datos de entrada serían los ingredientes que vamos a usar para elaborar la receta (p.e. 2 tomates, 1 cebolla, 1 pimiento rojo), los datos intermedios serían los productos intermedios que se producen (p.e. el sofrito), y los datos de salida serían el plato ya elaborado. 
+
 > [!NOTE]
 > El orden importa. Si “calientas la sartén” después de “cocinar”, algo no encaja.
 
@@ -57,7 +59,7 @@ Un buen algoritmo debe ser:
 - **Ordenado**: deja claro el orden de ejecución de los pasos.  
 - **Finito**: termina en algún momento (no se queda en un bucle “eterno”).  
 - **Independiente**: no depende de un lenguaje concreto (no uses `print`, `scanf`, etc. en el algoritmo).  
-- **Legible**: comprensible para otra persona (o para tu “yo” del futuro).
+- **Legible**: comprensible para otra persona (o para tu “yo” del futuro, puede que tengas que mantenerlo 😜).
 
 > [!TIP]
 > Si un algoritmo no es legible, es *difícil de validar* y *difícil de mantener*.
@@ -72,8 +74,8 @@ La pregunta entonces es: **¿cuál elegir?**
 Normalmente, buscamos el más eficiente (en **tiempo** y **memoria**) *sin perder claridad*.
 
 ### Ejemplo rápido: suma 1..n
-- Algoritmo A: sumar con un bucle (n operaciones).
-- Algoritmo B: usar la fórmula \(\frac{n(n+1)}{2}\) (tiempo constante).
+- Algoritmo A: sumar valor a valor hasta alcanzar n (tiempo dependiente de n, se realizan n sumas).
+- Algoritmo B: usar la fórmula de Gauss $\frac{n(n+1)}{2}$ (tiempo constante).
 
 > [!NOTE]
 > En este curso introduciremos la eficiencia de forma gradual. Lo importante aquí es interiorizar que *dos soluciones correctas* pueden tener costes muy distintos.
@@ -122,8 +124,24 @@ Inicio
   2: Leer(radio)
   3: Escribir "Introduce el valor de pi:"
   4: Leer(pi)
-  5: area <- pi * radio * radio
+  5: area ← pi * radio * radio
   6: Escribir "El área del círculo es:", area
+Fin
+```
+### 🧮 Ejemplo: media aritmética de dos números
+```text
+Algoritmo CalculoMediaDosNumeros
+Entrada: a (número real), b (número real)
+Intermedias: suma (número real)
+Salida: media (número real)
+Inicio
+  1: Escribir "Introduce el primer número:"
+  2: Leer(a)
+  3: Escribir "Introduce el segundo número:"
+  4: Leer(b)
+  5: suma ← a + b
+  6: media ← suma / 2
+  7: Escribir "La media de los dos números es:", media
 Fin
 ```
 
@@ -175,12 +193,12 @@ Son populares para:
 
 ## 🧭 Sección 8: Recordatorio importante: del problema al programa
 
-Antes de diseñar el algoritmo, analiza el problema:
+Fujo de trabajo habitual:
 
 1. **Análisis del problema**: datos de entrada, salida esperada, casos especiales, restricciones.
 2. **Diseño del algoritmo**: redacta el algoritmo y verifica sus propiedades.
-3. **Implementación**: traduce el algoritmo al lenguaje elegido.
-4. **Selección del lenguaje**: elige el lenguaje y herramientas más apropiados.
+3. **Selección del lenguaje**: elige el lenguaje y herramientas más apropiados.
+4. **Implementación**: traduce el algoritmo al lenguaje elegido.
 
 ---
 
@@ -188,8 +206,9 @@ Antes de diseñar el algoritmo, analiza el problema:
 
 Antes de dar por bueno tu algoritmo, comprueba:
 
-- [ ] ¿He identificado claramente **entrada**, **intermedios** y **salida**?
+- [ ] ¿Has identificado claramente **entrada**, **intermedios** y **salida**?
 - [ ] ¿Los pasos están en orden y **sin ambigüedad**?
+- [ ] ¿Hay un punto de entrada y otro de salida?
 - [ ] ¿El algoritmo **termina** siempre?
 - [ ] ¿La representación es **independiente** del lenguaje?
 - [ ] ¿Otra persona podría entenderlo sin preguntarme?

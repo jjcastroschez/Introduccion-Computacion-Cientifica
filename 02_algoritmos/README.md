@@ -44,8 +44,8 @@ Además, relacionaremos estas representaciones con una idea clave: según el **t
 Cerramos el tema con una mini-metodología que aplicarás durante todo el curso:
 1. **Análisis** del problema (entrada/salida, restricciones, casos),
 2. **Diseño** del algoritmo,
-3. **Implementación** en el lenguaje elegido,
-4. **Selección** del lenguaje y herramientas más apropiados.
+4. **Selección** del lenguaje y herramientas más apropiadas, 
+3. **Implementación** en el lenguaje elegido.
 
 ---
 
