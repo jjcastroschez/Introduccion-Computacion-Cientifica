@@ -41,15 +41,6 @@ A continuación se listan herramientas y recursos útiles para practicar el **di
 - **Mermaid**: permite escribir diagramas en texto y renderizarlos (GitHub soporta Mermaid).
 - **PlantUML**: diagramas a partir de texto, muy usado en entornos técnicos.
 
-#### Ejemplo rápido con Mermaid (flowchart)
-```mermaid
-flowchart TD
-  A[Inicio] --> B[Leer radio]
-  B --> C[area = pi * radio * radio]
-  C --> D[Escribir area]
-  D --> E[Fin]
-```
-
 > [!TIP]
 > Si te interesa documentar algoritmos dentro del repositorio, **Mermaid** suele ser la opción más cómoda porque el diagrama se “versiona” como texto.
 
