@@ -82,7 +82,20 @@ Normalmente, buscamos el más eficiente (en **tiempo** y **memoria**) *sin perde
 
 ---
 
-## 🧾 Sección 4: ¿Cómo se expresan los algoritmos?
+## 🧩 Sección 4: Elementos de un algoritmo (programación estructurada)
+
+Según el **teorema de la programación estructurada**, cualquier programa puede escribirse utilizando solo tres estructuras de control:
+
+1. **Secuencia**: instrucciones que se ejecutan una vez, en orden.
+2. **Selección**: ejecutar o no ejecutar instrucciones en función de una condición.
+3. **Iteración**: repetir instrucciones un número variable de veces.
+
+> [!IMPORTANT]
+> Simplemente combinando estas tres estructuras, es posible expresar cualquier función computable.
+
+---
+
+## 🧾 Sección 5: ¿Cómo se expresan los algoritmos?
 
 Un algoritmo se puede expresar de muchas formas:
 
@@ -95,7 +108,7 @@ La elección depende del **contexto**, el **público objetivo** y el **propósit
 
 ---
 
-## 🧱 Sección 5: Pseudocódigo
+## 🔠 Sección 6: Pseudocódigo
 
 El pseudocódigo busca un equilibrio: estructura parecida a un programa, pero **sin depender** de un lenguaje.
 
@@ -112,6 +125,8 @@ Inicio
   n: ...
 Fin
 ```
+
+Ahora veamos dos ejemplos:
 
 ### 🧮 Ejemplo: área de un círculo
 ```text
@@ -150,19 +165,6 @@ Fin
 
 ---
 
-## 🧩 Sección 6: Elementos de un algoritmo (programación estructurada)
-
-Según el **teorema de la programación estructurada**, cualquier programa puede escribirse utilizando solo tres estructuras de control:
-
-1. **Secuencia**: instrucciones que se ejecutan una vez, en orden.
-2. **Selección**: ejecutar o no ejecutar instrucciones en función de una condición.
-3. **Iteración**: repetir instrucciones un número variable de veces.
-
-> [!IMPORTANT]
-> Simplemente combinando estas tres estructuras, es posible expresar cualquier función computable.
-
----
-
 ## 📊 Sección 7: Diagramas de flujo
 
 Los **diagramas de flujo** representan un algoritmo gráficamente mediante **símbolos** estándar y flechas de flujo.
@@ -189,6 +191,31 @@ Son populares para:
 - A cada símbolo le llega solo una línea de flujo (salvo excepciones bien justificadas).
 - Notación **independiente** del lenguaje final.
 
+Veamos dos ejemplos simples, para representar los algoritmos anteriores:
+
+### 🧮 Ejemplo: área de un círculo
+```mermaid
+flowchart TD    
+    A([Inicio]) --> B[/Escribir: "Introduce el valor del radio del círculo:"/]    
+    B --> C[Leer(radio)]    
+    C --> D[/Escribir: "Introduce el valor de pi:"/]    
+    D --> E[Leer(pi)]    
+    E --> F[area ← pi * radio * radio]    
+    F --> G[/Escribir: "El área del círculo es:", area/]    
+    G --> H([Fin])
+```
+### 🧮 Ejemplo: media aritmética de dos números
+```mermaid
+flowchart TD
+    A([Inicio]) --> B[/Escribir: "Introduce el primer número:"/]
+    B --> C[Leer(a)]
+    C --> D[/Escribir: "Introduce el segundo número:"/]
+    D --> E[Leer(b)]
+    E --> F[suma ← a + b]
+    F --> G[media ← suma / 2]
+    G --> H[/Escribir: "La media de los dos números es:", media/]
+    H --> I([Fin])
+```
 ---
 
 ## 🧭 Sección 8: Recordatorio importante: del problema al programa
