@@ -220,7 +220,7 @@ flowchart TD
 
 ## 🧭 Sección 8: Recordatorio importante: del problema al programa
 
-Fujo de trabajo habitual:
+El fujo de trabajo habitual será:
 
 1. **Análisis del problema**: datos de entrada, salida esperada, casos especiales, restricciones.
 2. **Diseño del algoritmo**: redacta el algoritmo y verifica sus propiedades.
