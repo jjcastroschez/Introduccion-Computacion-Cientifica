@@ -23,7 +23,7 @@ En este tema nos centramos en el *diseño de la solución* (el algoritmo), antes
 
 ## 🧩 Sección 1: ¿Qué es un algoritmo?
 
-Un **algoritmo** es una secuencia **clara y ordenada** de pasos o instrucciones que se siguen para resolver un problema o realizar una tarea específica.
+Un **algoritmo** es una secuencia **clara, ordenada y finita** de pasos o instrucciones que se siguen para resolver un problema o realizar una tarea específica.
 
 ### 📥 Entradas, intermedios y salidas
 Un algoritmo:
@@ -34,18 +34,34 @@ Un algoritmo:
 Cada paso del algoritmo debe ser un paso *hacia la solución*.
 
 ### 🍳 Analogía rápida: receta de cocina
-Si quieres explicar una receta, el algoritmo sería la lista de instrucciones:
 
-1. Lavar ingredientes  
-2. Cortar verduras  
-3. Calentar sartén  
-4. Cocinar durante X minutos  
-5. Servir  
+Un algoritmo puede verse como una receta de cocina. Los **datos de entrada** serían los *ingredientes* que vamos a usar en la receta para elaborar el plato (p.e. 50ml aceite, 2kg de tomates maduros, 1 calabacín, 1 pimiento verde, 1 pimiento rojo, 1 cebolla, 1 ajo y 5gr de Sal), los **datos intermedios** serían los *productos intermedios* que se producen (p.e. el sofrito o la salsa de tomate casera), y los **datos de salida** serían el *plato elaborado* (p.e. el pisto manchego). 
 
-Los datos de entrada serían los ingredientes que vamos a usar para elaborar la receta (p.e. 2 tomates, 1 cebolla, 1 pimiento rojo), los datos intermedios serían los productos intermedios que se producen (p.e. el sofrito), y los datos de salida serían el plato ya elaborado. 
+La receta paso a paso es el algoritmo (el procedimiento ordenado), por ejemplo:
 
-> [!NOTE]
-> El orden importa. Si “calientas la sartén” después de “cocinar”, algo no encaja.
+1. Lavar ingredientes.
+2. Cortar los tomates, el ajo, la cebolla, el calabacín y los pimientos rojo y verde. 
+3. Calentar el aceite en la sartén.
+4. Echar el ajo, la cebolla y pimientos troceados en en la sartén.
+5. Sofreir a fuego lento durante 10 minutos.
+6. Añadir el calabacín.
+7. Sofreir a fuego lento durante 10 minutos
+8. Reservar el sofrito en un recipiente.
+9. Calentar aceite en una sartén.
+10. Añadir el tomate troceado y dejar a fuego lento, removiendo de vez en cuando, durante una hora.
+11. Mezclar la salsa de tomate obtenida con el sofrito antes elaborado.
+12. Servir
+
+> \[!NOTE]
+> El orden importa. Si “calientas la sartén” después de “sofreir”, algo no encaja.
+
+> \[!WARNING]
+> ¡No intente hacer esto en su casa! Es más que posible que el auténtico "pisto manchego" no te salga como el de tu madre/padre o abuela/abuelo seguro 😝. 
+
+Otros ejemplos de algoritmos cotidianos:
+* Las instrucciones de montaje que vienen con cualquier mueble de IKEA.
+* El procedimiento que sigues para lavarte las manos o los dientes.
+* Las indicaciones de una ruta de GPS para ir del punto A al punto B.
 
 ---
 
@@ -68,10 +84,9 @@ Un buen algoritmo debe ser:
 
 ## 🎸 Sección 3: No hay una única solución
 
-Distintos algoritmos pueden resolver el mismo problema.
+Distintos algoritmos pueden resolver el mismo problema. La pregunta entonces es: **¿cuál elegir?**. Normalmente, buscamos el más eficiente (en **tiempo** y **memoria**, es decir se analiza la complejidad *temporal* y *espacial*) *sin perder claridad*.
 
-La pregunta entonces es: **¿cuál elegir?**  
-Normalmente, buscamos el más eficiente (en **tiempo** y **memoria**) *sin perder claridad*.
+Con **complejidad temporal** nos referimos al tiempo que tarda en ejecutarse en función del tamaño de los datos de entrada. Con **complejidad espacial** se hace referencia a la cantidad de memoria que se utiliza en función también del tamaño de los datos de entrada. 
 
 ### Ejemplo rápido: suma 1..n
 - Algoritmo A: sumar valor a valor hasta alcanzar n (tiempo dependiente de n, se realizan n sumas).
@@ -118,15 +133,15 @@ Algoritmo NOMBRE_ALGORITMO
 Entrada: ...
 Intermedias: ...
 Salida: ...
-Inicio
+INICIO
   1: ...
   2: ...
   ...
   n: ...
-Fin
+FIN
 ```
 
-Ahora veamos dos ejemplos:
+Ahora veamos dos ejemplos simples, aumentaremos la complejidad conforme avancemos en el estudio de los lenguajes de programación en los siguientes temas:
 
 ### 🧮 Ejemplo: área de un círculo
 ```text
@@ -134,14 +149,14 @@ Algoritmo CalculoAreaCirculo
 Entrada: radio (número real), pi (número real)
 Intermedias: -
 Salida: area (número real)
-Inicio
-  1: Escribir "Introduce el valor del radio del círculo:"
-  2: Leer(radio)
-  3: Escribir "Introduce el valor de pi:"
-  4: Leer(pi)
+INICIO
+  1: ESCRIBIR "Introduce el valor del radio del círculo:"
+  2: LEER(radio)
+  3: ESCRIBIR "Introduce el valor de pi:"
+  4: LEER(pi)
   5: area ← pi * radio * radio
-  6: Escribir "El área del círculo es:", area
-Fin
+  6: ESCRIBIR "El área del círculo es:", area
+FIN
 ```
 ### 🧮 Ejemplo: media aritmética de dos números
 ```text
@@ -150,14 +165,14 @@ Entrada: a (número real), b (número real)
 Intermedias: suma (número real)
 Salida: media (número real)
 Inicio
-  1: Escribir "Introduce el primer número:"
-  2: Leer(a)
-  3: Escribir "Introduce el segundo número:"
-  4: Leer(b)
+  1: ESCRIBIR "Introduce el primer número:"
+  2: LEER(a)
+  3: ESCRIBIR "Introduce el segundo número:"
+  4: LEER(b)
   5: suma ← a + b
   6: media ← suma / 2
-  7: Escribir "La media de los dos números es:", media
-Fin
+  7: ESCRIBIR "La media de los dos números es:", media
+FIN
 ```
 
 > [!TIP]
@@ -191,15 +206,15 @@ Son populares para:
 - A cada símbolo le llega solo una línea de flujo (salvo excepciones bien justificadas).
 - Notación **independiente** del lenguaje final.
 
-Veamos dos ejemplos simples, para representar los algoritmos anteriores:
+Veamos dos ejemplos simples de diagramas de flujo, que corresponden a los algoritmos vistos anteriormente:
 
 ### 🧮 Ejemplo: área de un círculo
 ```mermaid
 flowchart TD    
     A([Inicio]) --> B[/Escribir: "Introduce el valor del radio del círculo:"/]
-    B --> C[/"Leer(radio)"/]    
+    B --> C[/"Leer: radio"/]    
     C --> D[/Escribir: "Introduce el valor de pi:"/]    
-    D --> E[/"Leer(pi)"/]    
+    D --> E[/"Leer: pi"/]    
     E --> F[area ← pi * radio * radio]    
     F --> G[/Escribir: "El área del círculo es:", area/]    
     G --> H([Fin])
@@ -208,14 +223,16 @@ flowchart TD
 ```mermaid
 flowchart TD
     A([Inicio]) --> B[/Escribir: "Introduce el primer número:"/]
-    B --> C[/"Leer(a)"/]
+    B --> C[/"Leer: a"/]
     C --> D[/Escribir: "Introduce el segundo número:"/]
-    D --> E[/"Leer(b)"/]
+    D --> E[/"Leer: b"/]
     E --> F[suma ← a + b]
     F --> G[media ← suma / 2]
     G --> H[/Escribir: "La media de los dos números es:", media/]
     H --> I([Fin])
 ```
+En próximos temas se aumentará la complejidad de los diagramas, para representar gráficamente construcciones o estructuras más complejas de los lenguajes de programación.
+
 ---
 
 ## 🧭 Sección 8: Recordatorio importante: del problema al programa
