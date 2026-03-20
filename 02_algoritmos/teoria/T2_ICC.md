@@ -27,15 +27,15 @@ Un **algoritmo** es una secuencia **clara, ordenada y finita** de pasos o instru
 
 ### 📥 Entradas, intermedios y salidas
 Un algoritmo:
-- parte de **cero o más datos de entrada** (información proporcionada),
-- puede construir **datos intermedios** (variables auxiliares),
+- parte de **cero o más datos de entrada** (información proporcionada al comienzo),
+- puede construir **datos intermedios** (datos auxiliares obtenidos),
 - y produce **al menos una salida** (resultado).
 
 Cada paso del algoritmo debe ser un paso *hacia la solución*.
 
 ### 🍳 Analogía rápida: receta de cocina
 
-Un algoritmo puede verse como una receta de cocina. Los **datos de entrada** serían los *ingredientes* que vamos a usar en la receta para elaborar el plato (p.e. 50ml aceite, 2kg de tomates maduros, 1 calabacín, 1 pimiento verde, 1 pimiento rojo, 1 cebolla, 1 ajo y 5gr de Sal), los **datos intermedios** serían los *productos intermedios* que se producen (p.e. el sofrito o la salsa de tomate casera), y los **datos de salida** serían el *plato elaborado* (p.e. el pisto manchego). 
+Un algoritmo puede verse como una receta de cocina. Los **datos de entrada** serían los *ingredientes* que vamos a usar en la receta para elaborar el plato (p.e. 50ml aceite, 2kg de tomates maduros, 1 calabacín, 1 pimiento verde, 1 pimiento rojo, 1 cebolla, 1 ajo y 5gr de sal), los **datos intermedios** serían los *productos intermedios* que se producen (p.e. el sofrito o la salsa de tomate casera), y los **datos de salida** serían el *plato elaborado* (p.e. el pisto manchego). 
 
 La receta paso a paso es el algoritmo (el procedimiento ordenado), por ejemplo:
 ```text
@@ -89,7 +89,8 @@ Distintos algoritmos pueden resolver el mismo problema. La pregunta entonces es:
 
 Con **complejidad temporal** nos referimos al tiempo que tarda en ejecutarse en función del tamaño de los datos de entrada. Con **complejidad espacial** se hace referencia a la cantidad de memoria que se utiliza en función también del tamaño de los datos de entrada. 
 
-### Ejemplo rápido: suma 1..n
+Veamos un ejemplo rápido. Supongamos que queremos sumar los *n* primeros números (suma de los números 1..n). Para resolver este problema se nos puede ocurrir dos algoritmos:
+
 - Algoritmo A: sumar valor a valor hasta alcanzar n (tiempo dependiente de n, se realizan n sumas).
 - Algoritmo B: usar la fórmula de Gauss $\frac{n(n+1)}{2}$ (tiempo constante).
 
@@ -98,13 +99,13 @@ Con **complejidad temporal** nos referimos al tiempo que tarda en ejecutarse en 
 
 ---
 
-## 🧩 Sección 4: Elementos de un algoritmo (programación estructurada)
+## 🧩 Sección 4: Tipos de estructuras de un algoritmo (programación estructurada)
 
 Según el **teorema de la programación estructurada**, cualquier programa puede escribirse utilizando solo tres estructuras de control:
 
-1. **Secuencia**: instrucciones que se ejecutan una vez, en orden.
-2. **Selección**: ejecutar o no ejecutar instrucciones en función de una condición.
-3. **Iteración**: repetir instrucciones un número variable de veces.
+1. **Secuencia**: estructuras para la ejecución de instrucciones una vez, y en orden.
+2. **Selección**: estructuras que permiten ejecutar o no instrucciones en función de una condición.
+3. **Iteración**: estructuras que permiten repetir la ejecución de instrucciones un número variable de veces.
 
 > [!IMPORTANT]
 > Simplemente combinando estas tres estructuras, es posible expresar cualquier función computable.
@@ -115,9 +116,9 @@ Según el **teorema de la programación estructurada**, cualquier programa puede
 
 Un algoritmo se puede expresar de muchas formas:
 
-- **Lenguaje natural** (útil, pero puede ser ambiguo).
-- **Pseudocódigo** (muy usado en docencia y diseño).
-- **Diagramas de flujo** (gráficos y muy intuitivos).
+- **Lenguaje natural**: útil, pero puede ser ambiguo.
+- **Pseudocódigo**: muy usado en docencia y diseño.
+- **Diagramas de flujo**: gráficos y muy intuitivos.
 - Otras: diagramas Nassi–Shneiderman, notaciones formales, UML (diagramas de actividad), etc.
 
 La elección depende del **contexto**, el **público objetivo** y el **propósito**.
@@ -135,12 +136,16 @@ Entrada: ...
 Intermedias: ...
 Salida: ...
 INICIO
+     [Comentario sobre el paso 1]
   1: ...
   2: ...
   ...
   n: ...
 FIN
 ```
+
+> [!NOTE]
+> Observa como se añaden comentarios para aclarar cosas en el algoritmo. 
 
 Ahora veamos dos ejemplos simples, aumentaremos la complejidad conforme avancemos en el estudio de los lenguajes de programación en los siguientes temas:
 
@@ -155,6 +160,7 @@ INICIO
   2: LEER(radio)
   3: ESCRIBIR "Introduce el valor de pi:"
   4: LEER(pi)
+     [Calculamos el área del círculo empleando la fórmula]
   5: area ← pi * radio * radio
   6: ESCRIBIR "El área del círculo es:", area
 FIN
@@ -170,6 +176,7 @@ INICIO
   2: LEER(a)
   3: ESCRIBIR "Introduce el segundo número:"
   4: LEER(b)
+     [Usamos un valor intermedio, para mostrar este tipo de dato]
   5: suma ← a + b
   6: media ← suma / 2
   7: ESCRIBIR "La media de los dos números es:", media
@@ -238,7 +245,7 @@ En próximos temas se aumentará la complejidad de los diagramas, para represent
 
 ## 🧭 Sección 8: Clasificación de los algoritmos
 
-Los algotmos, como casi todo, también pueden ser clasificados. Su clasificación se pueden hacer en función de varios aspectos. A continuación, se muestran algunas posibles clasificaciones en función de diversos aspectos, por ejemplo:
+Los algoritmos, como casi todo, también pueden ser clasificados. Su clasificación se hace en función de varios aspectos. A continuación, se muestran algunas posibles clasificaciones en función de diversos aspectos, por ejemplo:
 
 * **Según su naturaleza** (sistema de instrucciones): *cualitativos*, son instrucciones narrativas o descriptivas para guiar un proceso (p.e. una receta para preparar un plato) o *cuantitativos*, se emplean cálculos matemáticos u operaciones de comparación numérica para obtener un resultado (p.e. el cálculo del área del círculo).
 * **Según su función**: *de búsqueda*, buscan un elemento concreto en una colección de ellos (p.e. secuenciales o binaria); *de ordenamiento*, ordenan una colección de elementos (p.e. de burbuja--bubble Sort; o por seleccion--selection sort; o rápido--quicksort; o por mezcla--merge sort); *de clasificación*, clasifican una serie de elementos en clases (p.e. árboles de decisión, K-vecinos más cercanos, Naive Bayes, Redes Neuronales, Random Forest, Gradient Boosting); 
@@ -253,8 +260,8 @@ Los algotmos, como casi todo, también pueden ser clasificados. Su clasificació
 
 El fujo de trabajo habitual será:
 
-1. **Análisis del problema**: datos de entrada, salida esperada, casos especiales, restricciones.
-2. **Diseño del algoritmo**: redacta el algoritmo y verifica sus propiedades.
+1. **Análisis del problema**: determina cuáles son los datos de entrada y la salida esperada, analiza si hay casos especiales o restricciones en la entrada.
+2. **Diseño del algoritmo**: piensa en cómo solucionar el problema, redacta el algoritmo y verifica sus propiedades.
 3. **Selección del lenguaje**: elige el lenguaje y herramientas más apropiados.
 4. **Implementación**: traduce el algoritmo al lenguaje elegido.
 

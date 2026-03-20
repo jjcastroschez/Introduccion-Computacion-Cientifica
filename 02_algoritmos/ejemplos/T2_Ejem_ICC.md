@@ -14,7 +14,7 @@
 
 # 🧐 Ejemplos - Tema 2: Algoritmia
 
-En esta carpeta encontrarás algunos **algoritmos** de ejemplo que solucionan algunos problemas planteados en clase, el propósito es que veas el proceso que se sigue en el diseño y especificación de un algoritmo.
+En esta carpeta encontrarás algunos **algoritmos** de ejemplo que solucionan algunos problemas fáciles, el propósito es que veas el proceso que se sigue en el diseño y especificación de un algoritmo.
 
 > [!NOTE]
 > En los ejemplos propuestos no se incluyen estructuras aún no estudiadas en clase (p.e. `if`, `while`, `for`) que se estudiarán con detalle en el **Tema 4**.  
@@ -34,11 +34,13 @@ Como todos sabéis calentar una pizza en el horno, no hace falta hacer el análi
 
 El algoritmo en pseudocódigo será:
 
+```text
 1. Precalentar el horno a 220°C - 230°C (calor superior e inferior) durante 10-15 minutos.
 2. Preparar la pizza retirando todo el envoltorio de plástico y cartón.
 3. Colocar la pizza directamente sobre la rejilla del horno a media altura. Esto permite que el aire circule y la base quede crujiente.
 4. Hornear la pizza durante 10-15 minutos. El tiempo exacto depende del grosor de la masa. La señal de que está lista es que el queso burbujee y los bordes estén dorados.
 5. Retirar la pizza del horno y déjarla enfriar al menos 1 minuto antes de cortarla para que el queso se asiente. 
+```
 
 ### 💶 Ejemplo 2. Cambio de moneda
 
@@ -74,7 +76,7 @@ Entrada: conv_moneda_dolares, conv_euros_dolares  (número real); cantidad_moned
 Intermedias: cantidad_en_dolares, cantidad_en_euros, cantidad_por_comision (número real)
 Salida: cantidad_cambio_entrega (número real)
 INICIO
-  [Entrada de Datos]
+     [Entrada de Datos]
   1: ESCRIBIR "Introduce el valor de conversión de la moneda extranjera a cambiar:"
   2: LEER(conv_moneda_dolares)
   3: ESCRIBIR "Introduce el valor de conversión del euro:"
@@ -83,15 +85,15 @@ INICIO
   6: LEER(cantidad_moneda_extranj) 
   7: ESCRIBIR "Introduce el porcentaje de ganancia del banco:"
   8: LEER(porc_ganancia_banco) 
-  [Conversión de la moneda extranjera a dolares]
+     [Conversión de la moneda extranjera a dolares]
   9: cantidad_en_dolares ← cantidad_moneda_extranj * conv_moneda_dolares 
-  [Conversión de los dolares a euros]
+     [Conversión de los dolares a euros]
  10: cantidad_en_euros ← cantidad_en_dolares / conv_euros_dolares
-  [Cálculo de la comisión del banco]
+     [Cálculo de la comisión del banco]
  11: cantidad_por_comision ← cantidad_en_euros *  porc_ganancia_banco/100
-  [Cálculo de la cantidad a entregar]
+     [Cálculo de la cantidad a entregar]
  12: cantidad_cambio_entrega ← cantidad_en_euros - cantidad_por_comision
-  [Salida de datos]
+     [Salida de datos]
   6: ESCRIBIR "La cantidad a entregar al cliente es:", cantidad_cambio_entrega
 FIN
 ```
@@ -125,7 +127,7 @@ flowchart TD
 
 En este caso, se quiere mostrar cómo un algoritmo diseñado finalmente se plasma en un archivo escrito en un lenguajen de programación, en este caso hemos seleccionado Python 🐍, el lenguaje vehicular de la asignatura. 
 
-Partimos del algoritmo diseñado, tanto en pseudocódigo como en diagrama de flujos, en el apartado *Sección 6: Pseudocódigo* y *Sección 7: Diagramas de flujo* de [Teoría](../teoria/T2_ICC.md). 
+Partimos del algoritmo diseñado, tanto en pseudocódigo como en diagrama de flujos, en el apartado *Sección 6: Pseudocódigo* y *Sección 7: Diagramas de flujo (Ejemplo: área de un círculo)* de [Teoría](../teoria/T2_ICC.md). 
 
 La implementación será:
 
