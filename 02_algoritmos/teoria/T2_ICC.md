@@ -38,7 +38,7 @@ Cada paso del algoritmo debe ser un paso *hacia la solución*.
 Un algoritmo puede verse como una receta de cocina. Los **datos de entrada** serían los *ingredientes* que vamos a usar en la receta para elaborar el plato (p.e. 50ml aceite, 2kg de tomates maduros, 1 calabacín, 1 pimiento verde, 1 pimiento rojo, 1 cebolla, 1 ajo y 5gr de Sal), los **datos intermedios** serían los *productos intermedios* que se producen (p.e. el sofrito o la salsa de tomate casera), y los **datos de salida** serían el *plato elaborado* (p.e. el pisto manchego). 
 
 La receta paso a paso es el algoritmo (el procedimiento ordenado), por ejemplo:
-
+```text
 1. Lavar ingredientes.
 2. Cortar los tomates, el ajo, la cebolla, el calabacín y los pimientos rojo y verde. 
 3. Calentar el aceite en la sartén.
@@ -51,6 +51,7 @@ La receta paso a paso es el algoritmo (el procedimiento ordenado), por ejemplo:
 10. Añadir el tomate troceado y dejar a fuego lento, removiendo de vez en cuando, durante una hora.
 11. Mezclar la salsa de tomate obtenida con el sofrito antes elaborado.
 12. Servir
+```
 
 > \[!NOTE]
 > El orden importa. Si “calientas la sartén” después de “sofreir”, algo no encaja.
@@ -164,7 +165,7 @@ Algoritmo CalculoMediaDosNumeros
 Entrada: a (número real), b (número real)
 Intermedias: suma (número real)
 Salida: media (número real)
-Inicio
+INICIO
   1: ESCRIBIR "Introduce el primer número:"
   2: LEER(a)
   3: ESCRIBIR "Introduce el segundo número:"
@@ -235,7 +236,20 @@ En próximos temas se aumentará la complejidad de los diagramas, para represent
 
 ---
 
-## 🧭 Sección 8: Recordatorio importante: del problema al programa
+## 🧭 Sección 8: Clasificación de los algoritmos
+
+Los algotmos, como casi todo, también pueden ser clasificados. Su clasificación se pueden hacer en función de varios aspectos. A continuación, se muestran algunas posibles clasificaciones en función de diversos aspectos, por ejemplo:
+
+* **Según su naturaleza** (sistema de instrucciones): *cualitativos*, son instrucciones narrativas o descriptivas para guiar un proceso (p.e. una receta para preparar un plato) o *cuantitativos*, se emplean cálculos matemáticos u operaciones de comparación numérica para obtener un resultado (p.e. el cálculo del área del círculo).
+* **Según su función**: *de búsqueda*, buscan un elemento concreto en una colección de ellos (p.e. secuenciales o binaria); *de ordenamiento*, ordenan una colección de elementos (p.e. de burbuja--bubble Sort; o por seleccion--selection sort; o rápido--quicksort; o por mezcla--merge sort); *de clasificación*, clasifican una serie de elementos en clases (p.e. árboles de decisión, K-vecinos más cercanos, Naive Bayes, Redes Neuronales, Random Forest, Gradient Boosting); 
+*de aprendizaje*, infieren conocimiento a partir de datos particulares, se clasifican a su vez en supervisado, no supervisado, profundo y por refuerzo; *de encaminamiento*...
+* **Según su estrategia de resolución**: *fuerza bruta*--brute force, se prueban todas las soluciones hasta encontrar la correcta (p.e. búsqueda secuencial o  ordenación por selección); *divide y vencerás*--divide and conquer, se divide el problema principal en subproblemas más pequeños que son resueltos de manera individual, para luego combinar las soluciones y obtener de este modo la solución al problema de partida (p.e. Quicksort, mergesort o la búsqueda binaria); *voraces*--greedy, dividen la solución en pasos, tomando en cada paso la mejor decisión local, con la esperanza de obtener la mejor solución global (p.e. Dijkstra o Kruskal), *programación dinámica*--dynamic programming, similar al "divide y vencerás", pero en el que hay solapamiento de los problemas, se requiere emplear soluciones a subproblemas para solucionar otros subproblemas (p.e. cálculo de la serie de Fibonacci); *vuelta atrás*--backtracking, es una mejora de "la fuerza bruta" se construyen soluciones parciales que se descartan si se comprueba que no conducen a una solución final válida (p.e. solución de sudokus o la salida de un laberinto); *aleatorizados*, incluyen el azar como parte de su lógica para tomar decisiones durante la ejecución (p.e. Quicksort aleatorizado).
+
+* **Según la certeza del resultado**: *deterministicos*, ante los mismos datos de  entrada se ejecuta la misma secuencia de instrucciones y se produce produce la misma salida (p.e. multiplicación de matrices); *probabilísticos*, se introduce el azar, en cada ejecución el resultado puede ser distinto aún partiendo de los mismos datos de entrada (p.e. simulaciones de Montecarlo); *heurísticos*, no buscan la mejor solución o la solución perfecta, sino una solución "suficientemente buena" con recursos razonables (p.e. generación de una ruta en Google Maps).  
+
+---
+
+## 🧭 Sección 9: Recordatorio importante: del problema al programa
 
 El fujo de trabajo habitual será:
 

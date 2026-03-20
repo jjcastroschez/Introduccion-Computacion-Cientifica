@@ -12,136 +12,170 @@
 
 </div>
 
-# 🧩 Ejercicios - Tema 2: Algoritmia 📝
+# 🧠 Ejercicios Autocomprobación — Tema 2: Algoritmia  
+En este conjunto de ejercicios pondrás en práctica lo visto en clase sobre **algoritmos**, **pseudocódigo**, **diagramas de flujo** y las **características que deben cumplir los algoritmos** (precisión, finitud, orden, independencia, robustez…).
 
-El objetivo de estos ejercicios es que aprendas a **diseñar algoritmos** y a **expresarlos** de forma clara (pseudocódigo / diagrama de flujo), antes de “pensar en Python”.
+👉 *Recuerda:* antes de programar **hay que pensar**. El objetivo de este tema es **diseñar soluciones**, no escribir código todavía.
 
 ---
 
-## 1) Conceptos: ¿es realmente un algoritmo?
+## Conceptos: ¿es realmente un algoritmo?
 
-### ✅ Ejercicio 1 — “¿Algoritmo o descripción vaga?”
-Indica si las siguientes instrucciones describen un algoritmo *válido*. Si no lo es, explica por qué (ambigüedad, no finito, no definido, etc.) y reescríbelo para que sí lo sea.
+### 📝 Ejercicio: "¿Algoritmo o descripción vaga?"
 
-1. “Ordena los números y ya está”.
-2. “Suma todos los valores hasta que te parezca suficiente”.
-3. “Calcula la media de tres notas”.
+A continuación tienes un **algoritmo cualitativo** (en lenguaje natural).  
+
+🍳 *Algoritmo cualitativo inicial: “Qué hacer para aprobar la asignatura de ICC”*
+```text
+1. Estudiar lo necesario.
+2. Hacer las pruebas de progreso cuando toque y hacerlo lo mejor posible.
+3. Completar algunos ejercicios individuales.
+4. Participar en los trabajos en grupo de manera adecuada.
+5. Entregar todo a tiempo.
+6. Repasar antes del examen final si crees que lo necesitas.
+```
+
+#### Tu tarea es:
+
+1. Identificar si **cumple** las características fundamentales de un algoritmo:  
+   - Preciso  
+   - Ordenado  
+   - Finito  
+   - Legible  
+   - Independiente del lenguaje  
+   - Robusto / sin ambigüedades  
+2. Indicar **qué pasos NO cumplen alguna característica**.  
 
 <details>
-  <summary><h4>💡 Pistas</h4></summary>
-  <p>Piensa en las propiedades: preciso, finito, definido, legible. Si faltan datos de entrada o la condición de parada no es clara, no es un algoritmo “completo”.</p>
+  <summary><h4>💡 Piensa en si te deja claro lo que tienes que hacer para aprobar la asignatura ...  </h4></summary>
+  <p>Efectivamente... Este algoritmo NO cumple varias características fundamentales:</p>
+   <ul style="list-style-type: none;">
+      <li>❌ No es preciso: “lo necesario”, “algunos ejercicios”, “de manera adecuada”… no indican nada operativo.</li>
+      <li>❌ No es definido: no queda claro cuántas actividades hay que completar ni qué criterios se aplican.</li>
+      <li>❌ No es robusto: no contempla situaciones como suspender una prueba, faltas de entrega, etc.</li>
+      <li>❌ No es legible desde el punto de vista algorítmico: mezcla tareas sin jerarquía ni relación entre ellas.</li>
+      <li>❌ No es ordenado: hay acciones que dependen de otras pero no están ordenadas.
+      <li>❌ No refleja entradas, procesos ni salidas.</li>
+      <li>❌ No es finito en el sentido algorítmico: “estudiar lo necesario” no está acotado.</li>
+   </ul>
+</details>
+
+> [!NOTE]
+> No olvides este ejemplo, y piensa qué es necesario modificar para reflejar los criterios de evaluación de las asignatura cumpliendo los requisitos vistos en teoría (consulta 📘 *Sección 2: Características de un buen algoritmo* en la [teoría](../teoria/T2_ICC.md)).
+> 🧠 *Reflexiona:* ¿Qué partes podrían/deberían complicarse para ajustarse a la forma real de evaluar la asignatura?
+
+### 📝 Ejercicio: "¿Cumple este algoritmo cuantitativo las características de un algoritmo?"
+
+A continuación tienes un **algoritmo cuantitativo simple**, únicamente con **instrucciones secuenciales**:
+
+📐 *Algoritmo Propuesto: Cálculo de área del cuadrado*
+```text
+Entrada: lado (número real)  
+Intermedias: —  
+Salida: area (número real)
+
+INICIO
+1. ESCRIBIR "Introduce la longitud del lado:"  
+2. LEER(lado)  
+3. area ← lado * lado  
+4. ESCRIBIR "El área es:", area  
+FIN
+```
+---
+
+### ✔️ Tareas
+
+1. Evalúa si cumple TODAS las características de un algoritmo vistas en clase.  
+2. Justifica cada respuesta (una frase por característica es suficiente).  
+3. En caso necesario, propón mejoras.
+
+<details>
+  <summary><h4>💡 Piensa en piensa en finitud, determinismo, precisión y robustez...</h4></summary>
+  <p>Efectivamente... Este algoritmo SI cumple las características fundamentales.</p>
 </details>
 
 ---
 
-## 2) Del enunciado a entrada/salida
+## Del enunciado a entrada/salida
 
-### ✅ Ejercicio 2 — Especificación mínima
-Para cada problema, identifica **Entrada**, **Intermedias** y **Salida**:
+### ✅ Ejercicio: "Identifica los datos de entrada y salida, así como los intermedios"
+
+Te propongo que pienses en varios problemas y en sus soluciones:
 
 a) Calcular el área de un triángulo.  
 b) Convertir grados Celsius a Fahrenheit.  
-c) Determinar si un número entero es par.
+c) Sumar los dígitos que forman un número de tres cifras.
+
+#### La tarea a realizar es: 
+
+Para cada uno de ellos, identifica cuáles sería los datos de **Entrada**, **Intermedios** y **Salida**.
 
 <details>
-  <summary><h4>🧪 Ejemplo de formato de respuesta</h4></summary>
-  <p><strong>Entrada:</strong> base, altura (reales). <strong>Intermedias:</strong> - <strong>Salida:</strong> area (real).</p>
+  <summary><h4>🧪 Piensa en lo que necesitas para construir el algoritmo que soluciona el problema y en qué es lo que buscas....</h4></summary>
+  <p>Problema a):</p> 
+   <ul style="list-style-type: none;">
+      <li><strong>Entrada:</strong> base, altura (reales).</li> 
+      <li><strong>Intermedias:</strong> - <strong></li>
+      <li>Salida:</strong> area (real).</li>
+   </ul>
+  <p>Problema b):</p> 
+   <ul style="list-style-type: none;">
+      <li><strong>Entrada:</strong> grados Celsius (reales).</li> 
+      <li><strong>Intermedias:</strong> - <strong></li>
+      <li>Salida:</strong> grados Fahrenheit (real).</li>
+   </ul>
+ <p>Problema c):</p> 
+   <ul style="list-style-type: none;">
+      <li><strong>Entrada:</strong> numero (entero entre 100 y 999).</li> 
+      <li><strong>Intermedias:</strong> unidades, decenas y centenas (entero) <strong></li>
+      <li>Salida:</strong> resultado de la suma (entero).</li>
+   </ul>   
 </details>
 
 ---
 
-## 3) Pseudocódigo (sin programar)
+## De la idea al algoritmo: Diseñando y escribiendo algoritmos
 
-### ✅ Ejercicio 3 — Área y perímetro de un rectángulo
-Escribe el pseudocódigo que calcule el **área** y el **perímetro** de un rectángulo.
+### 📝 Ejercicio: "Diseña un algoritmo (cualitativo, expresado en pseudocódigo y diagrama de flujo)"
 
-- Entrada: base, altura  
-- Salida: area, perimetro
+Un profesor quiere automatizar un pequeño proceso:  
+*al recibir las tres calificaciones obtenidas por un estudiante en las pruebas de progreso (en el rango 0 a 10), quiere (1) calcular la nota final sobre 4 puntos teniendo en cuenta que la primera prueba tiene un peso de 1 punto, y la segunda y tercera de 1.5 puntos; y (2) mostrar el resultado al estudiante.*
 
-<details>
-  <summary><h4>✅ Solución propuesta</h4></summary>
-  <pre><code>Algoritmo RectanguloAreaPerimetro
-Entrada: base (real), altura (real)
-Intermedias: -
-Salida: area (real), perimetro (real)
-Inicio
-  1: Leer(base)
-  2: Leer(altura)
-  3: area &lt;- base * altura
-  4: perimetro &lt;- 2 * (base + altura)
-  5: Escribir(area, perimetro)
-Fin</code></pre>
-</details>
+#### ✔️ Tareas
 
----
+1. Escribe un **algoritmo cualitativo** (en lenguaje natural).  
+2. Transfórmalo en **pseudocódigo** siguiendo el formato visto en teoría.  
+   Consulta 📘 *Sección 6: Pseudocódigo* en la [teoría](../teoria/T2_ICC.md).  
+3. Representa el mismo algoritmo mediante un **diagrama de flujo** usando los símbolos estándar (terminal, entrada/salida, proceso…).  
+   Consulta 📘 *Sección 7: Diagramas de flujo*.
 
-### ✅ Ejercicio 4 — Valor absoluto
-Diseña un algoritmo que calcule \(|x|\) para un número real \(x\).
+Puedes hacerlo a mano o usando herramientas como:  
+- draw.io  
+- Mermaid  
+- Lucidchart  
+- Canva  
+- PlantUML  
+*(ver opciones en [Recursos del Tema 2](../recursos/T2_RE_ICC.md))*.
 
 > [!NOTE]
-> No uses funciones “mágicas” tipo `abs`. Resuélvelo con **selección**.
+> Observa cómo la solución se vuelve más precisa y formal conforme avanzamos desde lenguaje natural → pseudocódigo → diagrama de flujo.
 
----
+### 📝 Ejercicio: "Diseña un algoritmo secuencial (pseudocódigo + diagrama de flujo)"
 
-### ✅ Ejercicio 5 — Máximo de tres números
-Diseña un algoritmo que reciba tres números reales y devuelva el mayor.
+Diseña un algoritmo que:
 
-- Debe ser **definido** (si hay empates, tu algoritmo debe seguir funcionando).
-- Presenta dos versiones:
-  1) con comparaciones directas,
-  2) usando una variable auxiliar `maximo`.
+- establezca los pasos para recibir un número real (temperatura en grados Celsius),  
+- convierta dicha temperatura a grados Fahrenheit usando la fórmula  
+  \[
+  F = (C × 9/5) + 32
+  \]
+- y muestre el resultado al usuario.
 
----
+#### ✔️ Tareas
 
-## 4) Eficiencia (muy introductorio)
-
-### ✅ Ejercicio 6 — Dos formas de sumar 1..n
-Considera dos algoritmos para calcular \(S = 1 + 2 + ... + n\).
-
-- A) sumar con un bucle  
-- B) usar \(S = \frac{n(n+1)}{2}\)
-
-1) ¿Ambos son correctos?  
-2) ¿Cuál es más eficiente en tiempo?  
-3) ¿Cuál es más legible para alguien que empieza?
-
-<details>
-  <summary><h4>💡 Comentario orientativo</h4></summary>
-  <p>Los dos pueden ser correctos. El de la fórmula es más eficiente en tiempo (constante). El del bucle puede ser más “explicativo” al principio, pero es más costoso cuando n es grande.</p>
-</details>
-
----
-
-## 5) Diagramas de flujo
-
-> [!IMPORTANT]
-> Respeta las restricciones: un inicio y un fin, top-down, líneas rectas, y símbolos estándar.
-
-### ✅ Ejercicio 7 — Diagrama de flujo: par o impar
-Diseña el diagrama de flujo que determine si un número entero es **par** o **impar**.
-
-- Entrada: \(n\) (entero)
-- Salida: “PAR” o “IMPAR”
-
----
-
-### ✅ Ejercicio 8 — Diagrama de flujo: factorial
-Diseña el diagrama de flujo del factorial \(n!\), suponiendo \(n \ge 0\).
-
-> [!TIP]
-> Este ejercicio obliga a usar **iteración** (bucle). Aún no estamos programando: solo diseñando el algoritmo.
-
----
-
-## 6) Reto (opcional)
-
-### ⭐ Ejercicio 9 — Algoritmo de Euclides (MCD)
-Diseña en pseudocódigo el algoritmo para calcular el **máximo común divisor** (MCD) de dos enteros positivos \(a\) y \(b\) usando el algoritmo de Euclides.
-
-<details>
-  <summary><h4>💡 Pista</h4></summary>
-  <p>Mientras b ≠ 0, sustituye (a, b) por (b, a mod b). Al final, a es el MCD.</p>
-</details>
+1. Escribe el **pseudocódigo completo** siguiendo la plantilla del tema.  
+2. Representa tu solución en un **diagrama de flujo**.
+3. Revisa y valida usando el checklist del final de la teoría.
 
 ---
 
