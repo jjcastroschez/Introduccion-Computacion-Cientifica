@@ -67,7 +67,7 @@ Aunque los símbolos gráficos utilizados en los diagramas de flujo han sido est
 A continuación se referencian una serie de herramientas de utilidad para la creación de diagramas de flujo.
 
 ### Herramientas online (sin instalar nada)
-- **[Visual Paradigm](https://online.visual-paradigm.com/es/diagrams/solutions/free-flowchart-software/): editor gratuito, permite elaborar diagramas y exportar a distintos formatos de imágenes PNG/JPEG/SVG o documentos PDF o incluso como imagen para pegar en MS Office.
+- **[Visual Paradigm](https://online.visual-paradigm.com/es/diagrams/solutions/free-flowchart-software/)**: editor gratuito, permite elaborar diagramas y exportar a distintos formatos de imágenes PNG/JPEG/SVG o documentos PDF o incluso como imagen para pegar en MS Office.
 - **[draw.io](https://www.drawio.com)**: editor gratuito, exporta a PNG/SVG/PDF.
 - **[Lucidchart](https://lucid.app/)**: muy potente.
 - **[Canva](https://www.canva.com/es_es/)**: tiene plantillas de diagramas, útil si quieres un estilo visual cuidado.

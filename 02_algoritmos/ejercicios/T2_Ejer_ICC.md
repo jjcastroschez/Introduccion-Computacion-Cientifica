@@ -214,6 +214,30 @@ Diseña un algoritmo que:
 2. Representa tu solución en un **diagrama de flujo**.
 3. Revisa y valida usando el checklist del final de la teoría.
 
+<details>
+  <summary><h4>💡 Un último ejercicio para acostumbrarte a pensar 😜 </h4></summary>
+  <p>Mi propuesta para este caso, y debe varia poco de la tuya, es la siguiente.</p>
+  <p>Empiezo con la especificación del algoritmo en pseudocódigo:</p>
+  <pre>
+   Entrada: gradosCelsius (número real)  
+   Intermedias: -  
+   Salida: gradosFahrenheit (número real)
+
+   INICIO
+     1. ESCRIBIR "Dame la temperatura en Grados Celsius:"   
+     2. LEER(gradosCelsius)
+       [Aplicamos la fórmula de conversión]
+     3. gradosFahrenheit ← (gradosCelsius × 9/5) + 32   
+     4. ESCRIBIR "La calificación obtenida es: ", gradosFahrenheit 
+   FIN
+  </pre>
+  <p>El diagrama de flujo del algoritmo, realizado con draw.io, es el siguiente:</p>
+  <figure>
+    <img src="../imagenes/DiagramaFlujoTemperaturas.png" alt="Diagrama de Flujo">
+    <figcaption>Diagrama de Flujo para el problema de las notas</figcaption>
+  </figure> 
+</details>
+
 ---
 
 ## 🧭 Menú de Navegación
