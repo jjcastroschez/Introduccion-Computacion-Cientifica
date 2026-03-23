@@ -95,7 +95,7 @@ Para otras consultas, puedes contactar conmigo directamente en clase o de cualqu
 |:------:|:------------------------------------------------------------------------------|
 | 1      | [Introducción](./01_introduccion/README.md)                                   | 
 | 2      | [Algoritmos](./02_algoritmos/README.md)                                       |
-| 3      | [Variables - Tipos de Datos Simples](./03_variables_tipos_simples/README.md)  |        
+| 3      | [Tipos de Datos Simples - Variables](./03_variables_tipos_simples/README.md)  |        
 | 4      | [Control del Flujo de Ejecución](./04_control_flujo_ejecucion/README.md)      |
 | 5      | [Programación Modular](./05_programacion_modular/README.md)                   |
 | 6      | [Tipos de Datos Compuestos](./06_tipos_compuestos/README.md)                  |

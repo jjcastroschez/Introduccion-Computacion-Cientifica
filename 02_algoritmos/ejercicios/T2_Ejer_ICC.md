@@ -233,8 +233,8 @@ Diseña un algoritmo que:
   </pre>
   <p>El diagrama de flujo del algoritmo, realizado con draw.io, es el siguiente:</p>
   <figure>
-    <img src="../imagenes/DiagramaFlujoTemperaturas.png" alt="Diagrama de Flujo">
-    <figcaption>Diagrama de Flujo para el problema de las notas</figcaption>
+    <img src="../imagenes/DiagramaFlujoTemperaturas.png" alt="Diagrama de Flujo Conversión temperaturas">
+    <figcaption>Diagrama de Flujo para el problema de la conversión de temperaturas</figcaption>
   </figure> 
 </details>
 
