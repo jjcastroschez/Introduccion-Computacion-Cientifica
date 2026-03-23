@@ -138,8 +138,7 @@ Para cada uno de ellos, identifica cuáles sería los datos de **Entrada**, **In
 
 ### 📝 Ejercicio: "Diseña un algoritmo (cualitativo, expresado en pseudocódigo y diagrama de flujo)"
 
-Un profesor quiere automatizar un pequeño proceso:  
-*al recibir las tres calificaciones obtenidas por un estudiante en las pruebas de progreso (en el rango 0 a 10), quiere (1) calcular la nota final sobre 4 puntos teniendo en cuenta que la primera prueba tiene un peso de 1 punto, y la segunda y tercera de 1.5 puntos; y (2) mostrar el resultado al estudiante.*
+Un profesor quiere automatizar un pequeño proceso:  *al recibir las tres calificaciones obtenidas por un estudiante en las pruebas de progreso (en el rango 0 a 10), quiere (1) calcular la nota final sobre 4 puntos teniendo en cuenta que la primera prueba tiene un peso de 1 punto, y la segunda y tercera de 1.5 puntos; y (2) mostrar el resultado al estudiante.*
 
 #### ✔️ Tareas
 
@@ -149,7 +148,8 @@ Un profesor quiere automatizar un pequeño proceso:
 3. Representa el mismo algoritmo mediante un **diagrama de flujo** usando los símbolos estándar (terminal, entrada/salida, proceso…).  
    Consulta 📘 *Sección 7: Diagramas de flujo*.
 
-Puedes hacerlo a mano o usando herramientas como:  
+Puedes hacerlo a mano o usando herramientas como: 
+- Visual Paradigm 
 - draw.io  
 - Mermaid  
 - Lucidchart  
@@ -160,15 +160,52 @@ Puedes hacerlo a mano o usando herramientas como:
 > [!NOTE]
 > Observa cómo la solución se vuelve más precisa y formal conforme avanzamos desde lenguaje natural → pseudocódigo → diagrama de flujo.
 
+<details>
+  <summary><h4>💡 Piensa... antes de programar 😜 </h4></summary>
+  <p>Recuerda que no todos los algoritmos tienen que ser iguales, aunque cuando son simples, lo normal es que sean parecidos. Aquí va mi propuesta...</p>
+  <p>Un algoritmo cualitativo sería una primera aproximación a la solución del problema:</p>
+  <pre>
+   1. Pedir/recibir las tres notas del estudiante.
+   2. Calcular la calificación final según los pesos de cada prueba.
+   3. Sumar las tres notas.
+   4. Mostrar la nota final al estudiante. 
+  </pre>
+  <p>Vamos a detallar mejor el algoritmo, empleando para ello pseudocódigo:</p>
+  <pre>
+   Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real)  
+   Intermedias: calif1, calif2, calif3 (número real)  
+   Salida: notaPruebasProgreso (número real)
+
+   INICIO
+     1. ESCRIBIR "Dame la calificación de la primera prueba:"   
+     2. LEER(califPrimeraPrueba)
+     3. ESCRIBIR "Dame la calificación de la segunda prueba:"   
+     4. LEER(califSegundaPrueba)
+     5. ESCRIBIR "Dame la calificación de la tercera prueba:"   
+     6. LEER(califTerceraPrueba)    
+     7. calif1 ← califPrimeraPrueba x 0.10
+     8. calif2 ← califSegundqPrueba x 0.15
+     9. calif1 ← califTerceraPrueba x 0.10 
+    11. notaPruebasProgreso ← calif1 + calif2 + calif3   
+    10. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso 
+   FIN
+  </pre>
+  <p>A continuación, muestro el diagrama de flujo del algoritmo propuesto, está realizado con Visual Paradigm:</p>
+  <figure>
+    <img src="../imagenes/diagramaFlujoProblemaNotas.png" alt="Diagrama de Flujo">
+    <figcaption>Diagrama de Flujo para el problema de las notas</figcaption>
+  </figure> 
+</details>
+
 ### 📝 Ejercicio: "Diseña un algoritmo secuencial (pseudocódigo + diagrama de flujo)"
 
 Diseña un algoritmo que:
 
 - establezca los pasos para recibir un número real (temperatura en grados Celsius),  
-- convierta dicha temperatura a grados Fahrenheit usando la fórmula  
-  \[
-  F = (C × 9/5) + 32
-  \]
+- convierta dicha temperatura a grados Fahrenheit usando la fórmula:  
+  
+  $F = (C × 9/5) + 32$
+
 - y muestre el resultado al usuario.
 
 #### ✔️ Tareas
