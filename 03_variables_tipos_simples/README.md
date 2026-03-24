@@ -14,10 +14,11 @@
 
 # 🧠 Tema 3: Tipos de Datos y Variables 🔤
 
-En este tema aprenderás **cómo se representa la información dentro de un ordenador**, qué entiende realmente la máquina y cómo los lenguajes de programación (Python y C) te permiten manipular datos mediante **tipos**, **operadores** y **variables**.
+En este tema aprenderás **cómo se representa la información dentro de un ordenador**, qué entiende realmente la máquina y cómo los lenguajes de programación (p.e. Python o C) te permiten manipular datos mediante **tipos**, **operadores** y **variables**.
 
-Aquí empezarás a escribir tus primeros fragmentos de código con una base sólida: sabiendo qué tipo tiene cada dato, cómo operan entre sí y cómo convertirlos cuando sea necesario.  
-Este conocimiento te acompañará durante todo el curso… y durante toda tu vida como programador.
+Aquí empezarás a escribir tus primeros fragmentos de código con una base sólida: sabiendo qué tipo tiene cada dato, cómo operan entre sí, cómo convertirlos cuando sea necesario y cómo almacenarlos y hacer referencia ellos.
+
+Este conocimiento te acompañará durante todo el curso… y durante toda tu vida cuando realices tareas de programador 😜.
 
 ---
 
@@ -110,5 +111,4 @@ Podrás marcar como completados:
 | 2 | [Recursos](./recursos/T3_RE_ICC.md) | 5 |
 | 3 | [Ejemplos](./ejemplos/T3_Ejem_ICC.md) | – |
 | 4 | [Ejercicios](./ejercicios/T3_Ejer_ICC.md) | – |
-
-[Menú de Temas](../README.md)
+|   | [Menú de Temas](../README.md) | - |
