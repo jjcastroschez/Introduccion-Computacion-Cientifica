@@ -26,7 +26,29 @@ Para que un computador resuelva un problema concreto, hay que *“especializarlo
 
 La programación consiste en **comunicar a la máquina las instrucciones** que queremos que ejecute (los programas). Este acto de comunicación, como cualquier otro, requiere del uso de un **lenguaje**.
 
-El computador, a nivel físico, solo entiende el **lenguaje máquina** (sucesiones de ceros y unos que cumplen determinadas reglas). Puesto que para un ser humano es difícil e ineficiente comunicarse así, utilizamos los **lenguajes de programación de alto nivel**.
+El computador, a nivel físico, solo entiende el **lenguaje máquina**, que nos permite escribir programas que consisten en secuencias de instrucciones para manejar sus componentes físicos, donde cada instrucción es una cadena de ceros y unos que cumplen determinadas reglas, por ejemplo:
+
+```text
+0000 0001 0110 1110 
+0100 0000 0001 0010
+1100 0000 0000 1101
+```
+
+que podría corresponderse con:
+
+* Cargar un dato desde la dirección de memoria 366
+* Sumar dos números almacenados en los registros 1 y 2.
+* Salar a la instrucción 13 si el resultado de la operación anterior es cero.  
+
+Puesto que para un ser humano es difícil e ineficiente comunicarse así, se comienzan a inventar notaciones simbólicas para facilitar la lectura, escritura y edición de programas. Es lo que se denomina el **lenguaje ensamblador** que hace corresponder a cada código máquina que ejecutan los procesadores un mnemónico, también se simbolizan los registros, posiciones de memoria y otras características. Las instrucciones anteriores ahora podrían escribirse como:
+
+```text
+LOAD X
+ADD R1 R2
+JUMPZ h
+```
+
+Estos programas escritos en lenguaje ensamblador para poder ser ejecutados en el computador deben ser convertidos en su equivalente en lenguaje máquina, este trabajo lo realizan los *ensambladores*. 
 
 ### 🏷️ Componentes de un computador
 Básicamente, un computador es una máquina electrónica programable diseñada para procesar datos de forma automática. Su función principal es recibir información bruta, transformarla mediante operaciones lógicas y matemáticas, y entregar un resultado útil. Es, en esencia, un sistema capaz de seguir instrucciones (software) utilizando componentes físicos (hardware).
@@ -63,7 +85,10 @@ Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacida
 ---
 
 ## 🚀 Sección 2: Lenguajes de Programación de Alto Nivel
-Un **lenguaje de programación** es un **conjunto de símbolos, palabras y reglas para convinarlos**, que nos permiten especificar instrucciones precisas al computador en un formato cercano al lenguaje humano.
+
+El lenguaje ensamblador emplea una traducción *isomorfa* (un mapeo de uno a uno) y hay mucha dependencia con el computador y su arquitectura, por lo que sigue siendo complicado la tarea de programación. Para simplificar esa dependencia con la máquina aparecen los **lenguajes de programación de alto nivel**, que se separan de la máquina para acercarse al humano, empleando una terminología más cercana a él.
+
+Un **lenguaje de programación de alto nivel** es un **conjunto de símbolos, palabras y reglas para convinarlos**, que nos permiten **especificar instrucciones precisas al computador en un formato cercano al lenguaje humano**.
 
 ### 🗣️ Los Tres Pilares de un Lenguaje
 Al igual que los lenguajes empleados por los humanos (lenguajes naturales), los lenguajes de programación (lenguajes formales) se definen mediante tres pilares:
