@@ -44,9 +44,10 @@ Los lenguajes suelen ofrecer cuatro categorías fundamentales:
 1.  **Caracteres (`char`)**: Símbolos individuales (letras, dígitos, signos). Se basan en codificaciones como ASCII o Unicode. No existe este tipo de dato en Python. 
 2.  **Enteros (`int`)**: Números sin decimales. En Python tienen precisión arbitraria (crecen según se necesite), mientras que en C tienen un límite fijo (habitualmente 32 o 64 bits).
 3.  **Reales o Punto Flotante (`float`/`double`)**: Números con decimales. 
-    > [!WARNING]
-    > Los ordenadores no pueden representar todos los números reales con precisión infinita. Esto implica que en computación científica debemos tener cuidado con los errores de redondeo.
 4.  **Booleanos o Lógicos (`bool`)**: Solo dos valores: `True` (Verdadero) o `False` (Falso).
+
+> [!WARNING]
+> Los ordenadores no pueden representar todos los números reales con precisión infinita. Esto implica que en computación científica debemos tener cuidado con los errores de redondeo.
 
 ### 🛠️ Manipulación de Datos: Operadores y Relaciones
 Cada tipo de dato lleva asociado un conjunto de **operadores** específicos que definen cómo podemos interactuar con ellos:
@@ -83,7 +84,24 @@ La siguiente tabla resume las operaciones más comunes y su aplicabilidad según
     * **Implícito**: Lo hace el lenguaje automáticamente (ej. sumar un entero y un real).
     * **Explícito**: El programador lo fuerza (ej. `int(3.14)` en Python devuelve `3`).
 
-### 🔝 Orden de Precedencia
+### 🔢 Precedencia de Operadores Aritméticos
+
+Cuando una expresión contiene varios operadores aritméticos, el ordenador los evalúa en el siguiente orden estricto (de mayor a menor prioridad). Si los operadores tienen la misma prioridad, se evalúan de **izquierda a derecha**.
+
+| Prioridad | Operador | Descripción | Ejemplo | Resultado |
+| :---: | :---: | :--- | :--- | :--- |
+| **1º** | `( )` | Paréntesis (Agrupación) | `(2 + 3) * 4` | `20` |
+| **2º** | `**` | Exponenciación (Potencia) | `2 * 3 ** 2` | `18` |
+| **3º** | `+x`, `-x` | Identidad y Negación (Unarios) | `-3 + 5` | `2` |
+| **4º** | `*`, `/`, `//`, `%` | Multiplicación, División, Div. Entera y Módulo | `10 + 6 / 2` | `13.0` |
+| **5º** | `+`, `-` | Suma y Resta | `10 - 2 + 3` | `11` |
+
+> [!IMPORTANT]
+> **División en Python vs C:** 
+> - En **Python**, `/` siempre devuelve un real (`float`), mientras que `//` devuelve la parte entera.
+> - En **C**, si divides dos enteros con `/`, el resultado se trunca automáticamente a entero.    
+
+### 🔝 Orden de Precedencia entre operadores de distinto tipo
 Cuando en una misma expresión aparecen varios operadores, el ordenador los ejecuta siguiendo un orden jerárquico (precedencia). Si los operadores tienen la misma jerarquía, se evalúan de izquierda a derecha.
 
 | Prioridad | Operador | Descripción |
@@ -98,23 +116,9 @@ Cuando en una misma expresión aparecen varios operadores, el ordenador los ejec
 | **8** | `or` | Disyunción lógica |
 
 > [!TIP]
-> **Consejo de programador:** Ante la duda o en expresiones muy largas, **usa paréntesis**. No solo aseguran que el cálculo sea correcto, sino que hacen que el código sea mucho más fácil de leer para otros humanos.
+> Ante la duda o en expresiones muy largas, **usa paréntesis**. No solo aseguran que el cálculo sea correcto, sino que hacen que el código sea mucho más fácil de leer para otros humanos.
 
-### 🔢 Precedencia de Operadores Aritméticos
 
-Cuando una expresión contiene varios operadores aritméticos, el ordenador los evalúa en el siguiente orden estricto (de mayor a menor prioridad). Si los operadores tienen la misma prioridad, se evalúan de **izquierda a derecha**.
-
-| Prioridad | Operador | Descripción | Ejemplo | Resultado |
-| :---: | :---: | :--- | :--- | :--- |
-| **1º** | `( )` | Paréntesis (Agrupación) | `(2 + 3) * 4` | `20` |
-| **2º** | `**` | Exponenciación (Potencia) | `2 * 3 ** 2` | `18` |
-| **3º** | `+x`, `-x` | Identidad y Negación (Unarios) | `-3 + 5` | `2` |
-| **4º** | `*`, `/`, `//`, `%` | Multiplicación, División, Div. Entera y Módulo | `10 + 6 / 2` | `13.0` |
-| **5º** | `+`, `-` | Suma y Resta | `10 - 2 + 3` | `11` |
-
-> [!IMPORTANT]
-> **División en Python vs C:** > - En **Python**, `/` siempre devuelve un real (`float`), mientras que `//` devuelve la parte entera.
-> - En **C**, si divides dos enteros con `/`, el resultado se trunca automáticamente a entero.
 
 ---
 
@@ -125,7 +129,7 @@ Una **variable** es un nombre que apunta a un lugar en la memoria donde guardamo
 ### 🏷️ Identificadores y Estilo
 El nombre que damos a la variable es el **identificador**. Para escribir código profesional, debemos seguir reglas de estilo:
 - **Descriptivos**: `precio_total` es mejor que `pt`.
-- **CamelCase o snake_case**: Sé consistente. En Python se prefiere `nombre_variable`, en C es común `nombreVariable`.
+- **CamelCase o snake_case**: Sé consistente. En Python se prefiere `nombre_variable` (Snake Case), en C es común `nombreVariable` (Camel Case).
 - **Prohibiciones**: No pueden empezar por número ni contener espacios o caracteres especiales (excepto `_`).
 
 ### 🛡️ Clasificación de los Lenguajes por su Tipado
@@ -153,40 +157,40 @@ Transformemos un algoritmo simple de suma de dos números:
 
 **Pseudocódigo:**
 ```text
-1: Escribir ("Dame a: ")
-2: Leer (a)
-3: Escribir ("Dame b: ")
-4: Leer (b)
-5: resultado ← a + b
-6: Escribir ("Suma: ", resultado)
+1: Escribir ("Dame el primer operando: ")
+2: Leer (operando_1)
+3: Escribir ("Dame el segundo operando: ")
+4: Leer (operando_2)
+5: resultado_suma ← operando_1 + operando_2
+6: Escribir ("Suma: ", resultado_suma)
 ```
 
 ```python
 # Entrada (Python lee todo como texto, usamos int() para convertir)
-a = int(input("Dame a: "))
-b = int(input("Dame b: "))
+operando_1 = int(input("Dame el primer operando: "))
+operando_2 = int(input("Dame el segundo operando: "))
 
 # Proceso
-resultado = a + b
+resultado_suma = operando_1 + operando_2
 
 # Salida
-print(f"Suma: {resultado}")
+print(f"Suma: {resultado_suma}")
 ```
 ```c
 #include <stdio.h>
 
 int main() {
-    int a, b, resultado; // Declaración (Tipado Estático)
+    int operando_1, operando_2, resultado; // Declaración (Tipado Estático)
     
-    printf("Dame a: ");
-    scanf("%d", &a);
+    printf("Dame el primer operando: ");
+    scanf("%d", &operando_1);
     
-    printf("Dame b: ");
-    scanf("%d", &b);
+    printf("Dame el segundo operando: ");
+    scanf("%d", &operando_2);
     
-    resultado = a + b;
+    resultado_suma = operando_1 + operando_2;
     
-    printf("Suma: %d\n", resultado);
+    printf("Suma: %d\n", resultado_suma);
     return 0;
 }
 ```
