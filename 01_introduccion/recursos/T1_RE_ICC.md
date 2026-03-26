@@ -222,6 +222,67 @@ Para que comprendas cómo se trabaja profesionalmente, imagina que este es el "p
 | **4** | `git push` | Mandar una foto de tu hoja terminada al grupo. |
 | **5** | **Pull Request** | Preguntar al responsable: "¿Puedo pegar mi hoja en el libro oficial?". |
 
+### ⏪ Cómo retroceder a un commit anterior en Git
+
+En el desarrollo de software y la computación científica, es común cometer errores o querer volver a una versión previa que sabemos que funcionaba correctamente. Git nos ofrece distintas herramientas para "viajar en el tiempo" según nuestra necesidad.
+
+#### 1. Identificar el punto de retorno
+Antes de retroceder, necesitamos saber a qué momento de la historia queremos volver. Para ello, revisamos el historial:
+
+```bash
+git log --oneline
+```
+
+Esto mostrará una lista de commits con su identificador corto (hash), por ejemplo: `a1b2c3d`. Copia el ID del commit al que deseas interactuar.
+
+#### 2. Opciones para regresar a un commit
+
+Dependiendo de si queremos mantener el historial intacto, borrar cambios permanentemente o solo explorar, elegiremos una de estas tres rutas:
+
+##### Opción 1: `git revert` (Recomendada y segura)
+Esta opción **no borra el historial**. En su lugar, crea un **nuevo commit** que deshace exactamente los cambios del commit indicado.
+
+* **Comando:** `git revert <ID_del_commit>`
+* **¿Qué hace?**: Crea un parche inverso. El historial sigue creciendo hacia adelante, pero el código vuelve al estado anterior.
+* **Ideal para:** Proyectos colaborativos en GitHub. Es la forma más limpia de corregir errores sin causar conflictos a tus compañeros.
+
+##### Opción 2: `git reset --hard` (Volver completamente atrás)
+Esta opción "mueve" el estado del proyecto al commit elegido y **elimina permanentemente** todos los cambios y commits que se hicieron después de ese punto.
+
+* **Comando:** `git reset --hard <ID_del_commit>`
+* **¿Qué hace?**: Borra el rastro de los commits posteriores. El proyecto queda exactamente como estaba en ese punto del pasado.
+* **⚠️ Cuidado:** Úsalo solo en local. No se puede deshacer fácilmente y perderás cualquier trabajo no guardado tras ese commit.
+
+##### Opción 3: `git switch` (Modo exploración moderno)
+Esta es la forma actual y más clara de navegar a un commit antiguo para revisar el código sin crear ramas nuevas ni borrar nada.
+
+* **Comando:** `git switch --detach <ID_del_commit>`
+* **¿Qué hace?**: Mueve temporalmente tu estado de trabajo a ese commit específico. Git te avisará que estás en "detached HEAD", lo que significa que puedes ver y probar todo, pero los cambios que hagas no se guardarán en ninguna rama a menos que crees una nueva.
+* **Ideal para**: Inspeccionar cómo funcionaba un algoritmo en el pasado o recuperar un dato que borraste sin querer.
+* **Para volver:** Cuando termines de explorar, simplemente regresa a tu rama principal con `git switch main` (o el nombre de tu rama).
+
+>[!NOTE]
+> Es necesario usar la opción `--detach`, con `git switch --detach <ID>` le decimos a Git: "No busques una rama, llévame directamente a este punto ciego del historial solo para mirar".
+
+
+#### 💡 Conclusión: ¿Cuál elegir?
+
+| Si tu objetivo es... | Usa el comando... | ¿Es seguro en equipo? |
+| :--- | :--- | :--- |
+| **Deshacer un error** manteniendo el registro | `git revert` | ✅ Sí |
+| **Borrar todo** y resetear el historial | `git reset --hard` | ❌ No (solo local) |
+| **Explorar o revisar** sin romper nada | `git switch` | ✅ Sí |
+
+Saber cuándo usar cada uno te ahorrará muchos problemas en tus proyectos de computación científica, permitiéndote experimentar con el código con la seguridad de que siempre puedes volver a una versión estable.
+
+> [!TIP]
+> Algunos Tips adicionales:
+> 1. **Visualización:**  Visualmente el `revert` crea un nodo nuevo y el `reset` mueve la flecha hacia atrás.
+> 2. **Diferenciación:** Recuerda que el `ID_del_commit` en el caso de `revert` es el commit que quieres **anular**, mientras que en `reset` y `checkout` es el commit al que quieres **llegar**.
+
+> [!TIP]
+> Si ya subiste tus cambios a un servidor remoto (como GitHub), usa siempre revert Si los cambios solo están en tu computadora y quieres "limpiar" el desorden, puedes usar reset.
+
 ---
 
 ## ⚙️ Entorno de Desarrollo Integrado (IDE)
