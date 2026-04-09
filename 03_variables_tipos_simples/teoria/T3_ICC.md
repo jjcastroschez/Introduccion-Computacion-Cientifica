@@ -164,7 +164,7 @@ Transformemos un algoritmo simple de suma de dos números:
 5: resultado_suma ← operando_1 + operando_2
 6: Escribir ("Suma: ", resultado_suma)
 ```
-
+**Implementación usando Python:**
 ```python
 # Entrada (Python lee todo como texto, usamos int() para convertir)
 operando_1 = int(input("Dame el primer operando: "))
@@ -176,6 +176,7 @@ resultado_suma = operando_1 + operando_2
 # Salida
 print(f"Suma: {resultado_suma}")
 ```
+**Implementación usando C:**
 ```c
 #include <stdio.h>
 

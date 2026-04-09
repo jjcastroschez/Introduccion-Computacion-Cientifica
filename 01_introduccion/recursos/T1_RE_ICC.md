@@ -105,6 +105,42 @@ Una vez descargado el archivo, ejecútalo… es el instalador. Cuando te de opci
 
 ---
 
+## Otros lenguajes, otros procesadores
+
+A lo largo del curso, en clase, también haremos referencias a otros lenguajes de programación. Para practicar con ellos podrás hacer uso de algún compilador/intérprete disponible online (ver sección [Compiladores e Intérpretes Online](#-compiladores-e-intérpretes-online)) o instalar en tu máquina un compilador o intérprete del lenguaje que vayas a usar. 
+
+Puesto que en el curso vamos a usar un lenguaje interpretado, te recomiendo que te instales en tu ordenador también un lenguaje compilado, por ejemplo C.
+
+Puesto que Windows no trae un compilador de C de fábrica (macOS sí lo trae, es `gcc`), hay que instalarlo. Instalar un compilador de C en Windows es un proceso sencillo. Vamos a instalar una versión ligera del compilador de C, que funcione desde la terminal (como `gcc`) y que luego más adelante se pueda integrar con Visual Studio Code. 
+
+La forma más fácil de instalar un compilador de C en Windows hoy en día es a través de un gestor como **MSYS2**:
+
+1. Descarga e instala [MSYS2](https://www.msys2.org/).
+2. Abre la terminal de MSYS2 (UCRT64) y escribe el siguiente comando para instalar el compilador:
+`pacman -S mingw-w64-ucrt-x86_64-gcc`
+3. Configura las variables de entorno:
+  * Busca en Windows "Editar las variables de entorno del sistema".
+  * En "Variables del sistema", busca la que dice **Path**, selecciónala y pulsa "Editar".
+  * Añade la ruta de la carpeta bin donde se instaló (si no la cambias, normalmente es `C:\msys64\ucrt64\bin`).
+
+### ¿Cómo saber si lo has instalado bien?
+
+Abre una terminal (CMD o PowerShell) y escribe:
+
+```shell
+gcc --version
+```
+
+O si has instalado VSC:
+
+```shell
+cl --version
+```
+
+Si te aparece información sobre la versión y no un error de "comando no reconocido", ¡ya estás listo para probar los ejemplos en C vistos en clase!
+
+---
+
 ## Software de Control de Versiones 
 
 El **Software de Control de Versiones** (**VCS**, *Version Control System*) es una herramienta esencial en el desarrollo de software. Su misión es rastrear y gestionar cambios en el código fuente a lo largo del tiempo, tomando "fotos instantáneas" (snapshots) de los archivos. Permite a múltiples desarrolladores colaborar simultáneamente, revertir errores, gestionar distintas ramas de desarrollo y mantener un historial seguro del proyecto. A un único programador, le permite  experimentar sin miedo, ya que siempre podrá volver a una versión anterior funcional. Sin un VCS tendríamos archivos como ``ejercicio_final.py``, ``ejercicio_final_v2.py``o incluso ``ejercicio_final_este_es_el_bueno.py``. Mientras que con un VCS tendremos todo en un solo archivo y una línea de tiempo invisible, en la que se puede ver quién hizo qué, cuándo lo hizo y revertir cambios específicos sin perder el resto del trabajo.
