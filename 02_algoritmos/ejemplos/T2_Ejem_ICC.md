@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -71,10 +72,10 @@ Los datos `cantidad_en_dolares`, `cantidad_en_euros` y `cantidad_por_comision` s
 El algoritmo en pseudocódigo será:
 
 ```text
-Algoritmo CalculoCambioMoneda
-Entrada: conv_moneda_dolares, conv_euros_dolares  (número real); cantidad_moneda_extranj, porc_ganancia_banco (número entero)
-Intermedias: cantidad_en_dolares, cantidad_en_euros, cantidad_por_comision (número real)
-Salida: cantidad_cambio_entrega (número real)
+ALGORITMO calculo_cambio_moneda
+  Entrada: conv_moneda_dolares, conv_euros_dolares  (número real); cantidad_moneda_extranj, porc_ganancia_banco (número entero)
+  Intermedias: cantidad_en_dolares, cantidad_en_euros, cantidad_por_comision (número real)
+  Salida: cantidad_cambio_entrega (número real)
 INICIO
      [Entrada de Datos]
   1: ESCRIBIR "Introduce el valor de conversión de la moneda extranjera a cambiar:"
@@ -135,7 +136,7 @@ La implementación será:
 
 <details>
   <summary><h4>⍰ ¿Crees que realmente es la implementación que corresponde al algoritmo realizado? </h4></summary>
-  <p>No, fíjate que en esta implementación se asume un valor de pi de 3.141592653589793, mientras que en el algoritmo diseñado se deja al usuario que introduzca este valor, aproximándolo como él estime.</p>
+  <p>No, fíjate que en esta implementación se asume un valor de pi de 3.141592653589793, mientras que en el algoritmo diseñado se deja al usuario que introduzca este valor, aproximándolo como él estime. Además, se implementa la fórmula directamente elevando el radio al cuadrado (como se hace en el lenguaje Python). Tampoco se ofrece la misma salida que se estableció en el algoritmo.</p>
 </details>
 
 ---

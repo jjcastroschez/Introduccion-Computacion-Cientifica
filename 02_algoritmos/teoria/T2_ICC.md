@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -131,10 +132,10 @@ El pseudocódigo busca un equilibrio: estructura parecida a un programa, pero **
 
 ### 📌 Plantilla recomendada
 ```text
-Algoritmo NOMBRE_ALGORITMO
-Entrada: ...
-Intermedias: ...
-Salida: ...
+ALGORITMO nombre_algoritmo
+  Entrada: ...
+  Intermedias: ...
+  Salida: ...
 INICIO
      [Comentario sobre el paso 1]
   1: ...
@@ -151,10 +152,10 @@ Ahora veamos dos ejemplos simples, aumentaremos la complejidad conforme avancemo
 
 ### 🧮 Ejemplo: área de un círculo
 ```text
-Algoritmo CalculoAreaCirculo
-Entrada: radio (número real), pi (número real)
-Intermedias: -
-Salida: area (número real)
+ALGORITMO calculo_area_circulo
+  Entrada: radio (número real), pi (número real)
+  Intermedias: -
+  Salida: area (número real)
 INICIO
   1: ESCRIBIR "Introduce el valor del radio del círculo:"
   2: LEER(radio)
@@ -167,10 +168,10 @@ FIN
 ```
 ### 🧮 Ejemplo: media aritmética de dos números
 ```text
-Algoritmo CalculoMediaDosNumeros
-Entrada: a (número real), b (número real)
-Intermedias: suma (número real)
-Salida: media (número real)
+ALGORITMO calculo_media_dos_numeros
+  Entrada: a (número real), b (número real)
+  Intermedias: suma (número real)
+  Salida: media (número real)
 INICIO
   1: ESCRIBIR "Introduce el primer número:"
   2: LEER(a)
@@ -190,28 +191,26 @@ FIN
 
 ## 📊 Sección 7: Diagramas de flujo
 
-Los **diagramas de flujo** representan un algoritmo gráficamente mediante **símbolos** estándar y flechas de flujo.
-
-Son populares para:
+Los **diagramas de flujo** representan un algoritmo gráficamente mediante **símbolos** estándar y flechas de flujo. Son populares para:
 - representar algoritmos,
 - documentar procesos,
 - visualizar decisiones y ramificaciones,
 - mejorar sistemas (procesos administrativos, industriales, etc.).
 
 ### 🔷 Símbolos habituales
-- **Terminal**: inicio/fin.
-- **Entrada/Salida**: leer o mostrar información.
-- **Proceso**: operación/cálculo/asignación.
-- **Decisión**: bifurcación (sí/no).
-- **Conectores**: unión dentro/fuera de página.
-- **Operación manual**: intervención humana.
+- **Terminal**: inicio/fin (óvalo). 
+- **Entrada/Salida**: leer o mostrar información (paralelogramo).
+- **Proceso**: operación/cálculo/asignación (rectángulo).
+- **Decisión**: bifurcación (sí/no) (rombo/diamante).
+- **Conectores**: unión dentro/fuera de página (círculo (Conector de la misma página) o pentágono/"Casita" hacia abajo (Conector de página diferente)).
+- **Operación manual**: intervención humana (trapecio).
 - **Flechas**: dirección del flujo.
 
 ### ✅ Restricciones recomendadas (para diagramas claros)
 - Un solo **inicio** y un solo **fin**.
 - Construcción **top-down** (arriba→abajo) y **left-to-right** (izquierda→derecha).
 - Usar líneas rectas.
-- A cada símbolo le llega solo una línea de flujo (salvo excepciones bien justificadas).
+- A cada símbolo le llega solo una línea de flujo (se usan los conectores para lograrlo).
 - Notación **independiente** del lenguaje final.
 
 Veamos dos ejemplos simples de diagramas de flujo, que corresponden a los algoritmos vistos anteriormente:
@@ -248,15 +247,15 @@ En próximos temas se aumentará la complejidad de los diagramas, para represent
 Los algoritmos, como casi todo, también pueden ser clasificados. Su clasificación se hace en función de varios aspectos. A continuación, se muestran algunas posibles clasificaciones en función de diversos aspectos, por ejemplo:
 
 * **Según su naturaleza** (sistema de instrucciones): *cualitativos*, son instrucciones narrativas o descriptivas para guiar un proceso (p.e. una receta para preparar un plato) o *cuantitativos*, se emplean cálculos matemáticos u operaciones de comparación numérica para obtener un resultado (p.e. el cálculo del área del círculo).
-* **Según su función**: *de búsqueda*, buscan un elemento concreto en una colección de ellos (p.e. secuenciales o binaria); *de ordenamiento*, ordenan una colección de elementos (p.e. de burbuja--bubble Sort; o por seleccion--selection sort; o rápido--quicksort; o por mezcla--merge sort); *de clasificación*, clasifican una serie de elementos en clases (p.e. árboles de decisión, K-vecinos más cercanos, Naive Bayes, Redes Neuronales, Random Forest, Gradient Boosting); 
+* **Según su función**: *de búsqueda*, buscan un elemento concreto en una colección de ellos (p.e. secuenciales o binaria); *de ordenamiento*, ordenan una colección de elementos (p.e. de burbuja——bubble Sort; o por seleccion——selection sort; o rápido——quicksort; o por mezcla——merge sort); *de clasificación*, clasifican una serie de elementos en clases (p.e. árboles de decisión, K-vecinos más cercanos, Naive Bayes, Redes Neuronales, Random Forest, Gradient Boosting); 
 *de aprendizaje*, infieren conocimiento a partir de datos particulares, se clasifican a su vez en supervisado, no supervisado, profundo y por refuerzo; *de encaminamiento*...
-* **Según su estrategia de resolución**: *fuerza bruta*--brute force, se prueban todas las soluciones hasta encontrar la correcta (p.e. búsqueda secuencial o  ordenación por selección); *divide y vencerás*--divide and conquer, se divide el problema principal en subproblemas más pequeños que son resueltos de manera individual, para luego combinar las soluciones y obtener de este modo la solución al problema de partida (p.e. Quicksort, mergesort o la búsqueda binaria); *voraces*--greedy, dividen la solución en pasos, tomando en cada paso la mejor decisión local, con la esperanza de obtener la mejor solución global (p.e. Dijkstra o Kruskal), *programación dinámica*--dynamic programming, similar al "divide y vencerás", pero en el que hay solapamiento de los problemas, se requiere emplear soluciones a subproblemas para solucionar otros subproblemas (p.e. cálculo de la serie de Fibonacci); *vuelta atrás*--backtracking, es una mejora de "la fuerza bruta" se construyen soluciones parciales que se descartan si se comprueba que no conducen a una solución final válida (p.e. solución de sudokus o la salida de un laberinto); *aleatorizados*, incluyen el azar como parte de su lógica para tomar decisiones durante la ejecución (p.e. Quicksort aleatorizado).
+* **Según su estrategia de resolución**: *fuerza bruta*——brute force, se prueban todas las soluciones hasta encontrar la correcta (p.e. búsqueda secuencial o  ordenación por selección); *divide y vencerás*——divide and conquer, se divide el problema principal en subproblemas más pequeños que son resueltos de manera individual, para luego combinar las soluciones y obtener de este modo la solución al problema de partida (p.e. Quicksort, mergesort o la búsqueda binaria); *voraces*——greedy, dividen la solución en pasos, tomando en cada paso la mejor decisión local, con la esperanza de obtener la mejor solución global (p.e. Dijkstra o Kruskal), *programación dinámica*——dynamic programming, similar al "divide y vencerás", pero en el que hay solapamiento de los problemas, se requiere emplear soluciones a subproblemas para solucionar otros subproblemas (p.e. cálculo de la serie de Fibonacci); *vuelta atrás*——backtracking, es una mejora de "la fuerza bruta" se construyen soluciones parciales que se descartan si se comprueba que no conducen a una solución final válida (p.e. solución de sudokus o la salida de un laberinto); *aleatorizados*, incluyen el azar como parte de su lógica para tomar decisiones durante la ejecución (p.e. Quicksort aleatorizado).
 
-* **Según la certeza del resultado**: *deterministicos*, ante los mismos datos de  entrada se ejecuta la misma secuencia de instrucciones y se produce produce la misma salida (p.e. multiplicación de matrices); *probabilísticos*, se introduce el azar, en cada ejecución el resultado puede ser distinto aún partiendo de los mismos datos de entrada (p.e. simulaciones de Montecarlo); *heurísticos*, no buscan la mejor solución o la solución perfecta, sino una solución "suficientemente buena" con recursos razonables (p.e. generación de una ruta en Google Maps).  
+* **Según la certeza del resultado**: *determinísticos*, ante los mismos datos de  entrada se ejecuta la misma secuencia de instrucciones y se produce produce la misma salida (p.e. multiplicación de matrices); *probabilísticos*, se introduce el azar, en cada ejecución el resultado puede ser distinto aún partiendo de los mismos datos de entrada (p.e. simulaciones de Montecarlo); *heurísticos*, no buscan la mejor solución o la solución perfecta, sino una solución "suficientemente buena" con recursos razonables (p.e. generación de una ruta en Google Maps).  
 
 ---
 
-## 🧭 Sección 9: Recordatorio importante: del problema al programa
+## 🧭 Sección 9: Del problema al programa
 
 El fujo de trabajo habitual será:
 

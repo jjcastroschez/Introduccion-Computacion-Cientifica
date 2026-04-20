@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -22,7 +23,7 @@ Un buen programador no se define por lo rápido que teclea, sino por su capacida
 
 ## 📖 Contenido del Tema
 
-### 🧩 ¿Qué es un algoritmo?
+### ⁇ ¿Qué es un algoritmo?
 Un **algoritmo** es una secuencia **clara y ordenada** de pasos o instrucciones para resolver un problema o realizar una tarea específica.
 
 Verás que un algoritmo:
@@ -31,11 +32,11 @@ Verás que un algoritmo:
 - y produce *al menos una salida* (que puede o no ser un dato).
 
 ### ✅ Propiedades de un buen algoritmo
-Trabajaremos las propiedades que hacen que un algoritmo sea “bueno” (precisión, ausencia de ambigüedad, finitud, etc.) y aprenderás a detectar errores típicos: pasos vagos, condiciones incompletas o procesos que podrían no terminar.
+Trabajaremos las propiedades que hacen que un algoritmo sea "bueno" (precisión, ausencia de ambigüedad, finitud, etc.) y aprenderás a detectar errores típicos: pasos vagos, condiciones incompletas o procesos que podrían no terminar.
 
 ### 🧾 Cómo representar un algoritmo
 Un algoritmo se puede expresar de muchas formas. En este tema aprenderás dos representaciones fundamentales:
-- **Pseudocódigo**: una forma estructurada y “cercana al código”, pero independiente del lenguaje.
+- **Pseudocódigo**: una forma estructurada y "cercana al código", pero independiente del lenguaje.
 - **Diagramas de flujo**: representación gráfica mediante símbolos estándar.
 
 Además, relacionaremos estas representaciones con una idea clave: según el **teorema de la programación estructurada**, cualquier programa puede construirse combinando tres estructuras de control: **secuencia, selección e iteración**.

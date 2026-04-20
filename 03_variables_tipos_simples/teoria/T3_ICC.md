@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -20,7 +21,7 @@ En este tema daremos el salto de la lógica pura del algoritmo a la gestión rea
 
 ## 🏗️ Sección 1: El Dato: Hardware vs. Software
 
-Como ya sabes, un programa no es más que un proceso que toma **datos de entrada** los procesa y genera una **salidas**.
+Como ya sabes, un programa no es más que un proceso que toma **datos de entrada** los procesa y genera una **salida**.
 
 Para que un programa procese una información, esta debe residir en la memoria. Sin embargo, la forma en que el ordenador "ve" el dato es distinta a la nuestra.
 
@@ -33,15 +34,15 @@ Para la máquina, todo son **ceros y unos (bits)**.
 ### 💻 Perspectiva del Software
 Desde el lenguaje de programación, un tipo de dato se define por:
 1.  **Dominio**. El conjunto de valores posibles (ej. todos los números enteros).
-2.  **Conjunto de operaciones**. Qué acciones son válidas sobre esos valores (ej. no puedes "restar" letras, pero sí números).
+2.  **Conjunto de operaciones**. Las acciones válidas que se pueden realizar sobre o con esos valores (ej. no puedes "restar" letras, pero sí números).
 
 ---
 
 ## 🧩 Sección 2: Tipos de Datos Simples (Básicos o Primitivos)
 
-Los lenguajes suelen ofrecer cuatro categorías fundamentales:
+Los lenguajes de programación suelen ofrecer cuatro tipos fundamentales:
 
-1.  **Caracteres (`char`)**: Símbolos individuales (letras, dígitos, signos). Se basan en codificaciones como ASCII o Unicode. No existe este tipo de dato en Python. 
+1.  **Caracteres (`char`)**: Símbolos individuales (letras, dígitos, signos). Se basan en codificaciones como ASCII o Unicode. No existen en todos los lenguajes (p.e. este tipo de dato en Python no existe).  
 2.  **Enteros (`int`)**: Números sin decimales. En Python tienen precisión arbitraria (crecen según se necesite), mientras que en C tienen un límite fijo (habitualmente 32 o 64 bits).
 3.  **Reales o Punto Flotante (`float`/`double`)**: Números con decimales. 
 4.  **Booleanos o Lógicos (`bool`)**: Solo dos valores: `True` (Verdadero) o `False` (Falso).
@@ -61,6 +62,11 @@ Cada tipo de dato lleva asociado un conjunto de **operadores** específicos que 
 
 > [!WARNING]
 > Intentar usar un operador en un tipo de dato que no lo admite (por ejemplo, intentar dividir dos caracteres) provocará un error de tipo (*TypeError*), ya que la operación no está definida en ese dominio.
+
+> [!TIP]
+> **Sobre la precisión:** En computación científica, nunca compares dos números `float` usando `==`. Debido a la representación en binario, `0.1 + 0.2` no es exactamente `0.3`. Usa una pequeña tolerancia o funciones como `math.isclose()`. Ya lo veremos.
+
+--- 
 
 ### 📊 Tabla de Operadores por Tipo de Dato
 
@@ -157,12 +163,18 @@ Transformemos un algoritmo simple de suma de dos números:
 
 **Pseudocódigo:**
 ```text
-1: Escribir ("Dame el primer operando: ")
-2: Leer (operando_1)
-3: Escribir ("Dame el segundo operando: ")
-4: Leer (operando_2)
-5: resultado_suma ← operando_1 + operando_2
-6: Escribir ("Suma: ", resultado_suma)
+ALGORITMO suma_dos_numeros
+    Entrada: operando_1, operando_2 (enteros)
+    Intermedias: -
+    Salida: resultado_suma (entero)
+INICIO
+    1: ESCRIBIR ("Dame el primer operando: ")
+    2: LEER (operando_1)
+    3: ESCRIBIR ("Dame el segundo operando: ")
+    4: LEER (operando_2)
+    5: resultado_suma ← operando_1 + operando_2
+    6: ESCRIBIR ("Suma: ", resultado_suma)
+FIN
 ```
 **Implementación usando Python:**
 ```python
