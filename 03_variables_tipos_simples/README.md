@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -38,7 +39,7 @@ Trabajamos desde la base: bits, bytes, enteros, reales, booleanos y cadenas.
 Dominarás los operadores disponibles en Python y C:
 - aritméticos: `+`, `-`, `*`, `/`, `//`, `%`, `**`
 - booleanos: `and`, `or`, `not`
-- relacionales: `==`, `!=`, `<`, `>=`…
+- relacionales: `==`, `!=`, `<`, `<=`, `>`, `>=`
 
 Además, aprenderás a evaluar correctamente expresiones con **reglas de precedencia** y paréntesis.
 
@@ -46,7 +47,7 @@ Además, aprenderás a evaluar correctamente expresiones con **reglas de precede
 
 Responderemos a preguntas clave:
 - ¿Qué es una variable?
-- ¿Qué significa “tipado dinámico” en Python y “tipado estático” en C?
+- ¿Qué significa que Python es de “tipado dinámico” o C de “tipado estático”?
 - ¿Cómo se nombran correctamente los identificadores?
 
 También veremos estilos de nombrado (snake_case, camelCase), errores comunes y buenas prácticas.
@@ -57,7 +58,7 @@ Aprenderás a usar:
 - `int()`, `float()`, `str()` en Python  
 - conversiones explícitas en C  
 
-Analizaremos cuándo un casting es seguro y cuándo puede producir pérdida de información.
+Analizaremos cuándo un casting (conversión de tipo) es seguro y cuándo puede producir pérdida de información.
 
 ### ⌨️ Entrada / salida de datos
 
@@ -75,7 +76,7 @@ Al finalizar este tema serás capaz de:
 
 ### 1. Fundamentos (el “qué” y el “por qué”)
 - **Entender** cómo se representa la información en un ordenador.
-- **Reconocer** los tipos primitivos en Python y C.
+- **Reconocer** los tipos primitivos en lenguajes como Python y C.
 - **Distinguir** entre tipado estático y dinámico.
 
 ### 2. Representación (el “cómo se expresa”)

@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -33,7 +34,7 @@ La computación científica surge de la convergencia de tres áreas del conocimi
 
 ## 📍 Objetivo 
 
-Desde el área de conocimiento de las **Ciencias de la Computación**, esta asignatura aporta los conocimientos básicos necesarios para resolver problemas mediante computadores. Se centra en el desarrollo de programas bajo el **paradigma de la programación imperativa** —uno de los enfoques más arraigados y fundamentales— aunque también se explorarán brevemente los paradigmas de la programación funcional y la orientada a objetos.
+Desde el área de conocimiento de las **Ciencias de la Computación**, esta asignatura aporta los conocimientos básicos necesarios para resolver problemas mediante computadores. Se centra en el desarrollo de programas bajo el **paradigma de la programación imperativa** —uno de los enfoques más arraigados y fundamentales— aunque también se explorarán los paradigmas de la programación funcional y la orientada a objetos.
 
 El curso cubre los fundamentos de la programación y de los lenguajes de programación, así como técnicas de elaboración de algoritmos, que pueden ser de utilidad en el futuro profesional del graduado o graduada en Matemáticas. Estos conocimientos permitirán abordar con éxito las prácticas del resto de las asignaturas del plan de estudios del título.
 
@@ -59,7 +60,7 @@ Este espacio contiene, organizado en **9 carpetas** temáticas, parte del materi
 - 🌅 **/imagenes**. Figuras y recursos visuales empleados en el resto de los documentos.
 
 > \[!NOTE]
-> La estructura de carpetas se mantiene igual en todos los temas para facilitar la navegación, aunque puede haber temas en los que algunas subcarpetas puede aparecer vacías, esto es debido a que el contenido no es aplicable a esa unidad en concreto. 
+> La estructura de carpetas se mantiene igual en todos los temas para facilitar la navegación, aunque puede haber temas en los que algunas subcarpetas pueden aparecer vacías, esto es debido a que el contenido no es aplicable a esa unidad en concreto. 
 
 > \[!WARNING]
 > Este material complementa, no sustituye, al que se usa en las clases presenciales.
@@ -91,6 +92,8 @@ Para otras consultas, puedes contactar conmigo directamente en clase o de cualqu
 
 ## 🧭 Menú de Navegación en el Curso
 
+🛫 ¡Despegamos! 
+
 | Tema   | Enlace                                                                        | 
 |:------:|:------------------------------------------------------------------------------|
 | 1      | [Introducción](./01_introduccion/README.md)                                   | 
@@ -103,4 +106,3 @@ Para otras consultas, puedes contactar conmigo directamente en clase o de cualqu
 | 8      | [Programación Orientada a Objetos](./08_poo/README.md)                        |
 | 9      | [Paquetes de Interés (matemáticos)](./09_paquetes_matematicos/README.md)      |
 
-🛫 ¡Despegamos! 

@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -66,24 +67,23 @@ A continuación tienes un **algoritmo cualitativo** (en lenguaje natural).
 
 ### 📝 Ejercicio: "¿Cumple este algoritmo cuantitativo las características de un algoritmo?"
 
-A continuación tienes un **algoritmo cuantitativo simple**, únicamente con **instrucciones secuenciales**:
+A continuación tienes un 📐 *algoritmo para el Cálculo de área del cuadrado*, se trata de un  **algoritmo cuantitativo simple**, con únicamente con **instrucciones secuenciales**:
 
-📐 *Algoritmo Propuesto: Cálculo de área del cuadrado*
 ```text
-Entrada: lado (número real)  
-Intermedias: —  
-Salida: area (número real)
+ALGORITMO calculo_area_cuadrado
+  Entrada: lado (número real)  
+  Intermedias: —  
+  Salida: area (número real)
 
 INICIO
-1. ESCRIBIR "Introduce la longitud del lado:"  
-2. LEER(lado)  
-3. area ← lado * lado  
-4. ESCRIBIR "El área es:", area  
+  1. ESCRIBIR "Introduce la longitud del lado:"  
+  2. LEER(lado)  
+  3. area ← lado * lado  
+  4. ESCRIBIR "El área es:", area  
 FIN
 ```
----
 
-### ✔️ Tareas
+#### ✔️ Tareas
 
 1. Evalúa si cumple TODAS las características de un algoritmo vistas en clase.  
 2. Justifica cada respuesta (una frase por característica es suficiente).  
@@ -144,7 +144,7 @@ Un profesor quiere automatizar un pequeño proceso:  *al recibir las tres califi
 
 1. Escribe un **algoritmo cualitativo** (en lenguaje natural).  
 2. Transfórmalo en **pseudocódigo** siguiendo el formato visto en teoría.  
-   Consulta 📘 *Sección 6: Pseudocódigo* en la [teoría](../teoria/T2_ICC.md).  
+   Consulta 📘 *Sección 6: Pseudocódigo* en la [Teoría](../teoria/T2_ICC.md).  
 3. Representa el mismo algoritmo mediante un **diagrama de flujo** usando los símbolos estándar (terminal, entrada/salida, proceso…).  
    Consulta 📘 *Sección 7: Diagramas de flujo*.
 
@@ -155,7 +155,7 @@ Puedes hacerlo a mano o usando herramientas como:
 - Lucidchart  
 - Canva  
 - PlantUML  
-*(ver opciones en [Recursos del Tema 2](../recursos/T2_RE_ICC.md))*.
+(ver opciones en [Recursos](../recursos/T2_RE_ICC.md)).
 
 > [!NOTE]
 > Observa cómo la solución se vuelve más precisa y formal conforme avanzamos desde lenguaje natural → pseudocódigo → diagrama de flujo.
@@ -172,20 +172,22 @@ Puedes hacerlo a mano o usando herramientas como:
   </pre>
   <p>Vamos a detallar mejor el algoritmo, empleando para ello pseudocódigo:</p>
   <pre>
-   Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real)  
-   Intermedias: calif1, calif2, calif3 (número real)  
-   Salida: notaPruebasProgreso (número real)
+  ALGORITMO calculo_nota_pruebas
 
-   INICIO
-     1. ESCRIBIR "Dame la calificación de la primera prueba:"   
-     2. LEER(califPrimeraPrueba)
-     3. ESCRIBIR "Dame la calificación de la segunda prueba:"   
-     4. LEER(califSegundaPrueba)
-     5. ESCRIBIR "Dame la calificación de la tercera prueba:"   
-     6. LEER(califTerceraPrueba)    
-     7. calif1 ← califPrimeraPrueba x 0.10
-     8. calif2 ← califSegundqPrueba x 0.15
-     9. calif1 ← califTerceraPrueba x 0.10 
+    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real)  
+    Intermedias: calif1, calif2, calif3 (número real)  
+    Salida: notaPruebasProgreso (número real)
+
+  INICIO
+    1. ESCRIBIR "Dame la calificación de la primera prueba:"   
+    2. LEER(califPrimeraPrueba)
+    3. ESCRIBIR "Dame la calificación de la segunda prueba:"   
+    4. LEER(califSegundaPrueba)
+    5. ESCRIBIR "Dame la calificación de la tercera prueba:"   
+    6. LEER(califTerceraPrueba)    
+    7. calif1 ← califPrimeraPrueba x 0.10
+    8. calif2 ← califSegundaPrueba x 0.15
+    9. calif3 ← califTerceraPrueba x 0.10 
     11. notaPruebasProgreso ← calif1 + calif2 + calif3   
     10. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso 
    FIN
@@ -219,17 +221,18 @@ Diseña un algoritmo que:
   <p>Mi propuesta para este caso, y debe varia poco de la tuya, es la siguiente.</p>
   <p>Empiezo con la especificación del algoritmo en pseudocódigo:</p>
   <pre>
-   Entrada: gradosCelsius (número real)  
-   Intermedias: -  
-   Salida: gradosFahrenheit (número real)
+  ALGORITMO conversion_celsius_fahrenheit
+    Entrada: gradosCelsius (número real)  
+    Intermedias: -  
+    Salida: gradosFahrenheit (número real)
 
-   INICIO
-     1. ESCRIBIR "Dame la temperatura en Grados Celsius:"   
-     2. LEER(gradosCelsius)
-       [Aplicamos la fórmula de conversión]
-     3. gradosFahrenheit ← (gradosCelsius × 9/5) + 32   
-     4. ESCRIBIR "La calificación obtenida es: ", gradosFahrenheit 
-   FIN
+  INICIO
+    1. ESCRIBIR "Dame la temperatura en Grados Celsius:"   
+    2. LEER(gradosCelsius)
+          [Aplicamos la fórmula de conversión]
+    3. gradosFahrenheit ← (gradosCelsius × 9/5) + 32   
+    4. ESCRIBIR "La temperatura en Grados Fahrenheit es: ", gradosFahrenheit 
+  FIN
   </pre>
   <p>El diagrama de flujo del algoritmo, realizado con draw.io, es el siguiente:</p>
   <figure>

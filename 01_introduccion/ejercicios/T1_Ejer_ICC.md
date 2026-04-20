@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -15,7 +16,7 @@
 
 # 🖥️ Ejercicios Autocomprobación - Tema 1: Introducción a la Computación Científica 📝
 
-¡Es hora de practicar lo aprendido! De esta forma acabarás de aprender y adquirir los conocimientos y habilidades de este tema. Te animo a que realices los siguientes ejercicios para acabar de asimilar los contenidos del tema.
+¡Es hora de practicar lo aprendido! De esta forma acabarás de aprender y adquirir los conocimientos y habilidades de este tema. Asi que te animo a que realices los siguientes ejercicios para acabar de asimilar los contenidos del tema.
 
 ---
 
@@ -100,7 +101,7 @@ Ejecuta el siguiente programa escrito en el lenguaje de programación C, y respo
 </details>
 
 <details>
-  <summary><h4>Ejéculato... ¿Qué ha ocurrido?¿se genera código máquina?</h4></summary>
+  <summary><h4>Ejecútalo... ¿Qué ha ocurrido?¿se genera código máquina?</h4></summary>
   <p>Al usar un compilador online no hay, no puede haber, generación de código máquina. La herramienta que has usado, lee tu programa y simula el trabajo del compilador, analizando y ejecutando las instrucciones, pero no hay generación.</p>
 </details>
   

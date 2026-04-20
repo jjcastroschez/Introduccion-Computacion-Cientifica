@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -38,7 +39,7 @@ que podría corresponderse con:
 
 * Cargar un dato desde la dirección de memoria 366
 * Sumar dos números almacenados en los registros 1 y 2.
-* Salar a la instrucción 13 si el resultado de la operación anterior es cero.  
+* Saltar a la instrucción 13 si el resultado de la operación anterior es cero.  
 
 Puesto que para un ser humano es difícil e ineficiente comunicarse así, se comienzan a inventar notaciones simbólicas para facilitar la lectura, escritura y edición de programas. Es lo que se denomina el **lenguaje ensamblador** que hace corresponder a cada código máquina que ejecutan los procesadores un mnemónico, también se simbolizan los registros, posiciones de memoria y otras características. Las instrucciones anteriores ahora podrían escribirse como:
 
@@ -88,7 +89,7 @@ Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacida
 
 El lenguaje ensamblador emplea una traducción *isomorfa* (un mapeo de uno a uno) y hay mucha dependencia con el computador y su arquitectura, por lo que sigue siendo complicado la tarea de programación. Para simplificar esa dependencia con la máquina aparecen los **lenguajes de programación de alto nivel**, que se separan de la máquina para acercarse al humano, empleando una terminología más cercana a él.
 
-Un **lenguaje de programación de alto nivel** es un **conjunto de símbolos, palabras y reglas para convinarlos**, que nos permiten **especificar instrucciones precisas al computador en un formato cercano al lenguaje humano**.
+Un **lenguaje de programación de alto nivel** es un **conjunto de símbolos, palabras y reglas para combinarlos**, que nos permiten **especificar instrucciones precisas al computador en un formato cercano al lenguaje humano**.
 
 ### 🗣️ Los Tres Pilares de un Lenguaje
 Al igual que los lenguajes empleados por los humanos (lenguajes naturales), los lenguajes de programación (lenguajes formales) se definen mediante tres pilares:
@@ -125,7 +126,7 @@ Podemos clasificar los lenguajes de programación según distintos criterios, ca
 
 * **Propósito**: *De propósito general* (sirven para resolver casi cualquier tipo de problema, como Python o C) o *De propósito específico* (sirven para resolver un tipo de problema, como SQL para bases de datos o MATLAB para cálculo numérico).
 
-Incluso se pueden establecer clasificaciones en base a características del lenguaje, como por ejemplo su **sistema de tipado** (i.e. *estático*, *dinámico*, *fuerte*, *débil*), pero de esto hablaremos más adelante...
+Incluso se pueden establecer clasificaciones en base a características del lenguaje, como por ejemplo su **sistema de tipado** (i.e. *estático*, *dinámico*, *fuerte*, *débil*), pero de esto hablaremos más adelante... [Tipos de Datos Simples y Variables](../../03_variables_tipos_simples/teoria/03_variables_tipos_simples/teoria/T3_ICC.md). 
 
 ---
 
@@ -206,7 +207,7 @@ class HelloWorld {
 ```
 Hay una web muy interesante, [The Hello World Collection](https://helloworldcollection.de/), creada en 1994, en la que puedes acceder a la mayor colección de programas "¡Hola, mundo!" escritos en una gran cantidad de lenguajes de programación. Su consulta puede ser interesante para ver la diferencia entre los distintos lenguajes de programación. 
 
-Otra web muy interesante para ver las diferencias entre los distintos lenguajes, y las capacidades de los programadores, es [99 Bottles of Beer](https://99-bottles-of-beer.spielmannspiel.com). Este sitio web contiene una colección de la canción "99 Botellas de Cerveza" programada en diferentes lenguajes de programación.
+Otra web muy interesante para ver las diferencias entre los distintos lenguajes, y las capacidades de los programadores, es [99 Bottles of Beer](https://99-bottles-of-beer.spielmannspiel.com). Este sitio web contiene una colección de la canción ["99 Botellas de Cerveza"](https://www.youtube.com/watch?v=FITjBet3dio) programada en diferentes lenguajes de programación.
 
 En la carpeta de [ejemplos](../ejemplos/) tienes otros programas desarrollados con la misma finalidad, esto es: mostrar la diferencia entre los distintos lenguajes y paradigmas. 
 

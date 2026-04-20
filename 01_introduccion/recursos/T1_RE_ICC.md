@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -48,6 +49,7 @@ Durante tu trabajo práctico en la asignatura, utilizarás en la terminal los si
 > Para acceder a las ayudas sobre los comandos UNIX (macOS) puedes usar desde la línea de comandos el comando `man` seguido del nombre del comando sobre el que deseas obtener información. Por ejemplo, la ejecución del comando `man cp` te mostrará una página de ayuda sobre el comando `cp`.  
 
 ### 📂 Chuleta de Navegación: Comando `cd` (Change Directory)
+El trabajo con directorios (referenciándolos o accediendo a ellos) y el cambio entre ellos, será una tarea habitual, es por esto por lo que es interesante que te familiarices con la navegación empleando el comando `cd`:
 
 | Acción | Unix (Linux / macOS) | Windows (PowerShell / CMD) | Concepto |
 | :--- | :--- | :--- | :--- |
@@ -62,10 +64,8 @@ Durante tu trabajo práctico en la asignatura, utilizarás en la terminal los si
 | **Directorio actual** | `.` | `.` | Representa el lugar donde estás ahora mismo. |
 | **Directorio superior** | `..`| `..` | Representa una carpeta superior. |
 
----
-
-### 💡 Tips de Productividad
-1. **Autocompletado:** Escribe las primeras letras y pulsa `Tabulador` ↹. La terminal escribirá el resto por ti.
+### 💡 Tips de Productividad para trabajar con la línea de comandos
+1. **Autocompletado:** Escribe las primeras letras y pulsa `Tabulador` ↹. La terminal escribirá el  resto por ti.
 2. **Rutas Absolutas vs Relativas:**
    - **Absoluta:** Empieza desde la raíz (`/` o `C:\`). Ej: `cd /home/usuario/descargas` (Unix) o `cd documentos\proyectos` (Windows).
    - **Relativa:** Empieza desde donde estás. Ej: `cd descargas`.
@@ -86,7 +86,7 @@ Existen muchos compiladores e intérpretes en línea, es decir no requieren de i
 
 ---
 
-## Python
+## 🐍 Python
 
 En este curso se empleará el lenguaje Python para la enseñanza y aprendizaje de los fundamentos de los lenguajes de programación, bajo el paradigma imperativo, pero prestando también atención a los paradigmas orientado a objetos y funcional. Al adquirir fundamentos generales de programación se espera que estés preparado para, en un futuro, profundizar en características avanzadas de Python, así como aprender más fácilmente otros lenguajes de programación que pudieras necesitar en tu desempeño profesional. 
 
@@ -105,11 +105,11 @@ Una vez descargado el archivo, ejecútalo… es el instalador. Cuando te de opci
 
 ---
 
-## Otros lenguajes, otros procesadores
+## 🔠 Otros lenguajes, otros procesadores
 
-A lo largo del curso, en clase, también haremos referencias a otros lenguajes de programación. Para practicar con ellos podrás hacer uso de algún compilador/intérprete disponible online (ver sección [Compiladores e Intérpretes Online](#-compiladores-e-intérpretes-online)) o instalar en tu máquina un compilador o intérprete del lenguaje que vayas a usar. 
+A lo largo del curso, en clase, también haremos referencia a otros lenguajes de programación. Para practicar con ellos podrás hacer uso de algún compilador/intérprete disponible online (ver sección [Compiladores e Intérpretes Online](#-compiladores-e-intérpretes-online)) o instalar en tu máquina un compilador o intérprete del lenguaje que vayas a usar. 
 
-Puesto que en el curso vamos a usar un lenguaje interpretado, te recomiendo que te instales en tu ordenador también un lenguaje compilado, por ejemplo C.
+Puesto que en el curso vamos a usar un lenguaje interpretado, i.e. Python, te recomiendo que te instales en tu ordenador también un lenguaje compilado, por ejemplo C, para hacer prácticas con él. 
 
 Puesto que Windows no trae un compilador de C de fábrica (macOS sí lo trae, es `gcc`), hay que instalarlo. Instalar un compilador de C en Windows es un proceso sencillo. Vamos a instalar una versión ligera del compilador de C, que funcione desde la terminal (como `gcc`) y que luego más adelante se pueda integrar con Visual Studio Code. 
 
@@ -119,9 +119,9 @@ La forma más fácil de instalar un compilador de C en Windows hoy en día es a 
 2. Abre la terminal de MSYS2 (UCRT64) y escribe el siguiente comando para instalar el compilador:
 `pacman -S mingw-w64-ucrt-x86_64-gcc`
 3. Configura las variables de entorno:
-  * Busca en Windows "Editar las variables de entorno del sistema".
-  * En "Variables del sistema", busca la que dice **Path**, selecciónala y pulsa "Editar".
-  * Añade la ruta de la carpeta bin donde se instaló (si no la cambias, normalmente es `C:\msys64\ucrt64\bin`).
+   * Busca en Windows "Editar las variables de entorno del sistema".
+   * En "Variables del sistema", busca la que dice **Path**, selecciónala y pulsa "Editar".
+   * Añade la ruta de la carpeta bin donde se instaló (si no la cambias, normalmente es `C:\msys64\ucrt64\bin`).
 
 ### ¿Cómo saber si lo has instalado bien?
 
@@ -141,13 +141,13 @@ Si te aparece información sobre la versión y no un error de "comando no recono
 
 ---
 
-## Software de Control de Versiones 
+## 🛂 Software de Control de Versiones 
 
 El **Software de Control de Versiones** (**VCS**, *Version Control System*) es una herramienta esencial en el desarrollo de software. Su misión es rastrear y gestionar cambios en el código fuente a lo largo del tiempo, tomando "fotos instantáneas" (snapshots) de los archivos. Permite a múltiples desarrolladores colaborar simultáneamente, revertir errores, gestionar distintas ramas de desarrollo y mantener un historial seguro del proyecto. A un único programador, le permite  experimentar sin miedo, ya que siempre podrá volver a una versión anterior funcional. Sin un VCS tendríamos archivos como ``ejercicio_final.py``, ``ejercicio_final_v2.py``o incluso ``ejercicio_final_este_es_el_bueno.py``. Mientras que con un VCS tendremos todo en un solo archivo y una línea de tiempo invisible, en la que se puede ver quién hizo qué, cuándo lo hizo y revertir cambios específicos sin perder el resto del trabajo.
 
 [Git](https://git-scm.com) es un **Sistema de Control de Versiones Distribuido** (**DVCS**, *Distributed Version Control System*), en el que cada usuario que trabaje en el proyecto tiene una copia completa del historial en su propia máquina. Como alternativa, existen **Sistemas de control de Versiones Centralizados** (**CVCS**, *Centralized Version Control System*), donde el historial está en una única máquina (un servidor central).    
 
-Conceptos clave que escucharás siempre cuando trabajas con VCS:
+Conceptos clave que escucharás siempre cuando trabajas con DVCS:
 
 1. **Repositorio (Repo)**: La carpeta de tu proyecto que Git está vigilando.
 2. **Commit**: Una "foto" de tus archivos en un momento dado. Es el punto de guardado.
@@ -178,7 +178,7 @@ git config --global user.name "Tu Nombre"
 git config --global user.email "tu@email.com"
 ```
 
-### 🛠️ Chuleta de Git: Comandos Esenciales para el Día a Día
+### 📋 Chuleta de Git: Comandos Esenciales para el Día a Día
 
 | Acción | Comando | Concepto / Uso |
 | :--- | :--- | :--- | 
@@ -208,8 +208,6 @@ o
 
 Si alguien ha creado una nueva rama en el repositorio remoto, para traerla a tu local y trabajar con ella debes hacer primero un ``git fetch``y luego cambiar a la rama nueva para trabajar sobre ella ``git switch <nombre-de-la-rama>``.
 En resumen, ``git pull`` es para actualizar tu trabajo actual, mientras que ``git fetch`` es para ver todo lo que hay en el servidor. 
-
-https://www.freecodecamp.org/espanol/news/10-comandos-de-git-que-todo-desarrollador-deberia-saber/
 
 ### 🚀 Ecosistema de Colaboración: GitHub
 Para llevar tus proyectos al siguiente nivel y colaborar con otros, necesitas: una plataforma de alojamiento, donde "colgar" el código para que sea accesible por todos (tu ordenador no lo es); y, si no eres un usuario avanzado, una herramienta con interfaz gráfica para gestionar Git.
@@ -245,7 +243,7 @@ Para que comprendas cómo se trabaja profesionalmente, imagina que este es el "p
     * Modificas tus archivos en el editor.
     * **`git add`**: Preparas los archivos modificados (los metes en la "maleta").
     * **`git commit -m "..."`**: Creas el punto de guardado oficial con un mensaje descriptivo.
-4. **Publicar (`git push`)**: Subes tu rama a **GitHub** para que el historial esté seguro en la nube y otros puedan verla.
+4. **Publicar (`git push`)**: Subes tu rama a **GitHub** para que el historial esté seguro en la nube y otros puedan verla. Recuerda que si es la **primera vez** que haces `push` después de crear la rama debes usar el comando ``git push -u origin <nombre-de-tu-rama>``.
 5. **Integrar (Pull Request)**: En la web de GitHub, solicitas permiso para unir (merge) tu rama al tronco principal (`main`).
 
 ### 🎨 Diagrama Simplificado del Flujo "Día a Día"
@@ -334,11 +332,28 @@ Comenzaremos usando el **[IDLE](https://docs.python.org/es/3/library/idle.html)*
 * **[Thonny](https://thonny.org/)**: El IDE estándar para aprender Python. Incluye un depurador visual que te permite ver, paso a paso, cómo cambian las variables mientras se ejecuta tu programa.
 
 #### 🔵 Nivel Recomendado / Profesional
-* **[VS Code (Visual Studio Code)](https://code.visualstudio.com)**: Es el editor más popular en la industria actual. No es un IDE "puro" de serie, pero mediante **extensiones** se convierte en la herramienta más potente para Python. Como **ventaja** destacar que se integra perfectamente con Git y GitHub, permitiéndote hacer `commit` y `push` sin salir del programa.
+* **[VS Code (Visual Studio Code)](https://code.visualstudio.com)**: Es el editor más popular en la industria actual. No es un IDE "puro" de serie para Python, pero mediante **extensiones** se convierte en la herramienta más potente para este lenguaje. Como **ventaja** destacar que se integra perfectamente con Git y GitHub, permitiéndote hacer `commit` y `push` sin salir del programa.
+
+Otros IDEs multilenguaje son: 
+
+* [Eclipse](https://www.eclipse.org) muy usado en el mundo del software libre.
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/es/) diferente a VS Code, este es un IDE "pesado" diseñado para soluciones de nivel empresarial, especialmente en entornos Windows.
+* [IntelliJ IDEA (y la suite de JetBrains)](https://www.jetbrains.com/es-es/) solución muy potente. 
+* [Apache NetBeans](https://netbeans.apache.org/) un clásico para lenguajes como Java y C pero poco apropiado para Python. 
+
+
 
 #### ‼️ Otros Lenguajes
 
-Para otros lenguajes de programación existen otros IDEs. Por ejemplo, si vas a usar C o C++ en este curso para hacer pruebas, deberías tener también instalado en tu computador un compilador de C/C++ y un IDE. Existen muchos en el mercado, incluso puedes usar alguno multilenguaje, un ejemplo de IDE para C/C++ es [CLion](https://www.jetbrains.com/clion/). 
+Para otros lenguajes de programación existen otros IDEs. Por ejemplo, si vas a usar C o C++ en este curso para hacer pruebas, deberías tener también instalado en tu computador un compilador de C/C++ y un IDE. Existen muchos en el mercado, incluso puedes usar alguno multilenguaje (p.e. VSC), un ejemplo de IDE para C/C++ es [CLion](https://www.jetbrains.com/clion/) o [Dev-C++ (Embarcadero Edition)](https://www.dev-cpp.com). 
+
+#### Tendencias actuales
+
+La tendencia actual es usar una nueva generación de herramientas de programación impulsadas por Inteligencia Artificial y con un rendimiento extremo. ¡Ojo! No son para ti actualmente, estás aprendiendo...
+
+* [Antigravity](https://antigravity.google), lanzado por Google, es una propuesta muy ambiciosa que busca cambiar la forma en que se programa.
+* [Zed](https://zed.dev), una herramienta minimalista pero extremadamente eficiente.
+* [Cursor](https://cursor.com/), con la familiaridad de Visual Studio Code saca provecho a la IA.
 
 ### 💡 ¿Por qué usar un IDE en lugar de un editor de texto simple?
 
@@ -346,7 +361,7 @@ Como ya se ha comentado un IDE facilita la tarea de programar, ya que tiene:
 
 1.  **Resaltado de sintaxis.** Colorea el código para que identifiques visualmente funciones, variables y errores.
 2.  **Autocompletado.** Te sugiere comandos mientras escribes, ahorrando tiempo y evitando erratas.
-3.  **Terminal integrada.** Te permite ejecutar tu código de Python y usar comandos de Git en la misma ventana.
+3.  **Terminal integrada.** Te permite ejecutar tu código y usar comandos de Git en la misma ventana.
 4.  **Depuración (Debugging).** Te proporciona multiples ayudas para examinar el funcionamiento del programa con el propósito de detectar y corregir/solucionar fallos.
 
 ### 🐍 Comprobación de Python en el IDE
@@ -364,6 +379,10 @@ python --version
 ### Python
 
 * [Python](https://python.org)
+
+### Plataforma de distribución de software y desarrollo para Windows
+
+* [MSYS2](https://www.msys2.org/)
 
 ### Control de Versiones
 

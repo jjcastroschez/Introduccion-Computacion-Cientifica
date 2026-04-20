@@ -1,3 +1,4 @@
+
 <div align="center">
   <h1> Introducción a la Computación Científica (ICC)</h1>
 
@@ -44,6 +45,7 @@ Para el pseudocódigo no existen un conjunto de reglas léxicas ni sintácticas 
 1. Indica claramente variables de **entrada / intermedias / salida** (siempre que el problema lo permita).
 2. **Mantén el pseudocódigo sintácticamdente independiente del lenguaje** (no uses `print()`, `input()`, o incluso '`{`/`}`, etc.), a menos que sea una convención acordada por el equipo de trabajo. 
 3. **Evita ambigüedades**, si faltan cosas o casos, el algoritmo no está completo.
+4. **Uniformidad**, mantén la consistencia terminológica, una vez elegido un término, no debe cambiarse por un sinónimo para evitar confusiones.
 
 > [!NOTE]
 > Todas estas "reglas" del pseudocódigo son más pautas de legibilidad que normas obligatorias.
