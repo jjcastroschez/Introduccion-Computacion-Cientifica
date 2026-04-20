@@ -53,7 +53,7 @@ La serie: El "primer término" a es el pago inicial, y la "razón" r es el facto
 
 Aplicación: Saber cuánto vale hoy un fondo de pensiones o un préstamo.
 
-👉 Aquí tienes la solución explicada en un Notebook de Jupyter 😜. 
+👉 Aquí tienes la solución explicada en un Notebook de Jupyter 😜 [finanzas.ipynb](./finanzas.ipynb). 
 
 ---
 
@@ -61,8 +61,8 @@ Aplicación: Saber cuánto vale hoy un fondo de pensiones o un préstamo.
 
 | Orden  | Material                                   | Tiempo       | 
 |:------:|:-------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T2_ICC.md)              |      6       |
-| 2      | [Recursos](../recursos/T2_RE_ICC.md)       |      5       |
+| 1      | [Teoría](../teoria/T3_ICC.md)              |      6       |
+| 2      | [Recursos](../recursos/T3_RE_ICC.md)       |      5       |
 | 3      | **Ejemplos**                               |      -       |
-| 4      | [Ejercicios](../ejercicios/T2_Ejer_ICC.md) |      -       |
+| 4      | [Ejercicios](../ejercicios/T3_Ejer_ICC.md) |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       |

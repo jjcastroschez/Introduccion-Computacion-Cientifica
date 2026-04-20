@@ -192,8 +192,8 @@ flowchart TD
 
 | Orden  | Material                                   | Tiempo       | 
 |:------:|:-------------------------------------------|:------------:|
-| 1      | [Teoría](../teoria/T2_ICC.md)              |      6       |
-| 2      | [Recursos](../recursos/T2_RE_ICC.md)       |      5       |
-| 3      | [Ejemplos](../ejemplos/T2_Ejem_ICC.md)     |      -       |
+| 1      | [Teoría](../teoria/T3_ICC.md)              |      6       |
+| 2      | [Recursos](../recursos/T3_RE_ICC.md)       |      5       |
+| 3      | [Ejemplos](../ejemplos/T3_Ejem_ICC.md)     |      -       |
 | 4      | **Ejercicios**                             |      -       |
 |        | [Menu del Tema actual](../README.md)       |      -       |
