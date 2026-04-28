@@ -74,7 +74,7 @@ Imagina que tenemos un archivo llamado `Ejemplo_Tipos_T3.ipynb`. Su contenido en
 En este notebook vamos a probar cómo Python gestiona los tipos de datos de forma dinámica.
 ```
 
-#### Celda 2 (Código Python)
+#### Celda 2 (Código Python)
 ```python
 # Definimos una variable con un número entero
 numero_alumnos = 25
