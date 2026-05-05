@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="858"
+   viewBox="0 0 858 880"
+   role="img"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="flujo_busqueda_break.svg"
+   height="880"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.3370746"
+     inkscape:cx="410.97182"
+     inkscape:cy="562.04791"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg15" />
+  <title
+     id="title1">Flujograma: Búsqueda en lista con break</title>
+  <desc
+     id="desc1">Diagrama de flujo de un bucle for que busca un nombre en una lista y termina con break en cuanto lo encuentra.</desc>
+  <defs
+     id="defs1">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrow-5"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-8" />
+    </marker>
+  </defs>
+  <rect
+     x="330"
+     y="20"
+     width="140"
+     height="40"
+     rx="20"
+     fill="#f1efe8"
+     stroke="#5f5e5a"
+     stroke-width="0.5"
+     id="rect1" />
+  <text
+     x="400"
+     y="40"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#444441"
+     id="text1">Inicio</text>
+  <line
+     x1="400"
+     y1="60"
+     x2="400"
+     y2="86"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line1" />
+  <polygon
+     points="260,90 520,90 500,134 240,134 "
+     fill="#e1f5ee"
+     stroke="#0f6e56"
+     stroke-width="0.5"
+     id="polygon1"
+     transform="translate(20)" />
+  <text
+     x="400"
+     y="112"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#085041"
+     id="text2">Escribir &quot;¿Nombre a buscar?:&quot;</text>
+  <line
+     x1="400"
+     y1="134"
+     x2="400"
+     y2="160"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line2" />
+  <polygon
+     points="300,164 480,164 460,208 280,208 "
+     fill="#e1f5ee"
+     stroke="#0f6e56"
+     stroke-width="0.5"
+     id="polygon2"
+     transform="translate(20)" />
+  <text
+     x="400"
+     y="186"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#085041"
+     id="text3">Leer (buscado)</text>
+  <line
+     x1="400"
+     y1="208"
+     x2="400"
+     y2="234"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line3" />
+  <rect
+     x="276"
+     y="238"
+     width="240"
+     height="50"
+     fill="#eeeaf5"
+     stroke="#5b3daa"
+     stroke-width="0.5"
+     id="rect3" />
+  <text
+     x="396"
+     y="263"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#3a2b6e"
+     id="text4">encontrado = falso</text>
+  <line
+     x1="400"
+     y1="288"
+     x2="400"
+     y2="314"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line4" />
+  <polygon
+     points="230,388 400,318 570,388 400,458 "
+     fill="#faeeda"
+     stroke="#854f0b"
+     stroke-width="0.581039"
+     id="polygon4"
+     transform="matrix(0.79132954,0,0,0.9357764,83.094234,54.154068)" />
+  <text
+     x="400"
+     y="402"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#633806"
+     id="text5">¿Quedan</text>
+  <text
+     x="400"
+     y="420"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#633806"
+     id="text6">nombres en lista?</text>
+  <text
+     x="560.39484"
+     y="400.43704"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text7">SI</text>
+  <path
+     d="m 534.34892,417.35593 h 119.4197 v 52.42717"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path7" />
+  <text
+     x="378.69754"
+     y="513.89929"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text8">NO</text>
+  <line
+     x1="400"
+     y1="482.68076"
+     x2="400"
+     y2="773.33594"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line8" />
+  <rect
+     x="540"
+     y="470"
+     width="230"
+     height="50"
+     fill="#eeeaf5"
+     stroke="#5b3daa"
+     stroke-width="0.5"
+     id="rect8" />
+  <text
+     x="655"
+     y="495"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#3a2b6e"
+     id="text9">tomar siguiente nombre</text>
+  <line
+     x1="655"
+     y1="520"
+     x2="655"
+     y2="540"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line9" />
+  <polygon
+     points="655,664 540,604 655,544 770,604 "
+     fill="#faeeda"
+     stroke="#854f0b"
+     stroke-width="0.5"
+     id="polygon9" />
+  <text
+     x="655"
+     y="595"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#633806"
+     id="text10">¿es el</text>
+  <text
+     x="655"
+     y="613"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#633806"
+     id="text11">buscado?</text>
+  <text
+     x="810.61438"
+     y="590.51257"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text12">NO</text>
+  <path
+     d="m 770.05525,604.06282 h 63.35962 V 321.06233 l -424.83035,-0.72149"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path12"
+     sodipodi:nodetypes="cccc" />
+  <text
+     x="671.11749"
+     y="675.38666"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text13">SI</text>
+  <rect
+     x="510"
+     y="690"
+     width="290"
+     height="50"
+     fill="#fbe7e7"
+     stroke="#a02525"
+     stroke-width="0.5"
+     id="rect13" />
+  <text
+     x="655"
+     y="715"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#7e1818"
+     id="text14">encontrado = verdadero (BREAK)</text>
+  <path
+     d="m 655,664 v 26"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path14" />
+  <path
+     d="m 655,740 v 40 H 406"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path15" />
+  <circle
+     cx="400"
+     cy="780"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     id="circle15" />
+  <line
+     x1="400"
+     y1="786"
+     x2="400"
+     y2="808"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line15" />
+  <rect
+     x="330"
+     y="810"
+     width="140"
+     height="40"
+     rx="20"
+     fill="#f1efe8"
+     stroke="#5f5e5a"
+     stroke-width="0.5"
+     id="rect15" />
+  <text
+     x="400"
+     y="830"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#444441"
+     id="text15">Fin</text>
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Flujograma: Búsqueda en lista con break</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <circle
+     cx="400.06323"
+     cy="320.92731"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     id="circle15-1" />
+  <line
+     x1="399.27499"
+     y1="326.74789"
+     x2="399.27499"
+     y2="352.01892"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow-5)"
+     id="line4-9"
+     style="marker-end:url(#arrow-5)" />
+</svg>

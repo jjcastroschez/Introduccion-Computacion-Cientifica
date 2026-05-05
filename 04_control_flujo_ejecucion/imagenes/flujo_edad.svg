@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="908"
+   viewBox="0 0 908 1010"
+   role="img"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="flujo_edad.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   height="1010"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.1649759"
+     inkscape:cx="445.50278"
+     inkscape:cy="681.98836"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg14" />
+  <title
+     id="title1">Flujograma: Clasificar persona según su edad</title>
+  <desc
+     id="desc1">Diagrama de flujo de un if-elif-else: clasifica la edad introducida en menor de edad, edad de voto o sénior.</desc>
+  <defs
+     id="defs1">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrow-5"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-4" />
+    </marker>
+    <marker
+       id="arrow-7"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-3" />
+    </marker>
+  </defs>
+  <rect
+     x="484"
+     y="20"
+     width="140"
+     height="40"
+     rx="20"
+     fill="#f1efe8"
+     stroke="#5f5e5a"
+     stroke-width="0.5"
+     id="rect1" />
+  <text
+     x="554"
+     y="40"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#444441"
+     id="text1">Inicio</text>
+  <line
+     x1="554"
+     y1="60"
+     x2="554"
+     y2="86"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line1" />
+  <polygon
+     points="240,90 480,90 460,134 220,134 "
+     fill="#e1f5ee"
+     stroke="#0f6e56"
+     stroke-width="0.5"
+     id="polygon1"
+     transform="translate(208)" />
+  <text
+     x="558"
+     y="112"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#085041"
+     id="text2">Escribir &quot;¿Cuál es tu edad?:&quot;</text>
+  <line
+     x1="554"
+     y1="134"
+     x2="554"
+     y2="161.67334"
+     stroke="#555555"
+     stroke-width="1.54752"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line2" />
+  <polygon
+     points="270,164 430,164 410,208 250,208 "
+     fill="#e1f5ee"
+     stroke="#0f6e56"
+     stroke-width="0.5"
+     id="polygon2"
+     transform="matrix(0.98893662,0,0,0.98893662,217.76155,2.0577896)" />
+  <text
+     x="554"
+     y="186"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#085041"
+     id="text3">Leer (edad)</text>
+  <line
+     x1="554"
+     y1="208"
+     x2="554"
+     y2="236.61569"
+     stroke="#555555"
+     stroke-width="1.57366"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line3" />
+  <polygon
+     points="510,308 360,378 210,308 360,238 "
+     fill="#faeeda"
+     stroke="#854f0b"
+     stroke-width="0.5"
+     id="polygon3"
+     transform="translate(194)" />
+  <text
+     x="554"
+     y="308"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#633806"
+     id="text4">edad &lt; 18 ?</text>
+  <text
+     x="364"
+     y="298"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text5">SI</text>
+  <path
+     d="m 405.77313,308.06121 -231.25552,0.86039 v 75.6357 l 0.85838,34.75673"
+     stroke="#555555"
+     stroke-width="2.5006"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path5"
+     sodipodi:nodetypes="cccc"
+     style="stroke-width:1.601;stroke-dasharray:none" />
+  <text
+     x="573.0307"
+     y="432.76672"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text6">NO</text>
+  <line
+     x1="554"
+     y1="378"
+     x2="554"
+     y2="498"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line6" />
+  <polygon
+     points="220,468 0,468 20,424 240,424 "
+     fill="#e1f5ee"
+     stroke="#0f6e56"
+     stroke-width="0.5"
+     id="polygon6"
+     transform="matrix(1.2499035,0,0,1.0011683,18.12357,-0.34377627)" />
+  <text
+     x="170"
+     y="446"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#085041"
+     id="text7">Escribir &quot;Eres menor de edad&quot;</text>
+  <polygon
+     points="510,572 360,642 210,572 360,502 "
+     fill="#faeeda"
+     stroke="#854f0b"
+     stroke-width="0.5"
+     id="polygon7"
+     transform="translate(194)" />
+  <text
+     x="554"
+     y="572"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#633806"
+     id="text8">edad &lt; 65 ?</text>
+  <text
+     x="364"
+     y="562"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text9">SI</text>
+  <path
+     d="M 404.26635,571.987 H 325.93944 V 690.01302"
+     stroke="#555555"
+     stroke-width="1.4844"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path9" />
+  <text
+     x="749"
+     y="562"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12px"
+     font-weight="400"
+     fill="#3d3d3a"
+     id="text10">NO</text>
+  <path
+     d="M 704,572 H 739.07108 784 v 118"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path10"
+     sodipodi:nodetypes="cccc" />
+  <polygon
+     points="0,738 20,694 240,694 220,738 "
+     fill="#e1f5ee"
+     stroke="#0f6e56"
+     stroke-width="0.5"
+     id="polygon10"
+     transform="matrix(1.0892457,0,0,0.99938441,196.02035,0.44076093)" />
+  <text
+     x="330.47842"
+     y="713.10535"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="12.9474px"
+     font-weight="500"
+     fill="#085041"
+     id="text11"
+     transform="scale(0.99595721,1.0040592)"
+     style="stroke-width:0.995957">Escribir &quot;Estás en edad de votar&quot;</text>
+  <polygon
+     points="700,694 680,738 460,738 480,694 "
+     fill="#e1f5ee"
+     stroke="#0f6e56"
+     stroke-width="0.5"
+     id="polygon11"
+     transform="translate(194)" />
+  <text
+     x="774"
+     y="716"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     fill="#085041"
+     id="text12">Escribir &quot;Eres sénior&quot;</text>
+  <path
+     d="M 174.95505,467.55531 V 940.27656 H 321.24198"
+     stroke="#555555"
+     stroke-width="1.17989"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path12" />
+  <path
+     d="M 328.4292,738 V 933.12425"
+     stroke="#555555"
+     stroke-width="1.44801"
+     fill="none"
+     id="path13"
+     sodipodi:nodetypes="cc"
+     style="marker-end:url(#arrow)" />
+  <path
+     d="m 783.43685,738.02707 v 66.29108 135.6559 H 560.00209"
+     stroke="#555555"
+     stroke-width="1.53251"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path14"
+     sodipodi:nodetypes="cccc" />
+  <circle
+     cx="554"
+     cy="940"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     id="circle14" />
+  <line
+     x1="554"
+     y1="946"
+     x2="554"
+     y2="966"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="line14" />
+  <rect
+     x="484"
+     y="966"
+     width="140"
+     height="40"
+     rx="20"
+     fill="#f1efe8"
+     stroke="#5f5e5a"
+     stroke-width="0.5"
+     id="rect14" />
+  <text
+     x="554"
+     y="986"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="'Anthropic Sans', sans-serif"
+     font-size="14px"
+     font-weight="500"
+     fill="#444441"
+     id="text14">Fin</text>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Flujograma: Clasificar persona según su edad</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <circle
+     cx="327.5"
+     cy="939.5"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     id="circle14-6" />
+  <path
+     style="fill:#000000;stroke-width:1.601"
+     d="m 331.33733,937.35845 c 216.31348,0.85838 214.59671,0.85838 214.59671,0.85838"
+     id="path6" />
+  <line
+     x1="334.53058"
+     y1="940.06073"
+     x2="547.57556"
+     y2="940.06073"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow-7)"
+     id="line6-5"
+     style="marker-end:url(#arrow-7)" />
+</svg>

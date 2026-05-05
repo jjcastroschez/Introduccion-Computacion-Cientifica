@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="903"
+   viewBox="0 0 903 1069.267"
+   role="img"
+   version="1.1"
+   id="svg48"
+   sodipodi:docname="match_case_opcion_a.svg"
+   height="1069.267"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview48"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="0.832"
+     inkscape:cx="386.41827"
+     inkscape:cy="19.831731"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg48" />
+  <title
+     id="title1">Match-case representado como cadena de rombos</title>
+  <defs
+     id="defs23">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+    <mask
+       id="imagine-text-gaps-jyfjqr"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="800"
+         height="1000"
+         fill="#ffffff"
+         id="rect1" />
+      <rect
+         x="378.16711"
+         y="29.032608"
+         width="43.66576"
+         height="21.934782"
+         fill="#000000"
+         rx="2"
+         id="rect2" />
+      <rect
+         x="323.759"
+         y="101.03261"
+         width="132.48199"
+         height="21.934782"
+         fill="#000000"
+         rx="2"
+         id="rect3" />
+      <rect
+         x="347.61768"
+         y="199.84782"
+         width="104.7646"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect4" />
+      <rect
+         x="575.8327"
+         y="190.3913"
+         width="18.334579"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect5" />
+      <rect
+         x="306.37872"
+         y="270.3913"
+         width="27.242527"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect6" />
+      <rect
+         x="615.26038"
+         y="305.84781"
+         width="89.479279"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect7" />
+      <rect
+         x="354.14368"
+         y="339.84781"
+         width="91.712631"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect8" />
+      <rect
+         x="342.7179"
+         y="357.84781"
+         width="114.56419"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect9" />
+      <rect
+         x="605.8327"
+         y="338.3913"
+         width="18.334579"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect10" />
+      <rect
+         x="306.37872"
+         y="420.3913"
+         width="27.242527"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect11" />
+      <rect
+         x="588.16711"
+         y="455.84781"
+         width="143.66576"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect12" />
+      <rect
+         x="352.34341"
+         y="489.84781"
+         width="95.313179"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect13" />
+      <rect
+         x="342.1362"
+         y="507.84781"
+         width="115.72758"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect14" />
+      <rect
+         x="605.8327"
+         y="488.3913"
+         width="18.334579"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect15" />
+      <rect
+         x="306.37872"
+         y="570.39136"
+         width="27.242527"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect16" />
+      <rect
+         x="586.8551"
+         y="605.84784"
+         width="146.28973"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect17" />
+      <rect
+         x="347.72809"
+         y="647.84778"
+         width="104.54382"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect18" />
+      <rect
+         x="575.8327"
+         y="638.39136"
+         width="18.334579"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect19" />
+      <rect
+         x="306.37872"
+         y="720.39136"
+         width="27.242527"
+         height="19.217392"
+         fill="#000000"
+         rx="2"
+         id="rect20" />
+      <rect
+         x="581.93835"
+         y="755.84784"
+         width="156.12331"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect21" />
+      <rect
+         x="303.05246"
+         y="769.84784"
+         width="193.89503"
+         height="20.304348"
+         fill="#000000"
+         rx="2"
+         id="rect22" />
+      <rect
+         x="385.76306"
+         y="959.03259"
+         width="28.473845"
+         height="21.934782"
+         fill="#000000"
+         rx="2"
+         id="rect23" />
+    </mask>
+    <marker
+       id="arrow-4"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-3" />
+    </marker>
+    <marker
+       id="arrow-9"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-34" />
+    </marker>
+    <marker
+       id="arrow-4-1"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-3-4" />
+    </marker>
+    <marker
+       id="arrow-9-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-34-0" />
+    </marker>
+    <marker
+       id="arrow-9-2-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-34-0-6" />
+    </marker>
+    <marker
+       id="arrow-4-1-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-3-4-3" />
+    </marker>
+    <marker
+       id="arrow-4-1-2-6"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="#555555"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-3-4-3-7" />
+    </marker>
+  </defs>
+  <rect
+     x="138"
+     y="6"
+     width="140"
+     height="40"
+     rx="20"
+     fill="#F1EFE8"
+     stroke="#5F5E5A"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#f1efe8;stroke:#5f5e5a;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect24" />
+  <text
+     x="208"
+     y="26"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#444441"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#444441;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text24">Inicio</text>
+  <line
+     x1="208"
+     y1="46"
+     x2="208"
+     y2="72"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line24" />
+  <polygon
+     points="530,90 510,134 250,134 270,90 "
+     fill="#E1F5EE"
+     stroke="#0F6E56"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon24"
+     transform="translate(-192,-14)" />
+  <text
+     x="198"
+     y="98"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#085041"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text25">Leer (codigo_http)</text>
+  <line
+     x1="208"
+     y1="120"
+     x2="208"
+     y2="146"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line25" />
+  <polygon
+     points="260,210 400,164 540,210 400,256 "
+     fill="#FAEEDA"
+     stroke="#854F0B"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#faeeda;stroke:#854f0b;stroke-width:0.509923px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon25"
+     transform="matrix(0.96146085,0,0,1,-177.17569,-16)" />
+  <text
+     x="202"
+     y="194"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="13"
+     font-weight="500"
+     fill="#633806"
+     style="color:#000000;font-weight:500;font-size:13px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#633806;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text26">codigo == 200 ?</text>
+  <text
+     x="387"
+     y="184"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text27">SI</text>
+  <path
+     d="m 341.40816,194 h 486.29886 v 80"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="path27" />
+  <text
+     x="182"
+     y="264"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text28">NO</text>
+  <line
+     x1="207.39903"
+     y1="239.99998"
+     x2="207.39903"
+     y2="291.55576"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line28" />
+  <text
+     x="665.99036"
+     y="368.88461"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="13"
+     font-weight="500"
+     fill="#085041"
+     style="color:#000000;font-weight:500;font-size:13px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text29" />
+  <polygon
+     points="220,358 400,308 580,358 400,408 "
+     fill="#FAEEDA"
+     stroke="#854F0B"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#faeeda;stroke:#854f0b;stroke-width:0.574724px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon29"
+     transform="matrix(0.756869,0,0,1,-96.540875,-16)" />
+  <text
+     x="202"
+     y="334"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="13"
+     font-weight="500"
+     fill="#633806"
+     style="color:#000000;font-weight:500;font-size:13px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#633806;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text30">codigo == 301</text>
+  <text
+     x="202"
+     y="352"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="13"
+     font-weight="500"
+     fill="#633806"
+     style="color:#000000;font-weight:500;font-size:13px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#633806;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text31">o codigo == 302 ?</text>
+  <text
+     x="417"
+     y="332"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text32">SI</text>
+  <path
+     d="m 342.70126,342 h 358.90839 v 82"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.50001px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="path32" />
+  <text
+     x="180"
+     y="414"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text33">NO</text>
+  <line
+     x1="206.00002"
+     y1="392.00003"
+     x2="206.00002"
+     y2="440.36911"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line33" />
+  <polygon
+     points="580,508 400,558 220,508 400,458 "
+     fill="#FAEEDA"
+     stroke="#854F0B"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#faeeda;stroke:#854f0b;stroke-width:0.574725px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon34"
+     transform="matrix(0.75686875,0,0,1,-98.944612,-16)" />
+  <text
+     x="202"
+     y="484"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="13"
+     font-weight="500"
+     fill="#633806"
+     style="color:#000000;font-weight:500;font-size:13px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#633806;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text35">codigo == 400</text>
+  <text
+     x="202"
+     y="502"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="13"
+     font-weight="500"
+     fill="#633806"
+     style="color:#000000;font-weight:500;font-size:13px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#633806;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text36">o codigo == 404 ?</text>
+  <text
+     x="417"
+     y="482"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text37">SI</text>
+  <path
+     d="M 341.69417,492 H 589.6669 v 82"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="path37" />
+  <text
+     x="180"
+     y="564"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text38">NO</text>
+  <line
+     x1="204.60095"
+     y1="542"
+     x2="204.60095"
+     y2="591.54968"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line38" />
+  <polygon
+     points="260,658 400,608 540,658 400,708 "
+     fill="#FAEEDA"
+     stroke="#854F0B"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#faeeda;stroke:#854f0b;stroke-width:0.507669px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon39"
+     transform="matrix(0.97001613,0,0,1,-181.79972,-16)" />
+  <text
+     x="202"
+     y="642"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="13"
+     font-weight="500"
+     fill="#633806"
+     style="color:#000000;font-weight:500;font-size:13px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#633806;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text40">codigo == 500 ?</text>
+  <text
+     x="387"
+     y="632"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text41">SI</text>
+  <path
+     d="m 342,641.90656 h 120 v 97.82633"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.50001px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="path41" />
+  <text
+     x="182"
+     y="714"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="12"
+     font-weight="400"
+     fill="#3D3D3A"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text42">NO</text>
+  <line
+     x1="206.60097"
+     y1="692.00006"
+     x2="206.60097"
+     y2="740.36914"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line42" />
+  <path
+     d="m 206.40385,786.00001 v 39.12423"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="path48" />
+  <circle
+     cx="206"
+     cy="994"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle48" />
+  <circle
+     cx="205.84616"
+     cy="833.81732"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#555555;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle48-6" />
+  <path
+     d="m 206.05769,840 v 39.12423"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow-9)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-9)"
+     id="path48-9" />
+  <circle
+     cx="205.5"
+     cy="887.81732"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#555555;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle48-6-8" />
+  <path
+     d="m 206.05769,894 v 39.12423"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow-9-2)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-9-2)"
+     id="path48-9-5" />
+  <path
+     d="m 205.275,948 v 39.12423"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow-9-2-2)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-9-2-2)"
+     id="path48-9-5-6" />
+  <circle
+     cx="205.5"
+     cy="941.81732"
+     r="6"
+     fill="none"
+     stroke="#555555"
+     stroke-width="1"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#555555;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle48-6-8-3" />
+  <line
+     x1="206"
+     y1="1000"
+     x2="206"
+     y2="1022"
+     stroke="#555555"
+     stroke-width="1.5"
+     fill="none"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#555555;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line48" />
+  <rect
+     x="136"
+     y="1024"
+     width="140"
+     height="40"
+     rx="20"
+     fill="#F1EFE8"
+     stroke="#5F5E5A"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#f1efe8;stroke:#5f5e5a;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect48" />
+  <text
+     x="206"
+     y="1044"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#444441"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#444441;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text48">Fin</text>
+  <polygon
+     points="250,134 270,90 530,90 510,134 "
+     fill="#E1F5EE"
+     stroke="#0F6E56"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.708551px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon24-3"
+     transform="matrix(0.49796305,0,0,1,622.98554,187.25)" />
+  <text
+     x="815.38824"
+     y="299.25"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#085041"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text25-7">Escribir &quot;OK&quot;</text>
+  <polygon
+     points="530,90 510,134 250,134 270,90 "
+     fill="#E1F5EE"
+     stroke="#0F6E56"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.625159px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon24-3-7"
+     transform="matrix(0.63967305,0,0,1,451.91535,335.35428)" />
+  <text
+     x="700.18591"
+     y="447.35428"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#085041"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text25-7-1">Escribir &quot;Redirección&quot;</text>
+  <polygon
+     points="250,134 270,90 530,90 510,134 "
+     fill="#E1F5EE"
+     stroke="#0F6E56"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.625159px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon24-3-7-8"
+     transform="matrix(0.63967305,0,0,1,338.39226,485.31258)" />
+  <text
+     x="588.66284"
+     y="597.31256"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#085041"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text25-7-1-5">Escribir &quot;Error cliente&quot;</text>
+  <polygon
+     points="270,90 530,90 510,134 250,134 "
+     fill="#E1F5EE"
+     stroke="#0F6E56"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.57686px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon24-3-7-8-9"
+     transform="matrix(0.75127382,0,0,1,170.91604,651.08181)" />
+  <text
+     x="462.71091"
+     y="763.08179"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#085041"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text25-7-1-5-8">Escribir &quot;Error servidor&quot;</text>
+  <polygon
+     points="250,134 270,90 530,90 510,134 "
+     fill="#E1F5EE"
+     stroke="#0F6E56"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', system-ui, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.535616px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="polygon24-3-7-8-9-6"
+     transform="matrix(0.87143167,0,0,1,-137.2858,651.13458)" />
+  <text
+     x="200.1687"
+     y="763.13452"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-family="Anthropic Sans, sans-serif"
+     font-size="14"
+     font-weight="500"
+     fill="#085041"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text25-7-1-5-8-8">Escribir &quot;Otro código&quot; (case_)</text>
+  <metadata
+     id="metadata48">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Match-case representado como cadena de rombos</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="m 462.1778,784.66107 v 15.60475 31.93303 H 214.58936"
+     stroke="#555555"
+     stroke-width="1.53251"
+     fill="none"
+     marker-end="url(#arrow-4)"
+     id="path14"
+     sodipodi:nodetypes="cccc"
+     style="marker-end:url(#arrow-4)" />
+  <path
+     d="m 589.32205,620.04919 v 87.65528 179.37481 H 213.77896"
+     stroke="#555555"
+     stroke-width="1.53251"
+     fill="none"
+     marker-end="url(#arrow-4-1)"
+     id="path14-6"
+     sodipodi:nodetypes="cccc"
+     style="marker-end:url(#arrow-4-1)" />
+  <path
+     d="M 701.38029,469.42458 V 624.47064 941.75168 H 213.74022"
+     stroke="#555555"
+     stroke-width="1.53251"
+     fill="none"
+     marker-end="url(#arrow-4-1-2)"
+     id="path14-6-2"
+     sodipodi:nodetypes="cccc"
+     style="marker-end:url(#arrow-4-1-2)" />
+  <path
+     d="M 828.27573,319.68292 V 541.14809 994.34696 H 214.15621"
+     stroke="#555555"
+     stroke-width="1.53251"
+     fill="none"
+     marker-end="url(#arrow-4-1-2-6)"
+     id="path14-6-2-3"
+     sodipodi:nodetypes="cccc"
+     style="marker-end:url(#arrow-4-1-2-6)" />
+</svg>
