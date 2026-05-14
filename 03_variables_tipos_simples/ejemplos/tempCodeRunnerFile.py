@@ -1,0 +1,1 @@
+{limite_estacionario:.2f}

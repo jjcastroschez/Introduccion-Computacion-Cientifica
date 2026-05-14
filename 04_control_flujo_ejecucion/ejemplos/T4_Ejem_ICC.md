@@ -19,14 +19,14 @@ En esta carpeta encontrarás **problemas reales** resueltos paso a paso usando l
 > [!NOTE]
 > A diferencia del Tema 3, donde solo podías hacer programas "lineales" (ejecutar instrucciones una tras otra), ahora tus programas serán **dinámicos**: tomarán decisiones, repetirán cálculos cuantas veces haga falta y se recuperarán cuando algo vaya mal. Esta es la materia de la que están hechos los programas reales 💪.
 
-Cada ejemplo se presenta en **tres formatos** complementarios:
+Cada ejemplo se presenta en **tres formatos** complementarios -tal y como se hizo en el **Tema 3**- que son:
 
 1. 📓 Un **Notebook básico** (`.ipynb`) con la solución directa.
 2. 📔 Un **Notebook explicado** (`_icc.ipynb`) con el razonamiento, los matices y los detalles de implementación.
 3. 🐍 Un **script** (`.py`) con la implementación lista para ejecutar desde la terminal.
 
 > [!TIP]
-> Descárgate los archivos, examínalos y ejecútalos. Decide para cada uno cuál es la herramienta que mejor se ajusta a lo que quieres hacer 😜.
+> Descárgate los archivos, examínalos y ejecútalos. Ya conoces las herramientas que tienes que usar para trabajar con cada uno de ellos 😜.
 
 ---
 
