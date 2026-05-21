@@ -106,7 +106,7 @@ Descárgate el [ejem1_tipos_T3.ipynb](/03_variables_tipos_simples/recursos/Ejemp
 
 Existen herramientas que permiten ejecutarlos de manera:
 
-- **Local**: Si tienes instalado **VS Code** (recomendado en el [Tema 1]()), solo tienes que instalar la extensión de Jupyter y abrir un archivo el archivo con extensión `.ipynb`.
+- **Local**: Si tienes instalado **VS Code** (recomendado en el [Tema 1](../../01_introduccion/recursos/T1_RE_ICC.md)), solo tienes que instalar la extensión de Jupyter y abrir un archivo el archivo con extensión `.ipynb`.
 - **Nube**: Existen herramientas para poderlas usar sin necesidad de instalación, por ejemplo puedes usar [Google Colab](https://colab.research.google.com/) para crear y ejecutar Notebooks sin instalar nada en tu ordenador.
 
 Más adelante, en el [Sumario de enlaces interesantes](#sumario-de-enlaces-interesantes), te dejo otras alternativas.

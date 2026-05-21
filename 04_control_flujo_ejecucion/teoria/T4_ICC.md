@@ -309,7 +309,7 @@ A diferencia de C, MatLab o Pascal, **Python no tiene `do-while`**. Esto sorpren
 >         break
 > ```
 >
-> Aunque más adelante veremos que el `while True` no es el patrón más limpio, en este caso concreto está justificado.
+> Aunque más adelante veremos que el `while True` no es el patrón más recomendado desde la perspectica de los principios de la programación estructurada, puede que en algunos casos concretos esté justificado su uso (aunque siempre es evitable).
 
 ---
 

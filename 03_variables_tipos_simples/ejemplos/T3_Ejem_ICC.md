@@ -50,7 +50,7 @@ El **interés** se define como *el precio del dinero*, es decir, lo que cuesta l
 
 #### Empleando Python:
 
-👉 Notebook explicado paso a paso: [interes_simple_exp_py.ipynb](./interes_simple_exp.ipynb).  
+👉 Notebook explicado paso a paso: [interes_simple_exp_py.ipynb](./interes_simple_exp_py.ipynb).  
 👉 Script `.py` listo para ejecutar con una solución general: [interes_simple.py](./interes_simple.py). 
 
 #### Empleando C:
@@ -80,7 +80,7 @@ $$7x+5y=31$$
 
 #### Empleando Python:
 
-👉 Notebook explicado paso a paso: [camiones_exp_py.ipynb](./camiones_exp.ipynb).  
+👉 Notebook explicado paso a paso: [camiones_exp_py.ipynb](./camiones_exp_py.ipynb).  
 👉 Script `.py` listo para ejecutar con una solución general: [camiones.py](./camiones.py).  
 
 > [!WARNING]
@@ -100,7 +100,7 @@ La convergencia de esta serie le dice al médico cuál es el "nivel de estado es
 
 #### Empleando Python:
 
-👉 Notebook explicado paso a paso: [farmacologia_exp_py.ipynb](./farmacologia_exp.ipynb).  
+👉 Notebook explicado paso a paso: [farmacologia_exp_py.ipynb](./farmacologia_exp_py.ipynb).  
 👉 Script `.py` listo para ejecutar con una solución general: [farmacologia.py](./farmacologia.py). 
 
 #### Empleando C:

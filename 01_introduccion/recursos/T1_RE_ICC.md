@@ -111,7 +111,7 @@ A lo largo del curso, en clase, también haremos referencia a otros lenguajes de
 
 Puesto que en el curso vamos a usar un lenguaje interpretado, i.e. Python, te recomiendo que te instales en tu ordenador también un lenguaje compilado, por ejemplo C, para hacer prácticas con él. 
 
-Puesto que Windows no trae un compilador de C de fábrica (macOS sí lo trae, es `gcc`), hay que instalarlo. Instalar un compilador de C en Windows es un proceso sencillo. Vamos a instalar una versión ligera del compilador de C, que funcione desde la terminal (como `gcc`) y que luego más adelante se pueda integrar con Visual Studio Code. 
+Puesto que Windows no trae un compilador de C de fábrica (macOS sí lo trae, es `gcc`), hay que instalarlo. Instalar un compilador de C en Windows es un proceso sencillo. Vamos a instalar una versión ligera del compilador de C, que funcione desde la terminal (como `gcc`) y que luego más adelante se pueda integrar con Visual Studio Code (VSC). 
 
 La forma más fácil de instalar un compilador de C en Windows hoy en día es a través de un gestor como **MSYS2**:
 
