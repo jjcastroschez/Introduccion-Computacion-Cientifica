@@ -1,39 +1,25 @@
 """
-Programa con bugs deliberados para practicar depuración.
+Programa con un bug deliberado para practicar depuración.
 
-Se supone que este script cuenta cuántos números pares hay en una lista.
-Tiene un bug; encuéntralo usando print debugging, pdb o el depurador de
-VS Code.
+Se supone que calcula la suma de los N primeros números pares
+(2 + 4 + 6 + ... + 2N), pero da un resultado incorrecto.
 
 Para depurar con pdb desde la terminal:
     python programa_con_bugs.py
-La línea con `breakpoint()` detendrá la ejecución.
+La línea con breakpoint() detendrá la ejecución.
 
 Tema 4 - Introducción a la Computación Científica (ICC).
 """
 
+n = 5      # esperamos: 2+4+6+8+10 = 30
 
-def contar_pares(numeros):
-    contador = 0
-    for n in numeros:
-        breakpoint()           # ← descomenta esta línea para depurar con pdb
-        if n % 2 == 0:
-            contador = 1       # 🐛 BUG aquí: ¿debería ser 'contador += 1'?
-    return contador
+suma = 0
+i = 0
+while i < n:
+    breakpoint()         # ← inicia el depurador en cada vuelta
+    i = i + 1
+    suma = suma + 2 * i
+    i = i + 1            # 🐛 BUG: incremento de más
 
-
-def main():
-    numeros = [4, 7, 12, 5, 8, 3, 10, 1, 6, 9]
-    pares = contar_pares(numeros)
-
-    esperado = 5
-    print(f"Pares contados: {pares}")
-    print(f"Pares reales:   {esperado}")
-    if pares == esperado:
-        print("✅ Correcto.")
-    else:
-        print(f"❌ Hay un bug. Diferencia: {esperado - pares}")
-
-
-if __name__ == "__main__":
-    main()
+print(f"Suma de los {n} primeros pares: {suma}")
+print("Esperado: 30")

@@ -14,130 +14,170 @@
 
 # 🧐 Ejemplos - Tema 4: Control del Flujo de Ejecución 🔀
 
-En esta carpeta encontrarás **problemas reales** resueltos paso a paso usando los conceptos del Tema 4: condicionales (`if`, `match-case`), bucles (`for`, `while`), bucles anidados, manejo de excepciones (`try-except`) y rupturas del flujo (`break`, `continue`).
+En esta carpeta encontrarás algunos documentos Notebooks de Jupyter y scripts preparados para mostrarte problemas solucionados usando las nuevas construcciones del Tema 4: **condicionales**, **bucles** (`for`, `while`) y **manejo de excepciones** (`try-except`).
 
 > [!NOTE]
-> A diferencia del Tema 3, donde solo podías hacer programas "lineales" (ejecutar instrucciones una tras otra), ahora tus programas serán **dinámicos**: tomarán decisiones, repetirán cálculos cuantas veces haga falta y se recuperarán cuando algo vaya mal. Esta es la materia de la que están hechos los programas reales 💪.
-
-Cada ejemplo se presenta en **tres formatos** complementarios -tal y como se hizo en el **Tema 3**- que son:
-
-1. 📓 Un **Notebook básico** (`.ipynb`) con la solución directa.
-2. 📔 Un **Notebook explicado** (`_icc.ipynb`) con el razonamiento, los matices y los detalles de implementación.
-3. 🐍 Un **script** (`.py`) con la implementación lista para ejecutar desde la terminal.
-
-> [!TIP]
-> Descárgate los archivos, examínalos y ejecútalos. Ya conoces las herramientas que tienes que usar para trabajar con cada uno de ellos 😜.
-
----
+> Aún no se emplean **estructuras de datos compuestas** (`list`, `tuple`, `dict`...) ni se definen **funciones propias**: esos contenidos se ven en los **Temas 5 y 6**. Aquí seguimos trabajando con tipos simples (`int`, `float`, `bool`), pero por primera vez podemos hacer que el programa **tome decisiones** y **repita cálculos** las veces que haga falta 💪.
 
 ## Contenido
 
-| # | Ámbito | Problema | Estructura clave |
-| :-: | :--- | :--- | :--- |
-| 1 | Salud y deporte | Frecuencia cardíaca máxima por zonas de entrenamiento | `if-elif-else` |
-| 2 | Climatología | Detección de olas de calor | `for` con `if` interno |
-| 3 | Métodos numéricos | Cálculo de la raíz cuadrada por el método babilónico | `while` con convergencia |
-| 4 | Software robusto | Validación de entradas con `try-except` | Manejo de excepciones |
-| 5 | Depuración | Cómo encontrar bugs en bucles y condicionales | (transversal) |
+En el [Tema 3](../../03_variables_tipos_simples/ejemplos/T3_Ejem_ICC.md) vimos cómo aplicar fórmulas matemáticas cerradas (series geométricas, rentas perpetuas) a problemas reales de medicina y finanzas. Esas fórmulas son **muy potentes** porque te dan el resultado en una sola línea, pero tienen una limitación: solo sirven cuando el problema encaja exactamente con la fórmula.
 
----
+Ahora, con las construcciones del Tema 4, vas a poder **simular el proceso paso a paso**, lo que te permitirá:
 
-### Ejemplo 1. Salud y deporte: Zonas de entrenamiento por frecuencia cardíaca
+* Tratar **casos que la fórmula cerrada no contempla** (datos irregulares, condiciones de parada arbitrarias…).
+* **Validar la entrada del usuario** para que tus programas no se rompan.
 
-Cuando haces deporte, tu corazón late a distintas velocidades según la intensidad del ejercicio. Los entrenadores y médicos deportivos clasifican las **pulsaciones por minuto (ppm)** en **cinco zonas de entrenamiento**, cada una con efectos fisiológicos distintos: quema de grasa, mejora aeróbica, umbral anaeróbico, etc.
+Y también aprenderás a ver **cómo evoluciona** el sistema, no solo a dónde llega.
 
-**El problema:** Dada la edad del usuario y sus pulsaciones actuales, queremos clasificar el esfuerzo en una de las cinco zonas y darle una recomendación.
+### Ejemplo 1. Acumulación de fármacos — versión iterativa
 
-**La fórmula:** La **Frecuencia Cardíaca Máxima** (FCM) se estima con la fórmula clásica de Tanaka *et al.* (2001):
+¿Te acuerdas del problema de [acumulación de fármacos](../../03_variables_tipos_simples/ejemplos/farmacologia_exp_py.ipynb) que resolviste en el Tema 3?
 
-$$\text{FCM} = 208 - 0.7 \cdot \text{edad}$$
+* Cada día el paciente toma una dosis $a$ de medicamento (por ejemplo, 100mg).
+* Cada día su cuerpo elimina un porcentaje constante (por ejemplo, el 20%).
+* La pregunta: **¿cuánto fármaco acumulará a largo plazo?**
 
-Y a partir de ahí se definen los porcentajes que delimitan cada zona (50–60%, 60–70%, 70–80%, 80–90%, 90–100%).
+En el Tema 3 lo resolviste con la **fórmula cerrada** de la serie geométrica infinita: $$S_\infty = \frac{a}{1 - r}$$ 
 
-**Por qué este ejemplo:** Es perfecto para un `if-elif-else` con varias ramas mutuamente excluyentes. Y como bonus, introduce un caso "fuera de rango" (pulsaciones absurdamente altas o bajas) que conviene tratar con cuidado.
+Esta fórmula te daba el **valor límite**, pero no te decía nada del proceso.
 
-👉 Solución directa en Notebook: [zonas_cardiacas.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/zonas_cardiacas.ipynb).  
-👉 Notebook explicado paso a paso: [zonas_cardiacas_icc.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/zonas_cardiacas_icc.ipynb).  
-👉 Script `.py` listo para ejecutar: [zonas_cardiacas_icc.py](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/zonas_cardiacas_icc.py).
+**Lo que aporta el Tema 4**: ahora podemos **simular día a día** lo que va pasando, ver cómo se acerca al valor límite y, lo más importante, **podemos parar cuando queramos** (por ejemplo, cuando la concentración ya se haya estabilizado por debajo de una tolerancia dada).
 
----
+#### Empleando Python:
 
-### Ejemplo 2. Climatología: Detección de olas de calor
+👉 Notebook explicado paso a paso: [farmacologia_exp_py.ipynb](./farmacologia_exp_py.ipynb).  
+👉 Script `.py` listo para ejecutar con una solución general: [farmacologia.py](./farmacologia.py).
 
-Una **ola de calor** se define oficialmente como un periodo de al menos **3 días consecutivos** en que la temperatura máxima diaria supera el umbral del percentil 95 de la serie histórica (en Castilla-La Mancha, en torno a los 36 ºC en verano).
+#### Empleando C:
 
-**El problema:** Dada una lista con las temperaturas máximas diarias de un mes, contar cuántas olas de calor ha habido y cuántos días en total las componen.
+👉 Notebook explicado paso a paso: [farmacologia_exp_c.ipynb](./farmacologia_exp_c.ipynb). 
+👉 Programa `.c` listo para compilar y ejecutar con una solución general: [farmacologia.c](./farmacologia.c). 
 
-**Por qué este ejemplo:** Combina un bucle `for` recorriendo la lista de temperaturas con un `if` que comprueba el umbral, y requiere mantener un **contador de días consecutivos** y otro de **olas detectadas**. Es un patrón de programación llamado *runs detection* (detección de rachas) que aparece en muchísimos campos: control de calidad, análisis de series temporales, biología, etc.
+> [!TIP]
+> Descarga los archivos, examínalos y ejecútalos. Compara el resultado de la simulación con el de la fórmula del Tema 3. ¿Cuándo coinciden? ¿Cuándo es mejor una u otra? 😜
 
-**Bonus pedagógico:** El ejemplo ilustra perfectamente cómo una decisión dentro de un bucle puede generar lógica compleja a partir de instrucciones muy simples. También muestra la importancia de **inicializar correctamente las variables contadoras** antes del bucle.
+### Ejemplo 2. Finanzas — anualidad finita
 
-👉 Solución directa en Notebook: [olas_calor.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/olas_calor.ipynb).  
-👉 Notebook explicado paso a paso: [olas_calor_icc.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/olas_calor_icc.ipynb).  
-👉 Script `.py` listo para ejecutar: [olas_calor_icc.py](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/olas_calor_icc.py).
+El otro problema del [Tema 3](../../03_variables_tipos_simples/ejemplos/finanzas_exp_py.ipynb) era el de las rentas perpetuas: un banco que te promete pagar 100 € **para siempre**.
 
----
+La fórmula del Tema 3, nos daba el valor presente de esa renta perpetua: $$VP_\infty =\frac{a}{i}$$ 
 
-### Ejemplo 3. Métodos numéricos: Raíz cuadrada por el método babilónico
+Pero la realidad es que **casi nunca** firmamos productos financieros perpetuos. Las hipotecas son a 25 años, las anualidades duran 10 o 20 años, las pensiones son vitalicias…
 
-¿Cómo calcula tu calculadora una raíz cuadrada? No usa una fórmula mágica: aplica un **algoritmo iterativo** que se va aproximando al valor real. El más conocido (e increíblemente eficiente) es el **método babilónico** (también llamado método de Herón), que se usa desde hace más de 2 000 años:
+**Lo que aporta el Tema 4**: con un bucle `for` podemos calcular el valor presente de una anualidad de $n$ años:
 
-$$x_{n+1} = \frac{1}{2}\left(x_n + \frac{a}{x_n}\right)$$
+$$ VP_n = \sum_{t=1}^{n} \frac{a}{(1+i)^t} $$
 
-Cada iteración duplica el número de cifras correctas. En menos de 10 vueltas, tienes la raíz cuadrada con precisión de 15 decimales.
+Y verás algo bonito: cuando $n$ es muy grande, el resultado se acerca al valor de la **renta perpetua** del Tema 3. Recuperamos el caso del tema anterior como **caso límite** del nuevo.
 
-**El problema:** Implementar este método para calcular $\sqrt{a}$ con una **tolerancia** dada (por ejemplo, $10^{-10}$), sin usar la función `math.sqrt()`.
+#### Empleando Python:
 
-**Por qué este ejemplo:** Es el ejemplo *paradigmático* del bucle `while` en computación científica:
+👉 Notebook explicado paso a paso: [finanzas_exp_py.ipynb](./finanzas_exp_py.ipynb).
+👉 Script `.py` listo para ejecutar con una solución general: [finanzas.py](./finanzas.py). 
 
-* No sabes a priori cuántas iteraciones harán falta → necesitas `while`, no `for`.
-* La condición de salida es la **convergencia** ($|x_{n+1} - x_n| < \text{tolerancia}$).
-* Hay que protegerse contra **bucles infinitos** con un límite máximo de iteraciones.
-* Ilustra un patrón fundamental que aparece en cientos de algoritmos científicos: bisección, Newton-Raphson, gradiente descendente...
+#### Empleando C:
 
-👉 Solución directa en Notebook: [raiz_babilonica.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/raiz_babilonica.ipynb).  
-👉 Notebook explicado paso a paso: [raiz_babilonica_icc.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/raiz_babilonica_icc.ipynb).  
-👉 Script `.py` listo para ejecutar: [raiz_babilonica_icc.py](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/raiz_babilonica_icc.py).
+👉 Notebook explicado paso a paso:[finanzas_exp_c.ipynb](./finanzas_exp_c.ipynb).
+👉 Programa `.c` listo para compilar y ejecutar con una solución general: [finanzas.c](./finanzas.c). 
 
----
+### Ejemplo 3. Validación robusta de entrada con `try-except`
 
-### Ejemplo 4. Software robusto: Validación de entradas con `try-except`
+En todos los programas anteriores (los del Tema 3 y los primeros del Tema 4), **asumimos que el usuario teclea bien**. Pero, ¿qué pasa si en el ejemplo de la farmacología teclea `'doscientos'` en lugar de `200`? El programa **se rompe** con un `ValueError`.
 
-Un programa "de juguete" asume que todo va bien: confía en que el usuario teclee lo que se le pide. Un programa **profesional** no asume nada: comprueba, valida y se recupera de los errores.
+Un programa profesional **no confía** en la entrada: la valida y, si no es válida, vuelve a pedirla. Para hacerlo necesitamos combinar:
 
-**El problema:** Crear una pequeña utilidad que pida al usuario un número entero positivo entre 1 y 100, y siga pidiéndolo (mostrando un mensaje de error claro) hasta que la entrada sea correcta.
+* Un bucle `while` que se repite hasta que la entrada sea válida.
+* Un bloque `try-except` que **captura** el error de conversión sin que el programa se caiga.
 
-**Por qué este ejemplo:** Combina **dos estructuras esenciales** de este tema:
+**Lo que aporta el Tema 4**: por primera vez podemos escribir programas que **se recuperan** de los errores en lugar de morir abruptamente. Es una de las marcas de la programación profesional.
 
-* Un bucle `while` que se ejecuta hasta que la entrada es válida.
-* Un bloque `try-except` que captura los distintos tipos de error (`ValueError` cuando se teclea texto en lugar de número, condición lógica para el rango).
+#### Empleando Python:
 
-Aprenderás también a **diferenciar tipos de excepción** (no es lo mismo que el usuario escriba `"hola"` que `"-5"`), y verás un patrón llamado **"validación robusta"** que se utiliza en cualquier programa que reciba datos del usuario.
+👉 Notebook explicado paso a paso: [validacion_entrada_exp_py.ipynb](./validacion_entrada_exp_py.ipynb).
+👉 Script `.py` listo para ejecutar con una solución general: [validacion_entrada.py](./validacion_entrada.py).
 
-👉 Solución directa en Notebook: [validacion_entrada.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/validacion_entrada.ipynb).  
-👉 Notebook explicado paso a paso: [validacion_entrada_icc.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/validacion_entrada_icc.ipynb).  
-👉 Script `.py` listo para ejecutar: [validacion_entrada_icc.py](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/validacion_entrada_icc.py).
+#### Empleando C:
 
----
+👉 Notebook explicado paso a paso: [validacion_entrada_exp_c.ipynb](./validacion_entrada_exp_c.ipynb).
+👉 Programa `.c` listo para compilar y ejecutar con una solución general: [validacion_entrada.c](./validacion_entrada.c). 
 
-### Ejemplo 5. Depuración: Cómo encontrar bugs en bucles y condicionales
+> [!TIP]
+> Una vez entendido este patrón, **vuelve a los ejemplos 1, 2 y 3** y aplícalo: protege todas las llamadas a `int(input(...))` y `float(input(...))` con un bucle de validación. Verás cómo tus programas dejan de romperse cuando alguien teclea algo raro.
 
-Cuando un programa con bucles y condicionales **no funciona como esperabas**, el método "leer el código fijamente con cara de concentración" 😅 rara vez sirve. Lo que necesitas es un **depurador**.
+### Ejemplo 4. Algoritmo de Euclides para el MCD
 
-Este ejemplo no es un problema de cálculo: es un **tutorial práctico** que te enseña tres técnicas para encontrar errores:
+Hasta ahora, todos los algoritmos que has implementado tenían un **número fijo de pasos**: leer datos, hacer un cálculo, mostrar el resultado. Pero hay problemas matemáticos donde el número de pasos **no se conoce de antemano** y depende de los datos de entrada. El ejemplo más clásico es el **algoritmo de Euclides** (siglo III a.C., uno de los algoritmos más antiguos de la historia).
 
-1. **🐛 *Print debugging***: la técnica universal. Insertar `print()` estratégicos para ver qué está pasando. Funciona siempre, no necesita herramientas, pero es lenta y poco escalable.
-2. **🔬 El módulo `pdb`**: el depurador integrado de Python. Te permite **pausar** la ejecución, **inspeccionar** variables y **avanzar paso a paso** sin instalar nada extra.
-3. **💻 El depurador visual de VS Code**: el más cómodo de todos. Marcas un *breakpoint* con un click, pulsas F5 y avanzas con los botones de control.
+* El problema: dados dos enteros positivos $a$ y $b$ (con $a>=b$), calcular su **máximo común divisor** $(mcd)$.
+* El método: usar repetidamente la identidad $mcd(a, b) = mcd(b, a mod b)$ hasta que el segundo argumento valga $0$.
 
-Como ejemplo guía partimos de un **programa con bugs deliberados** (un sumatorio que da resultados raros) y vemos cómo cada técnica nos ayuda a encontrar y corregir el error.
+**Lo que aporta el Tema 4**: el algoritmo no encaja en ninguna fórmula cerrada — necesita **iterar mientras se cumpla una condición**. Ese es exactamente el patrón del bucle `while`, que también vamos a usar para **validar la entrada** del usuario con `try-except`.
+
+#### Empleando Python:
+
+👉 Notebook explicado paso a paso: [euclides_exp_py.ipynb](./euclides_exp_py.ipynb).
+👉 Script `.py` listo para ejecutar con una solución general: [euclides.py](./euclides.py).
+
+#### Empleando C:
+
+👉 Notebook explicado paso a paso:[euclides_exp_c.ipynb](./euclides_exp_c.ipynb).
+👉 Programa `.c` listo para compilar y ejecutar con una solución general: [euclides.c](./euclides.c). 
+
+### Ejemplo 5. Reparto de carga en camiones — versión iterativa
+
+En el Tema 3 resolviste un problema de logística muy interesante: una empresa quiere repartir una **carga de 31 toneladas** en camiones de **7 t** y **5 t** sin desperdiciar espacio. Esto se modeliza como una **ecuación diofántica**:
+
+$$7x + 5y = 31$$
+
+cuya resolución se apoya en la **Identidad de Bézout** y en el cálculo del **inverso modular**. En el Tema 3, el programa hacía las cuentas finales, pero **el gestor tenía que calcular a mano** dos cosas:
+
+* Verificar que mcd($a$, $b$) divide a $r$ (condición de Bézout).
+* Calcular el **inverso modular** de $a$ módulo $b$ y proporcionarlo como entrada extra.
+
+**Lo que aporta el Tema 4**: con un **bucle `while`** podemos implementar el [algoritmo de Euclides](euclides.py) y calcular el mcd automáticamente. Con un **bucle `for`** podemos buscar el inverso modular probando candidatos del $1$ al $b-1$. Y con **condicionales `if`** podemos comprobar que las soluciones sean números **naturales** (porque, recuerda, $-3$ camiones no tiene sentido físico). En definitiva: el ordenador se encarga de todo y el gestor solo introduce los datos del enunciado.
+
+#### Empleando Python:
+
+👉 Notebook explicado paso a paso: [camiones_exp_py.ipynb](./camiones_exp_py.ipynb).
+👉 Script `.py` listo para ejecutar con una solución general: [camiones.py](./camiones.py).
+
+#### Empleando C:
+
+👉 Notebook explicado paso a paso: [camiones_exp_c.ipynb](./camiones_exp_c.ipynb).
+👉 Programa `.c` listo para compilar y ejecutar con una solución general: [camiones.c](./camiones.c). 
+
+
+> [!TIP]
+> Prueba con los mismos casos de la tabla del Tema 3 (7-5-31, 9-7-44, 9-7-41, 13-5-41, 5-3-37, 4-3-37). Verás que **el resultado es idéntico** pero ya no tienes que introducir el inverso modular: lo calcula el programa 🎯. Prueba también algún caso que **falle** (p.ej. 6-4-31, donde mcd(6,4)=2 no divide a 31, o 7-5-3, donde la solución no es natural).
+
+### Ejemplo 6. Cómo depurar un programa con bucles
+
+Cuando un programa con bucles y condicionales **no funciona como esperabas**, el método "leer el código fijamente con cara de concentración" 😅 rara vez sirve. Lo que necesitas es **depurar**: una técnica sistemática para encontrar errores.
+
+Este ejemplo no es un problema matemático: es un **tutorial práctico** que te enseña tres técnicas de depuración:
+
+1. 🐛 **`print()` debugging** — la técnica universal: insertar `print()` para ver qué está pasando.
+2. 🔬 **El módulo `pdb`** — el depurador integrado de Python: te permite **pausar** la ejecución, **inspeccionar** variables y **avanzar paso a paso**.
+3. 💻 **El depurador visual de VS Code** — el más cómodo de todos.
+
+Como ejemplo guía partimos de un programa con un **bug deliberado** (una suma que da un resultado incorrecto) y vemos cómo cada técnica nos ayuda a encontrarlo y corregirlo.
 
 > [!IMPORTANT]
 > Aprender a depurar es **tan importante como aprender a programar**. Un programador profesional dedica más tiempo a depurar que a escribir código nuevo. Cuanto antes te familiarices con el depurador, mejores programas escribirás 🚀.
 
-👉 Notebook tutorial completo: [depuracion_tutorial_icc.ipynb](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/depuracion_tutorial_icc.ipynb).  
-👉 Script con bugs para practicar: [programa_con_bugs.py](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/programa_con_bugs.py).  
-👉 Script ya corregido (no mires hasta haber intentado depurarlo tú 😉): [programa_corregido.py](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejemplos/programa_corregido.py).
+#### Empleando Python:
+
+👉 Notebook explicado paso a paso: [depuracion_tutorial_exp_py.ipynb](./depuracion_tutorial_exp_py.ipynb).
+👉 Script `.py` con el bug para prácticar: [programa_con_bugs.py](./programa_con_bugs.py).
+👉 Script `.py` con el bug corregido (no mires hasta haberlo intentado tú 😉) [programa_corregido.py](./programa_corregido.py). 
+
+#### Empleando C:
+
+👉 Notebook explicado paso a paso: [depuracion_tutorial_exp_py.ipynb](./depuracion_tutorial_exp_c.ipynb).
+👉 Programa `.c` con el bug para prácticar: [programa_con_bugs.py](./programa_con_bugs.c).
+👉 Programa `.c` con el bug corregido (no mires hasta haberlo intentado tú 😉): [programa_corregido.py](./programa_corregido.c). 
+
 
 ---
 

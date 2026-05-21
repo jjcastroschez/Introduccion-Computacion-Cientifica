@@ -14,9 +14,9 @@
 
 # 🔨 Ejercicios Autocomprobación — Tema 4: Control del Flujo de Ejecución 🔀
 
-En esta sección encontrarás ejercicios pensados para que **interiorices las construcciones del Tema 4** (condicionales, bucles, anidamientos, excepciones) aplicándolas a problemas que ya conoces de tus asignaturas de **Cálculo, Álgebra y Análisis Numérico**.
+En esta sección encontrarás ejercicios diseñados para que **interiorices las construcciones del Tema 4** (condicionales, bucles, anidamientos, excepciones) aplicándolas a problemas matemáticos clásicos y a la mejora de algunos de los programas que ya implementaste en el Tema 3.
 
-En el [Tema 3](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/03_variables_tipos_simples/ejercicios/T3_Ejer_ICC.md) implementaste algoritmos lineales —donde las instrucciones se ejecutaban una tras otra, sin condiciones ni repeticiones—. Ahora vas a dar un salto cualitativo: **tus programas tomarán decisiones y repetirán cálculos**, justo como hacen los algoritmos matemáticos clásicos (Euclides, criba de Eratóstenes, Newton-Raphson…).
+En el [Tema 3](../../03_variables_tipos_simples/ejercicios/T3_Ejer_ICC.md) ya implementaste algoritmos **lineales** —donde las instrucciones se ejecutaban una tras otra, sin condiciones ni repeticiones—. Ahora ya has dado un salto cualitativo: tus programas **toman decisiones** y **repiten cálculos** las veces que haga falta, justo como hacen los algoritmos matemáticos clásicos (Euclides, criba de Eratóstenes, métodos iterativos…).
 
 > [!WARNING]
 > 👉 **Recuerda:** antes de programar **hay que pensar**. Para cada ejercicio te recomiendo seguir esta secuencia:
@@ -24,41 +24,46 @@ En el [Tema 3](https://github.com/jjcastroschez/Introduccion-Computacion-Cientif
 > 1. **Comprende el problema** matemáticamente. Asegúrate de entender la fórmula o el procedimiento.
 > 2. **Diseña el algoritmo** en pseudocódigo, decidiendo qué condicionales y bucles necesitas.
 > 3. **Dibuja el diagrama de flujo** (en papel basta).
-> 4. **Implementa** la solución en Python.
+> 4. **Implementa** la solución en Python o el lenguaje que decidas.
 > 5. **Prueba** con varios casos, incluyendo los extremos (entrada cero, negativa, muy grande...).
 
 > [!TIP]
-> Las soluciones están **plegadas** dentro de bloques desplegables. Antes de mirar mi solución, **inténtalo tú**. Si te atascas, mira solo lo necesario para desbloquearte. La programación se aprende programando 💪.
+> Las soluciones están **plegadas** dentro de bloques desplegables. Antes de mirarlas, **inténtalo tú**. Si te atascas, despliega solo lo necesario para desbloquearte. La programación se aprende programando 💪.
+
+> [!NOTE]
+> En este tema todavía **no se utilizan listas, tuplas, diccionarios ni se definen funciones propias** (esos contenidos se ven en los Temas 5 y 6). Todos los ejercicios se resuelven únicamente con **tipos simples** (`int`, `float`, `bool`) y las **construcciones del Tema 4**.
 
 ---
 
 ## 🟢 Bloque 1 — Condicionales (`if`, `if-elif-else`)
 
-### 📝 Ejercicio 1.1: Clasificación de un triángulo
+### 📝 Ejercicio 1: "Clasificando las raíces de una ecuación de segundo grado"
 
-**Enunciado.** Dados tres números reales $a$, $b$, $c$ que representan las longitudes de los lados de un triángulo, escribe un programa que:
+Dados los coeficientes $a$, $b$, $c$ de la ecuación $ax^2 + bx + c = 0$, queremos un programa que clasifique las raíces según el **discriminante** $\Delta = b^2 - 4ac$:
 
-1. Compruebe si **forman un triángulo válido** (recuerda la **desigualdad triangular**: la suma de dos lados cualesquiera ha de ser mayor que el tercero).
-2. Si lo es, lo clasifique como **equilátero** (3 lados iguales), **isósceles** (2 iguales) o **escaleno** (todos distintos).
+* Si $\Delta > 0$ → **dos raíces reales distintas**. Calcular ambas.
+* Si $\Delta = 0$ → **una raíz real doble**. Calcular su valor.
+* Si $\Delta < 0$ → **dos raíces complejas conjugadas**. Mostrar la parte real e imaginaria.
 
 **Pseudocódigo orientativo:**
 
 ```text
-ALGORITMO clasificar_triangulo
+ALGORITMO clasificar_raices_cuadratica
   Entrada: a, b, c (real)
-  Salida: tipo_triangulo (texto)
-
+  Salida: (texto descriptivo de las raíces)
 INICIO
-  1. LEER(a, b, c)
-  2. SI no se cumple la desigualdad triangular ENTONCES
-        ESCRIBIR "No es un triángulo válido"
+  1. ESCRIBIR "Dame los valores a, b, c de la ecuación:" 
+  2. LEER(a, b, c)
+  3. SI a == 0 ENTONCES
+        (tratar como ecuación lineal)
      SINO
-  3.    SI a == b Y b == c ENTONCES
-            ESCRIBIR "Equilátero"
-        SINO SI a == b O b == c O a == c ENTONCES
-            ESCRIBIR "Isósceles"
+  4.    discriminante ← b² - 4·a·c
+        SI discriminante > 0 ENTONCES
+            ESCRIBIR "Dos raíces reales distintas..."
+        SINO SI discriminante == 0 ENTONCES
+            ESCRIBIR "Raíz real doble..."
         SINO
-            ESCRIBIR "Escaleno"
+            ESCRIBIR "Raíces complejas conjugadas..."
         FINSI
      FINSI
 FIN
@@ -66,54 +71,9 @@ FIN
 
 #### ✔️ Tareas
 
-1. Implementa la solución en Python.
-2. Pruébala con: `(3, 3, 3)`, `(3, 4, 5)`, `(5, 5, 8)`, `(1, 2, 5)` (este último **no** es triángulo).
-3. **Bonus matemático**: amplía el programa para que indique también si el triángulo es **rectángulo** (Teorema de Pitágoras: $a^2 + b^2 = c^2$, salvo permutación de los lados). ⚠️ Cuidado con la comparación de `float`: usa una tolerancia.
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-a = float(input("Lado a: "))
-b = float(input("Lado b: "))
-c = float(input("Lado c: "))
-
-# Comprobar desigualdad triangular
-if a + b <= c or a + c <= b or b + c <= a:
-    print("No es un triángulo válido.")
-elif a == b == c:
-    print("Equilátero")
-elif a == b or b == c or a == c:
-    print("Isósceles")
-else:
-    print("Escaleno")
-
-# Bonus: ¿es rectángulo?
-TOL = 1e-9
-lados = sorted([a, b, c])  # los ordenamos para que c sea el mayor
-if abs(lados[0]**2 + lados[1]**2 - lados[2]**2) < TOL:
-    print("Además, es un triángulo rectángulo.")
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/clasificar_triangulo.py)
-
-</details>
-
----
-
-### 📝 Ejercicio 1.2: Clasificación de las raíces de una ecuación de 2.º grado
-
-**Enunciado.** Dados los coeficientes $a$, $b$, $c$ de la ecuación $ax^2 + bx + c = 0$ (con $a \neq 0$), escribe un programa que clasifique sus raíces en función del **discriminante** $\Delta = b^2 - 4ac$:
-
-* Si $\Delta > 0$ → dos **raíces reales distintas** y calcula ambas.
-* Si $\Delta = 0$ → una **raíz real doble** y calcula su valor.
-* Si $\Delta < 0$ → dos **raíces complejas conjugadas** y muestra su parte real e imaginaria.
-
-#### ✔️ Tareas
-
-1. Implementa la solución en Python.
-2. Pruébala con: $x^2 - 5x + 6 = 0$, $x^2 - 4x + 4 = 0$, $x^2 + x + 1 = 0$.
-3. **Bonus**: ¿qué pasa si el usuario introduce $a = 0$? Modifica el programa para tratarlo como **ecuación de primer grado** $bx + c = 0$. Si además $b = 0$, distingue los casos $c = 0$ (infinitas soluciones) y $c \neq 0$ (sin solución).
+1. Implementa la solución en Python (necesitarás `import math` para la raíz cuadrada).
+2. Pruébala con: $x^2 - 5x + 6 = 0$ (raíces $2$ y $3$), $x^2 - 4x + 4 = 0$ (raíz doble $2$), $x^2 + x + 1 = 0$ (complejas).
+3. **Bonus**: ¿qué pasa si el usuario introduce $a = 0$? La ecuación deja de ser de segundo grado: se convierte en una lineal $bx + c = 0$. Trata también este caso (y el caso aún más degenerado en que también $b = 0$).
 
 <details>
 <summary>🫣 Mira cómo quedaría la implementación...</summary>
@@ -126,14 +86,13 @@ b = float(input("Coeficiente b: "))
 c = float(input("Coeficiente c: "))
 
 if a == 0:
-    # Caso degenerado: ecuación lineal
     if b == 0:
         if c == 0:
             print("Infinitas soluciones (0 = 0).")
         else:
             print("Sin solución.")
     else:
-        print(f"Raíz única: x = {-c / b}")
+        print(f"Ecuación lineal. Raíz única: x = {-c / b}")
 else:
     discriminante = b**2 - 4 * a * c
     if discriminante > 0:
@@ -150,65 +109,123 @@ else:
         print(f"Raíces complejas conjugadas: {parte_real} ± {parte_imag}i")
 ```
 
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/raices_cuadratica.py)
+📁 [Solución completa en Python](./raices_cuadratica.py)
 
 </details>
 
 ---
 
-## 🟡 Bloque 2 — Bucle `for`
+### 📝 Ejercicio 2: "Mejorando el cálculo de la nota con clasificación"
 
-### 📝 Ejercicio 2.1: Suma de los $N$ primeros números de Fibonacci
+En el [Tema 3](../../03_variables_tipos_simples/ejercicios/T3_Ejer_ICC.md) ya implementaste un programa que calculaba la nota final del estudiante como media ponderada de tres pruebas. Pero el programa **solo decía el número** — no clasificaba al estudiante. Vamos a corregirlo.
 
-**Enunciado.** La sucesión de **Fibonacci** se define recursivamente como:
+Diseña un programa que:
 
-$$F_0 = 0,\quad F_1 = 1,\quad F_n = F_{n-1} + F_{n-2} \text{ para } n \geq 2$$
+1. Pida las tres calificaciones (cada una sobre 10).
+2. Calcule la **nota final** como $\,0.30 \cdot c_1 + 0.40 \cdot c_2 + 0.30 \cdot c_3$.
+3. Clasifique al estudiante según los **criterios académicos estándar**:
 
-Escribe un programa que, dado un entero $N$, calcule **la suma** de los $N$ primeros términos: $\displaystyle \sum_{n=0}^{N-1} F_n$.
+| Nota | Clasificación |
+| :---: | :--- |
+| $< 5$ | Suspenso |
+| $[5, 7)$ | Aprobado |
+| $[7, 9)$ | Notable |
+| $[9, 9.5)$ | Sobresaliente |
+| $\geq 9.5$ | Matrícula de honor |
 
 #### ✔️ Tareas
 
-1. Implementa la solución en Python usando un bucle `for`.
-2. Comprueba que para $N = 10$ el resultado es **88**.
-3. **Curiosidad matemática**: existe una identidad que afirma $\sum_{n=0}^{N-1} F_n = F_{N+1} - 1$. Modifica el programa para verificarla numéricamente para varios valores de $N$.
+1. Implementa la solución usando `if-elif-else`.
+2. Pruébala con $(5, 8, 9)$ → debe dar Notable (7.40), $(3, 4, 4)$ → Suspenso (3.70), $(10, 10, 10)$ → Matrícula (10.00).
+3. **Reflexión**: ¿qué pasaría si el orden de los `elif` fuera el opuesto (empezando por la matrícula)? ¿Funcionaría igual? Pruébalo y razónalo.
+4. **Sentencia match-case**: ¿puedes emplear esta construcción en este problema? 
 
 <details>
 <summary>🫣 Mira cómo quedaría la implementación...</summary>
 
 ```python
-n = int(input("¿Cuántos términos de Fibonacci sumar?: "))
+calif1 = float(input("Calificación de la primera prueba (sobre 10): "))
+calif2 = float(input("Calificación de la segunda prueba (sobre 10): "))
+calif3 = float(input("Calificación de la tercera prueba (sobre 10): "))
 
-a, b = 0, 1
-suma = 0
-for _ in range(n):
-    suma = suma + a
-    a, b = b, a + b   # asignación múltiple: avanzamos a la siguiente pareja
+nota = calif1 * 0.30 + calif2 * 0.40 + calif3 * 0.30
 
-print(f"La suma de los primeros {n} términos de Fibonacci es: {suma}")
+print(f"Nota obtenida: {nota:.2f}")
 
-# Verificación de la identidad: la suma debe coincidir con F_{N+1} - 1
-print(f"F_{n+1} - 1 = {b - 1}")    # tras el bucle, b = F_{N+1}
+if nota < 5:
+    clasificacion = "Suspenso"
+elif nota < 7:
+    clasificacion = "Aprobado"
+elif nota < 9:
+    clasificacion = "Notable"
+elif nota < 9.5:
+    clasificacion = "Sobresaliente"
+else:
+    clasificacion = "Matrícula de honor"
+
+print(f"Clasificación: {clasificacion}")
 ```
 
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/fibonacci_suma.py)
+📁 [Solución completa en Python](./calculo_nota.py)
+
+Veamos ahora como quedaría con la sentencia `match-case`:
+
+```python
+calif1 = float(input("Calificación de la primera prueba (sobre 10): "))
+calif2 = float(input("Calificación de la segunda prueba (sobre 10): "))
+calif3 = float(input("Calificación de la tercera prueba (sobre 10): "))
+
+nota = calif1 * 0.30 + calif2 * 0.40 + calif3 * 0.30
+
+print(f"Nota obtenida: {nota:.2f}")
+
+match nota:
+    case _ if nota < 5:
+        clasificacion = "Suspenso"
+    case _ if nota < 7:
+        clasificacion = "Aprobado"
+    case _ if nota < 9:
+        clasificacion = "Notable"
+    case _ if nota < 9.5:
+        clasificacion = "Sobresaliente"
+    case _:
+        clasificacion = "Matrícula de honor"
+
+print(f"Clasificación: {clasificacion}")
+```
+
+> [!WARNING]
+> La sentencia `case` no evalúa condiciones booleanas (verdadero/falso) directamente, sino que hace coincidencia de patrones (pattern matching). Es decir, no podemos hacer `case nota < 5`. Con **guardas** (if dentro del case), si podemos hacerlo. 
+> 🤯 **¿Qué está pasando aquí?**
+>    * El guión bajo (case _): En el mundo del pattern matching, el guión bajo es un comodín. Significa "coincide con cualquier cosa que venga de match nota".
+>    * La guarda (if ...): Al añadir el if, le dices a Python: "Vale, coincide con cualquier nota, pero solo si se cumple esta condición extra".
+>    * El case _ final: Es el caso por defecto; si ninguna de las condiciones anteriores se cumple, entrará ahí.
+
+📁 [Solución completa en Python](./calculo_nota_match.py)
 
 </details>
 
+
+
 ---
 
-### 📝 Ejercicio 2.2: Aproximación de $\pi$ con la serie de Leibniz
+## 🟡 Bloque 2 — Bucle `for`
 
-**Enunciado.** La fórmula de Leibniz nos da una serie infinita que converge a $\pi/4$:
+### 📝 Ejercicio 3: "Aproximando $\pi$ por la serie de Leibniz"
 
-$$\frac{\pi}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \cdots = \sum_{n=0}^{\infty} \frac{(-1)^n}{2n+1}$$
+Una de las series infinitas más famosas de la historia de las matemáticas es la **fórmula de Leibniz** (1676):
 
-Escribe un programa que, dado un número $N$ de términos, calcule la aproximación de $\pi$ que se obtiene sumando los $N$ primeros términos de la serie.
+$$\frac{\pi}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \cdots = \sum_{k=0}^{\infty} \frac{(-1)^k}{2k+1}$$
+
+Diseña un programa que, dado un entero $N$, calcule la **aproximación de $\pi$** que se obtiene sumando los $N$ primeros términos de la serie y la compare con el valor real (`math.pi`).
+
+> 💡 **Pista**: el signo $(-1)^k$ va alternando $+1, -1, +1, -1, \ldots$ Puedes calcularlo con `(-1) ** k`, o más eficientemente usando una variable `signo` que multipliques por $-1$ en cada vuelta del bucle.
 
 #### ✔️ Tareas
 
-1. Implementa la solución usando un bucle `for`.
-2. Calcula y muestra el **error absoluto** respecto al valor real de $\pi$ (usa `math.pi`).
-3. ¿Cuántos términos hacen falta para tener un error menor que $10^{-2}$? ¿Y menor que $10^{-4}$? Te darás cuenta de que la serie de Leibniz converge **muy lentamente** — un resultado interesante en Análisis Numérico.
+1. Implementa la solución usando un bucle `for` y una variable acumuladora.
+2. Pruébala con $N = 10, 100, 1000, 10000$. Observa cómo el error decrece, pero **muy lentamente**.
+3. ¿Cuántos términos hacen falta para que el error sea menor que $10^{-2}$? Esta lenta convergencia es un resultado conocido en Análisis Numérico.
 
 <details>
 <summary>🫣 Mira cómo quedaría la implementación...</summary>
@@ -216,13 +233,16 @@ Escribe un programa que, dado un número $N$ de términos, calcule la aproximaci
 ```python
 import math
 
-n = int(input("Número de términos: "))
+n = int(input("Número de términos a sumar: "))
 
-pi_aprox = 0
+suma = 0.0
+signo = 1   # alternará +1, -1, +1, -1...
 for k in range(n):
-    pi_aprox = pi_aprox + ((-1) ** k) / (2 * k + 1)
+    denominador = 2 * k + 1
+    suma = suma + signo / denominador
+    signo = -signo
 
-pi_aprox = pi_aprox * 4
+pi_aprox = suma * 4
 error = abs(pi_aprox - math.pi)
 
 print(f"π aproximado con {n} términos: {pi_aprox:.10f}")
@@ -230,60 +250,55 @@ print(f"π real:                       {math.pi:.10f}")
 print(f"Error absoluto:               {error:.2e}")
 ```
 
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/pi_leibniz.py)
+📁 [Solución completa en Python](./pi_leibniz.py)
 
 </details>
 
 ---
 
-### 📝 Ejercicio 2.3: Factorial y combinatorio
+### 📝 Ejercicio 4: "Factorial y fórmula de Stirling"
 
-**Enunciado.** Escribe un programa que, dados dos enteros no negativos $n$ y $k$ con $k \leq n$, calcule el **número combinatorio**:
+El **factorial** de un entero positivo se define como $n! = 1 \cdot 2 \cdot 3 \cdots n$. Para valores grandes de $n$, $n!$ crece tan rápido que en muchas aplicaciones se sustituye por la **fórmula de Stirling**, una aproximación asintótica:
 
-$$\binom{n}{k} = \frac{n!}{k!\,(n-k)!}$$
+$$n! \approx \sqrt{2 \pi n} \cdot \left(\frac{n}{e}\right)^n$$
+
+Diseña un programa que:
+
+1. Calcule $n!$ usando un bucle `for` (acumulador multiplicativo).
+2. Calcule la aproximación de Stirling.
+3. Muestre el **error relativo** entre ambos: $\dfrac{|n! - \text{Stirling}|}{n!} \cdot 100$ (%).
 
 #### ✔️ Tareas
 
-1. Define una función `factorial(n)` que use un bucle `for` para calcular $n!$.
-2. Usa esa función para calcular $\binom{n}{k}$.
-3. **Bonus**: para evitar el desbordamiento (los factoriales crecen muy rápido), implementa una versión que use la fórmula equivalente $\binom{n}{k} = \prod_{i=1}^{k} \frac{n-i+1}{i}$, que va dividiendo en cada paso y mantiene los números pequeños.
+1. Implementa la solución.
+2. Pruébala con $n = 5, 10, 20, 50$. Verás que el error relativo decrece a medida que $n$ aumenta.
+3. **Reflexión**: con $n = 5$ el error es ~2%; con $n = 50$ es ~0.2%. Es decir, la fórmula es mejor cuando $n$ es grande. ¿Por qué es importante esto desde el punto de vista práctico?
 
 <details>
 <summary>🫣 Mira cómo quedaría la implementación...</summary>
 
 ```python
-def factorial(n: int) -> int:
-    """Devuelve n!"""
-    resultado = 1
-    for i in range(2, n + 1):
-        resultado = resultado * i
-    return resultado
+import math
 
+n = int(input("Calcular n! para n = "))
 
-def combinatorio(n: int, k: int) -> int:
-    """Devuelve C(n, k) usando factoriales."""
-    return factorial(n) // (factorial(k) * factorial(n - k))
+# Cálculo exacto con bucle for (acumulador multiplicativo)
+factorial = 1
+for i in range(2, n + 1):
+    factorial = factorial * i
 
+# Aproximación de Stirling
+stirling = math.sqrt(2 * math.pi * n) * (n / math.e) ** n
 
-def combinatorio_estable(n: int, k: int) -> int:
-    """
-    Versión más eficiente y estable: evita calcular factoriales gigantes.
-    Calcula C(n, k) = product_{i=1..k} (n - i + 1) / i.
-    """
-    resultado = 1
-    for i in range(1, k + 1):
-        resultado = resultado * (n - i + 1) // i
-    return resultado
+# Error relativo
+error_relativo = abs(factorial - stirling) / factorial * 100
 
-
-n = int(input("n: "))
-k = int(input("k: "))
-
-print(f"C({n}, {k}) = {combinatorio(n, k)}")
-print(f"C({n}, {k}) = {combinatorio_estable(n, k)}  (versión estable)")
+print(f"{n}! exacto:               {factorial}")
+print(f"Aproximación de Stirling: {stirling:.4e}")
+print(f"Error relativo:           {error_relativo:.4f} %")
 ```
 
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/combinatorio.py)
+📁 [Solución completa en Python](./factorial_stirling.py)
 
 </details>
 
@@ -291,128 +306,20 @@ print(f"C({n}, {k}) = {combinatorio_estable(n, k)}  (versión estable)")
 
 ## 🟠 Bloque 3 — Bucle `while`
 
-### 📝 Ejercicio 3.1: Algoritmo de Euclides para el MCD
+### 📝 Ejercicio 5: "Raíz cuadrada por el método babilónico"
 
-**Enunciado.** Implementa el **algoritmo de Euclides** para calcular el máximo común divisor (MCD) de dos enteros positivos. El algoritmo se basa en:
+Implementaremos uno de los **algoritmos iterativos más antiguos** que se conocen (más de 2 000 años). Dada una estimación inicial $x_0$, refinamos sucesivamente:
 
-$$\gcd(a, b) = \gcd(b, a \bmod b),\qquad \gcd(a, 0) = a$$
+$$x_{n+1} = \frac{1}{2}\left(x_n + \frac{a}{x_n}\right)$$
 
-Y termina cuando el segundo argumento es 0.
-
-**Pseudocódigo orientativo:**
-
-```text
-ALGORITMO mcd_euclides
-  Entrada: a, b (entero positivo)
-  Salida: mcd (entero positivo)
-
-INICIO
-  1. MIENTRAS b != 0
-       resto ← a mod b
-       a ← b
-       b ← resto
-  2. ESCRIBIR "MCD =", a
-FIN
-```
+En menos de 10 iteraciones tendrás precisión de 15 decimales. Es el patrón fundamental de los métodos numéricos: **iterar hasta converger**.
 
 #### ✔️ Tareas
 
-1. Implementa el algoritmo en Python con un bucle `while`.
-2. Pruébalo con $\gcd(48, 18) = 6$, $\gcd(1071, 462) = 21$, $\gcd(17, 5) = 1$.
-3. **Bonus matemático**: extiende el programa para que también calcule el **mínimo común múltiplo** usando $\text{mcm}(a,b) = \dfrac{a \cdot b}{\gcd(a,b)}$.
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-a = int(input("a: "))
-b = int(input("b: "))
-
-# Guardamos los originales para el cálculo posterior del mcm
-a_orig, b_orig = a, b
-
-while b != 0:
-    a, b = b, a % b   # asignación múltiple: muy útil aquí
-
-mcd = a
-mcm = (a_orig * b_orig) // mcd
-
-print(f"MCD({a_orig}, {b_orig}) = {mcd}")
-print(f"MCM({a_orig}, {b_orig}) = {mcm}")
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/euclides_mcd.py)
-
-</details>
-
----
-
-### 📝 Ejercicio 3.2: Método de la bisección
-
-**Enunciado.** Sea $f$ una función continua en $[a, b]$ tal que $f(a) \cdot f(b) < 0$. Por el **Teorema de Bolzano**, existe al menos una raíz $\xi \in (a, b)$. El **método de la bisección** la aproxima dividiendo el intervalo a la mitad en cada paso:
-
-1. Calcular $c = (a+b)/2$.
-2. Si $|f(c)| < \varepsilon$, hemos encontrado la raíz.
-3. Si $f(a) \cdot f(c) < 0$ → la raíz está en $[a, c]$ → hacer $b \leftarrow c$.
-4. En otro caso → la raíz está en $[c, b]$ → hacer $a \leftarrow c$.
-5. Repetir mientras $b - a > \varepsilon$.
-
-Implementa el método para encontrar la raíz de $f(x) = x^3 - x - 2$ en el intervalo $[1, 2]$ (la raíz exacta es $\xi \approx 1.521380$).
-
-#### ✔️ Tareas
-
-1. Implementa el método con un bucle `while` que termine cuando se cumpla la tolerancia.
+1. Implementa el método con un bucle `while` cuya condición de parada sea $|x_{n+1} - x_n| < \varepsilon$ (tolerancia, por ejemplo $10^{-12}$).
 2. Añade un **límite máximo de iteraciones** como red de seguridad (por ejemplo, 100).
-3. Cuenta el **número de iteraciones** que han hecho falta. ¿Cuántas iteraciones hacen falta para tolerancia $10^{-6}$? ¿Y para $10^{-12}$? Compáralo con la teoría: cada iteración reduce el intervalo a la mitad, así que el error decrece como $2^{-n}$.
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-def f(x):
-    return x**3 - x - 2
-
-a = 1.0
-b = 2.0
-TOLERANCIA = 1e-10
-MAX_ITER = 100
-
-if f(a) * f(b) >= 0:
-    print("⚠️ No se garantiza la existencia de raíz en este intervalo.")
-else:
-    iteracion = 0
-    while (b - a) > TOLERANCIA and iteracion < MAX_ITER:
-        c = (a + b) / 2
-        if f(a) * f(c) < 0:
-            b = c
-        else:
-            a = c
-        iteracion = iteracion + 1
-
-    raiz = (a + b) / 2
-    print(f"Raíz aproximada: {raiz:.12f}")
-    print(f"Iteraciones empleadas: {iteracion}")
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/biseccion.py)
-
-</details>
-
----
-
-### 📝 Ejercicio 3.3: Método de Newton-Raphson
-
-**Enunciado.** El **método de Newton-Raphson** aproxima una raíz de $f(x) = 0$ partiendo de una estimación $x_0$ y aplicando la recurrencia:
-
-$$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$
-
-Implementa el método para calcular $\sqrt{a}$ aplicándolo a la función $f(x) = x^2 - a$ (cuya derivada es $f'(x) = 2x$). Sustituyendo en la fórmula obtienes —¡sorpresa!— la **fórmula babilónica** que viste en el [Ejemplo 3](../ejemplos/T4_Ejem_ICC.md#ejemplo-3-métodos-numéricos-raíz-cuadrada-por-el-método-babilónico).
-
-#### ✔️ Tareas
-
-1. Implementa el método de **forma genérica**, recibiendo `f` y `df` como parámetros.
-2. Úsalo para calcular $\sqrt{2}$ y compara el número de iteraciones con el método de la bisección del ejercicio anterior. ¿Cuál converge más rápido?
-3. **Bonus**: úsalo también para encontrar una raíz de $f(x) = \cos(x) - x$ partiendo de $x_0 = 0.5$. La raíz es la famosa **constante de Dottie**, $\xi \approx 0.7390851332$.
+3. Trata el caso $a < 0$ con un `if` previo (no existe raíz real).
+4. **Bonus**: ¿en cuántas iteraciones converge para $a = 2$? ¿Y para $a = 1\,000\,000$? ¿Cuánto influye el valor inicial?
 
 <details>
 <summary>🫣 Mira cómo quedaría la implementación...</summary>
@@ -420,44 +327,85 @@ Implementa el método para calcular $\sqrt{a}$ aplicándolo a la función $f(x) 
 ```python
 import math
 
-def newton_raphson(f, df, x0, tol=1e-12, max_iter=100):
-    """
-    Devuelve una raíz aproximada de f, partiendo de x0.
+a = float(input("Calcular la raíz cuadrada de: "))
 
-    Parámetros:
-      f, df:       función y su derivada
-      x0:          estimación inicial
-      tol:         tolerancia
-      max_iter:    máximo de iteraciones (red de seguridad)
-    """
-    x = x0
-    for iteracion in range(max_iter):
-        x_nuevo = x - f(x) / df(x)
-        if abs(x_nuevo - x) < tol:
-            return x_nuevo, iteracion + 1
+if a < 0:
+    print("⚠️ No existe raíz real de un número negativo.")
+elif a == 0:
+    print("√0 = 0")
+else:
+    TOLERANCIA = 1e-12
+    MAX_ITER = 100
+
+    x = a / 2
+    iteracion = 0
+    diferencia = TOLERANCIA + 1   # para entrar al bucle al menos una vez
+
+    while diferencia > TOLERANCIA and iteracion < MAX_ITER:
+        x_nuevo = 0.5 * (x + a / x)
+        diferencia = abs(x_nuevo - x)
         x = x_nuevo
-    raise RuntimeError(f"No convergió en {max_iter} iteraciones")
+        iteracion = iteracion + 1
 
-
-# 1. √2 con Newton-Raphson
-a = 2.0
-raiz, iteraciones = newton_raphson(
-    f=lambda x: x**2 - a,
-    df=lambda x: 2 * x,
-    x0=a / 2,
-)
-print(f"√{a} ≈ {raiz} en {iteraciones} iteraciones")
-
-# 2. Constante de Dottie: cos(x) = x
-dottie, iteraciones = newton_raphson(
-    f=lambda x: math.cos(x) - x,
-    df=lambda x: -math.sin(x) - 1,
-    x0=0.5,
-)
-print(f"Constante de Dottie ≈ {dottie} en {iteraciones} iteraciones")
+    print(f"√{a} ≈ {x:.15f}")
+    print(f"Resultado de math.sqrt:  {math.sqrt(a):.15f}")
+    print(f"Iteraciones empleadas: {iteracion}")
 ```
 
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/newton_raphson.py)
+📁 [Solución completa en Python](./raiz_babilonica.py)
+
+</details>
+
+---
+
+### 📝 Ejercicio 6: "Conjetura de Collatz (3n+1)"
+
+La **conjetura de Collatz** afirma que la siguiente sucesión, partiendo de cualquier entero positivo, **siempre acaba llegando a 1**:
+
+$$a_{n+1} = \begin{cases} a_n / 2 & \text{si } a_n \text{ es par} \\ 3 a_n + 1 & \text{si } a_n \text{ es impar} \end{cases}$$
+
+Por ejemplo, partiendo de 6: $6 \to 3 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1$ (8 pasos).
+
+**Nadie ha demostrado todavía** si la conjetura es cierta para todos los números, aunque se ha verificado computacionalmente para los primeros $10^{20}$ valores.
+
+#### ✔️ Tareas
+
+1. Implementa un programa que, dado un entero positivo $n$, vaya **mostrando la sucesión por pantalla** (usa `print(..., end="")` para mantenerlo en una sola línea con flechas) y cuente cuántos pasos tarda en llegar a 1.
+2. Protege la entrada con `try-except` para que el programa no se rompa si el usuario teclea algo raro.
+3. Prueba con $n = 6, 27, 100$. Verás que $27$ tarda **111 pasos** (¡es famosamente largo para su tamaño!).
+
+<details>
+<summary>🫣 Mira cómo quedaría la implementación...</summary>
+
+```python
+while True:
+    try:
+        n = int(input("Entero positivo: "))
+        if n <= 0:
+            print("⚠️ Debe ser positivo.")
+            continue
+        break
+    except ValueError:
+        print("⚠️ Eso no es un entero válido.")
+
+n_original = n
+pasos = 0
+
+print(f"Sucesión partiendo de {n}: ", end="")
+print(n, end="")
+
+while n != 1:
+    if n % 2 == 0:
+        n = n // 2
+    else:
+        n = 3 * n + 1
+    pasos = pasos + 1
+    print(f" → {n}", end="")
+
+print(f"\n\nPartiendo de {n_original}, llegamos a 1 en {pasos} pasos.")
+```
+
+📁 [Solución completa en Python](./collatz.py)
 
 </details>
 
@@ -465,350 +413,215 @@ print(f"Constante de Dottie ≈ {dottie} en {iteraciones} iteraciones")
 
 ## 🔵 Bloque 4 — Bucles anidados
 
-### 📝 Ejercicio 4.1: Criba de Eratóstenes
+### 📝 Ejercicio 7: "Récord de Collatz en el rango [1, N]"
 
-**Enunciado.** La **criba de Eratóstenes** es un algoritmo clásico para encontrar todos los números primos hasta un cierto límite $N$. Funciona así:
+Amplía el ejercicio 6: queremos encontrar, dentro del rango $[1, N]$, **cuál es el entero que tarda más pasos** en llegar a 1. Llamaremos a este número el **récord de Collatz** de $[1, N]$.
 
-1. Crea una lista `[2, 3, 4, ..., N]`.
-2. Empieza con $p = 2$ (el primer primo).
-3. Tacha de la lista todos los múltiplos de $p$ (excepto $p$ mismo).
-4. Avanza al siguiente número no tachado y repite.
-5. Cuando $p^2 > N$, los números no tachados restantes son **todos primos**.
+> 💡 **Pista pedagógica**: aquí necesitas combinar **dos bucles anidados**:
+>
+> * Un bucle externo `for` que recorra cada $\text{inicio}$ entre 1 y $N$.
+> * Un bucle interno `while` que aplique la sucesión a $\text{inicio}$ hasta llegar a 1, contando los pasos.
+>
+> Y necesitas **dos variables simples** para guardar el mejor encontrado hasta el momento (`mejor_numero` y `max_pasos`), que vas actualizando dentro del `for` externo cuando encuentres uno mejor. **¡Sin listas, no las necesitas!**
 
 #### ✔️ Tareas
 
-1. Implementa el algoritmo. Pista: usa una lista de booleanos `es_primo = [True] * (N + 1)` y necesitarás dos bucles anidados.
-2. Pruébalo con $N = 30$. Deberías obtener: `[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`.
-3. **Reflexión sobre la complejidad**: ¿cuántas operaciones realiza la criba para llegar hasta $N$? ¿Por qué la condición $p^2 > N$ es suficiente para parar?
+1. Implementa el algoritmo.
+2. Pruébalo con $N = 10, 100, 1000$. Para $N = 100$ el récord es $97$ (118 pasos); para $N = 1000$ es $871$ (178 pasos).
+3. **Reflexión sobre el coste**: cada $\text{inicio}$ requiere ejecutar el bucle de Collatz hasta llegar a 1. ¿Por qué tarda tanto el programa para $N = 100\,000$? Esto te dará una primera intuición sobre la **complejidad computacional** de los algoritmos anidados.
 
 <details>
 <summary>🫣 Mira cómo quedaría la implementación...</summary>
 
 ```python
-n = int(input("Encontrar primos hasta: "))
+n_max = int(input("Buscar el récord entre 1 y N. Introduce N: "))
 
-# Inicialmente, todos los números son candidatos a primo
-es_primo = [True] * (n + 1)
-es_primo[0] = es_primo[1] = False   # 0 y 1 no son primos
+# Variables simples para guardar el mejor (sin usar listas)
+mejor_numero = 1
+max_pasos = 0
 
-# Criba propiamente dicha
-p = 2
-while p * p <= n:
-    if es_primo[p]:
-        # Tachamos los múltiplos de p (empezando por p*p, que es el primer
-        # múltiplo de p que no se ha tachado en pasadas anteriores)
-        for multiplo in range(p * p, n + 1, p):
-            es_primo[multiplo] = False
-    p = p + 1
-
-# Recogemos los primos de la lista
-primos = [i for i in range(n + 1) if es_primo[i]]
-print(f"Primos hasta {n}: {primos}")
-print(f"Cantidad: {len(primos)}")
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/eratostenes.py)
-
-</details>
-
----
-
-### 📝 Ejercicio 4.2: Multiplicación de matrices
-
-**Enunciado.** Sean $A \in \mathbb{R}^{m \times n}$ y $B \in \mathbb{R}^{n \times p}$. Su producto $C = A \cdot B$ tiene dimensión $m \times p$ y se calcula como:
-
-$$C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}$$
-
-Implementa el producto matricial usando **listas de listas** (matrices representadas como `[[1, 2], [3, 4]]`) y **tres bucles anidados**.
-
-#### ✔️ Tareas
-
-1. Implementa la función `multiplicar(A, B)` que devuelva la matriz producto.
-2. Comprueba primero que las **dimensiones son compatibles** (columnas de $A$ = filas de $B$). Si no lo son, lanza un `ValueError`.
-3. Pruébalo con:
-
-   $$A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}, \quad B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix} \quad \Rightarrow \quad A \cdot B = \begin{pmatrix} 19 & 22 \\ 43 & 50 \end{pmatrix}$$
-
-4. **Análisis de coste**: ¿cuántas operaciones de multiplicación realizan los tres bucles anidados para matrices $n \times n$? Verás que es $O(n^3)$ — el coste cúbico clásico de la multiplicación de matrices.
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-def multiplicar(A, B):
-    """Multiplica dos matrices representadas como listas de listas."""
-    filas_A = len(A)
-    cols_A = len(A[0])
-    filas_B = len(B)
-    cols_B = len(B[0])
-
-    if cols_A != filas_B:
-        raise ValueError(
-            f"Dimensiones incompatibles: A es {filas_A}x{cols_A}, "
-            f"B es {filas_B}x{cols_B}."
-        )
-
-    # Inicializamos C como una matriz de ceros
-    C = [[0] * cols_B for _ in range(filas_A)]
-
-    # Triple bucle anidado
-    for i in range(filas_A):
-        for j in range(cols_B):
-            for k in range(cols_A):
-                C[i][j] = C[i][j] + A[i][k] * B[k][j]
-
-    return C
-
-
-A = [[1, 2], [3, 4]]
-B = [[5, 6], [7, 8]]
-
-C = multiplicar(A, B)
-for fila in C:
-    print(fila)
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/multiplicar_matrices.py)
-
-</details>
-
----
-
-### 📝 Ejercicio 4.3: Triángulo de Pascal
-
-**Enunciado.** El **triángulo de Pascal** se construye colocando un `1` en los extremos de cada fila, y siendo cada elemento interno la **suma de los dos elementos que tiene encima** en la fila anterior:
-
-```text
-                1
-              1   1
-            1   2   1
-          1   3   3   1
-        1   4   6   4   1
-      1   5  10  10   5   1
-    1   6  15  20  15   6   1
-```
-
-Cada elemento corresponde al número combinatorio: $\text{Pascal}_{n, k} = \binom{n}{k}$.
-
-#### ✔️ Tareas
-
-1. Implementa un programa que pida un entero $N$ e imprima las primeras $N$ filas del triángulo de Pascal.
-2. **Bonus**: usa los formateadores de cadena para que el triángulo aparezca **bien centrado** visualmente, como en el ejemplo.
-3. **Conexión teórica**: comprueba que el elemento $(n, k)$ del triángulo coincide con el número combinatorio que calculaste en el [Ejercicio 2.3](#-ejercicio-23-factorial-y-combinatorio).
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-n = int(input("Número de filas del triángulo de Pascal: "))
-
-# Lista que iremos modificando fila a fila
-fila = [1]
-
-# Calculamos el ancho máximo para centrar visualmente
-ancho = len("   ".join(["1"] * n)) + 2 * (n - 1)
-
-for i in range(n):
-    # Mostrar la fila actual centrada
-    cadena = "   ".join(str(x) for x in fila)
-    print(cadena.center(ancho))
-
-    # Calcular la siguiente fila usando bucles anidados
-    nueva_fila = [1]
-    for k in range(len(fila) - 1):
-        nueva_fila.append(fila[k] + fila[k + 1])
-    nueva_fila.append(1)
-    fila = nueva_fila
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/triangulo_pascal.py)
-
-</details>
-
----
-
-## 🔴 Bloque 5 — Combinando todo: condicionales, bucles y excepciones
-
-### 📝 Ejercicio 5.1: Conjetura de Collatz (3n+1)
-
-**Enunciado.** La **conjetura de Collatz** afirma que la siguiente sucesión, partiendo de cualquier entero positivo, **siempre acaba llegando a 1**:
-
-$$a_{n+1} = \begin{cases} a_n / 2 & \text{si } a_n \text{ es par} \\ 3 a_n + 1 & \text{si } a_n \text{ es impar} \end{cases}$$
-
-Por ejemplo, partiendo de 6: $6 \to 3 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1$. **Nadie ha demostrado todavía** si la conjetura es cierta para todos los números, pero se ha verificado computacionalmente para los primeros $10^{20}$ valores.
-
-#### ✔️ Tareas
-
-1. Escribe un programa que, dado un entero positivo $n$, muestre la sucesión de Collatz hasta llegar a 1, y cuente cuántos pasos ha tardado.
-2. Maneja la entrada del usuario con `try-except` para garantizar que se introduce un entero positivo.
-3. **Reto**: para los enteros del 1 al 100, encuentra cuál tiene la **trayectoria más larga** (es decir, tarda más pasos en llegar a 1). ¿Cuál es ese número?
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-def collatz(n: int) -> tuple[list[int], int]:
-    """Devuelve la sucesión de Collatz partiendo de n y el número de pasos."""
-    sucesion = [n]
+for inicio in range(1, n_max + 1):
+    # Bucle interno: aplicamos Collatz al número 'inicio'
+    n = inicio
     pasos = 0
     while n != 1:
         if n % 2 == 0:
             n = n // 2
         else:
             n = 3 * n + 1
-        sucesion.append(n)
         pasos = pasos + 1
-    return sucesion, pasos
 
+    # ¿Es este el nuevo récord?
+    if pasos > max_pasos:
+        max_pasos = pasos
+        mejor_numero = inicio
 
-# Pedir entrada con validación robusta
+print(f"Del 1 al {n_max}, el número con más pasos es {mejor_numero} ({max_pasos} pasos).")
+```
+
+📁 [Solución completa en Python](./collatz_record.py)
+
+</details>
+
+---
+
+### 📝 Ejercicio 8: "Imprimir la tabla pitagórica"
+
+Diseña un programa que imprima la **tabla pitagórica** de $N \times N$, es decir, la tabla con todos los productos $i \cdot j$ para $i, j \in [1, N]$. La salida debe parecerse a esto (para $N = 5$):
+
+```text
+    |   1   2   3   4   5
+-------------------------
+  1 |   1   2   3   4   5
+  2 |   2   4   6   8  10
+  3 |   3   6   9  12  15
+  4 |   4   8  12  16  20
+  5 |   5  10  15  20  25
+```
+
+> 💡 **Pista**: usa `print(..., end="")` para imprimir varios valores **en la misma línea** y un `print()` vacío para saltar de línea al acabar cada fila. Y usa los formateadores de cadena (`f"{x:4}"` reserva 4 espacios) para alinearlo bonito.
+
+#### ✔️ Tareas
+
+1. Implementa la solución con dos bucles `for` anidados.
+2. Añade la cabecera (los números de columna) y la línea separadora.
+3. **Bonus**: modifica el programa para que solo imprima los productos del **triángulo superior** (es decir, los del tipo $i \cdot j$ con $j \geq i$). ¿Cómo logras que se vean bien alineados?
+
+<details>
+<summary>🫣 Mira cómo quedaría la implementación...</summary>
+
+```python
+n = int(input("Tamaño de la tabla pitagórica: "))
+
+# Cabecera
+print("    |", end="")
+for j in range(1, n + 1):
+    print(f"{j:4}", end="")
+print()
+print("-" * (5 + 4 * n))
+
+# Cuerpo
+for i in range(1, n + 1):
+    print(f"{i:3} |", end="")
+    for j in range(1, n + 1):
+        print(f"{i*j:4}", end="")
+    print()
+```
+
+📁 [Solución completa en Python](./tabla_pitagorica.py)
+
+</details>
+
+---
+
+## 🔴 Bloque 5 — Manejo de excepciones
+
+### 📝 Ejercicio 9: "Validación robusta del cambio de moneda"
+
+En el [Tema 3](../../03_variables_tipos_simples/ejercicios/T3_Ejer_ICC.md) implementaste el cálculo de cambio de moneda. Si te fijaste, ese programa **se rompe** si el usuario teclea cualquier cosa que no sea un número. También daría resultados absurdos si el porcentaje del banco fuera negativo o mayor que 100.
+
+Vamos a aplicar lo aprendido sobre **validación robusta** (Ejemplo 4 de este tema): cada llamada a `input()` debe ir envuelta en un bucle `while True` con `try-except` que vuelva a pedir el dato hasta que sea correcto.
+
+#### ✔️ Tareas
+
+1. Recupera tu programa del Tema 3 (o vuelve a empezar).
+2. Para cada dato de entrada, asegúrate de que:
+   - La conversión a número es correcta (captura `ValueError`).
+   - El valor cumple las restricciones lógicas (positivo, en rango...).
+3. Cuando todo sea válido, calcula y muestra el resultado **como en el Tema 3**.
+4. **Reflexión**: ¿cuántas líneas extra has tenido que añadir? ¿Te parece que vale la pena? Cuando trabajes en proyectos reales, verás que este código de validación es habitual y, una vez aprendido el patrón, se escribe casi automáticamente.
+
+<details>
+<summary>🫣 Mira cómo quedaría la implementación...</summary>
+
+```python
+# --- Conversión de la moneda extranjera a dólares ---
 while True:
     try:
-        n = int(input("Entero positivo: "))
-        if n <= 0:
-            print("Debe ser positivo.")
+        conv_moneda_dolares = float(input(
+            "Valor de conversión de la moneda extranjera a dólares: "
+        ))
+        if conv_moneda_dolares <= 0:
+            print("  ⚠️ Debe ser un valor positivo.")
             continue
         break
     except ValueError:
-        print("Eso no es un entero válido.")
+        print("  ⚠️ Debe ser un número.")
 
-sucesion, pasos = collatz(n)
-print(f"Sucesión: {sucesion}")
-print(f"Pasos hasta llegar a 1: {pasos}")
+# --- Conversión del euro a dólares ---
+while True:
+    try:
+        conv_euros_dolares = float(input("Valor de conversión del euro a dólares: "))
+        if conv_euros_dolares <= 0:
+            print("  ⚠️ Debe ser un valor positivo.")
+            continue
+        break
+    except ValueError:
+        print("  ⚠️ Debe ser un número.")
 
-# Reto: el número con trayectoria más larga del 1 al 100
-mas_largo = 1
-max_pasos = 0
-for i in range(1, 101):
-    _, p = collatz(i)
-    if p > max_pasos:
-        max_pasos = p
-        mas_largo = i
+# --- Cantidad de moneda extranjera ---
+while True:
+    try:
+        cantidad_moneda_extranj = int(input("Cantidad de moneda extranjera a cambiar: "))
+        if cantidad_moneda_extranj <= 0:
+            print("  ⚠️ Debe ser un entero positivo.")
+            continue
+        break
+    except ValueError:
+        print("  ⚠️ Debe ser un entero.")
 
-print(f"\nDel 1 al 100, el de trayectoria más larga es {mas_largo} ({max_pasos} pasos).")
+# --- Porcentaje de ganancia del banco ---
+while True:
+    try:
+        porc_ganancia_banco = float(input("Porcentaje de ganancia del banco (0-100): "))
+        if porc_ganancia_banco < 0 or porc_ganancia_banco > 100:
+            print("  ⚠️ Debe estar entre 0 y 100.")
+            continue
+        break
+    except ValueError:
+        print("  ⚠️ Debe ser un número.")
+
+# --- Cálculos (igual que en el Tema 3) ---
+cantidad_en_dolares = cantidad_moneda_extranj * conv_moneda_dolares
+cantidad_en_euros = cantidad_en_dolares / conv_euros_dolares
+cantidad_por_comision = cantidad_en_euros * porc_ganancia_banco / 100
+cantidad_cambio_entrega = cantidad_en_euros - cantidad_por_comision
+
+print(f"\nLa cantidad a entregar al cliente es: {cantidad_cambio_entrega:.2f} €")
 ```
 
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/collatz.py)
+📁 [Solución completa en Python](./cambio_moneda.py)
 
 </details>
 
 ---
 
-### 📝 Ejercicio 5.2: Suma de la serie armónica truncada
+## 🎯 Reto final (sin solución publicada)
 
-**Enunciado.** La **serie armónica** $\sum_{n=1}^{\infty} \frac{1}{n}$ es divergente — no tiene suma finita —, pero crece **muy lentamente**. Vamos a estudiar dos preguntas con un programa:
+### 📝 Ejercicio reto: "Aproximación del número $e$ por la serie de Taylor"
 
-1. **Sumar los $N$ primeros términos**: $H_N = 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{N}$.
-2. **Encontrar el $N$ tal que $H_N$ supere por primera vez un umbral** $S$ dado por el usuario.
+La constante de Euler $e$ se puede definir como la suma de la serie:
+
+$$e = \sum_{n=0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \cdots$$
+
+Diseña un programa que aproxime $e$ sumando términos **hasta que el último término sumado sea menor que una tolerancia $\varepsilon$ dada por el usuario** (por ejemplo, $\varepsilon = 10^{-10}$).
+
+> 💡 **Pista de implementación**: no calcules cada factorial desde cero — sería terriblemente ineficiente. Aprovecha la relación recurrente entre dos términos consecutivos:
+>
+> $$ \text{termino}_{n+1} = \text{termino}_n \cdot \frac{1}{n+1} $$
+>
+> Es decir, **multiplica el término anterior por $1/(n+1)$** para obtener el siguiente. Con una sola variable acumuladora, sin definir funciones, sin listas.
 
 #### ✔️ Tareas
 
-1. Implementa la primera pregunta con un bucle `for`.
-2. Implementa la segunda con un bucle `while`. Añade un límite máximo de iteraciones por seguridad.
-3. ¿Cuántos términos hacen falta para que $H_N > 10$? ¿Y para que $H_N > 20$? Compáralo con la fórmula asintótica $H_N \approx \ln(N) + \gamma$, donde $\gamma \approx 0.5772$ es la **constante de Euler-Mascheroni**.
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-import math
-
-# Pregunta 1: Sumar los N primeros términos
-n = int(input("N (cuántos términos sumar): "))
-suma = 0
-for i in range(1, n + 1):
-    suma = suma + 1 / i
-print(f"H_{n} = {suma:.10f}")
-print(f"Aproximación asintótica ln(N) + γ = {math.log(n) + 0.5772156649:.10f}")
-
-# Pregunta 2: Encontrar N tal que H_N > S
-s = float(input("\nUmbral S: "))
-MAX = 10**8
-
-n = 0
-suma = 0.0
-while suma <= s and n < MAX:
-    n = n + 1
-    suma = suma + 1 / n
-
-if suma > s:
-    print(f"H_{n} = {suma:.6f} > {s} (primer N que supera el umbral)")
-else:
-    print(f"⚠️ No se ha superado el umbral en {MAX} iteraciones.")
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/serie_armonica.py)
-
-</details>
-
----
-
-### 📝 Ejercicio 5.3: Integración numérica por la regla del trapecio
-
-**Enunciado.** La **regla del trapecio compuesta** aproxima la integral $\int_a^b f(x)\, dx$ dividiendo el intervalo en $n$ subintervalos iguales:
-
-$$\int_a^b f(x)\, dx \approx \frac{h}{2}\left[f(a) + 2\sum_{i=1}^{n-1} f(a+ih) + f(b)\right], \quad h = \frac{b-a}{n}$$
-
-#### ✔️ Tareas
-
-1. Implementa una función `trapecio(f, a, b, n)` que reciba una función, los extremos del intervalo y el número de subintervalos, y devuelva la integral aproximada.
-2. Pruébala calculando $\int_0^1 x^2\, dx$ (cuyo valor exacto es $1/3$) y $\int_0^\pi \sin(x)\, dx$ (cuyo valor exacto es $2$).
-3. **Análisis numérico**: comprueba empíricamente que **al duplicar $n$, el error se divide por 4**. Esto se debe a que el error de la regla del trapecio es $O(h^2)$.
-
-<details>
-<summary>🫣 Mira cómo quedaría la implementación...</summary>
-
-```python
-import math
-
-def trapecio(f, a, b, n):
-    """Integral aproximada de f en [a, b] por la regla del trapecio compuesta."""
-    h = (b - a) / n
-    suma = (f(a) + f(b)) / 2
-    for i in range(1, n):
-        suma = suma + f(a + i * h)
-    return suma * h
-
-
-# Caso 1: ∫₀¹ x² dx = 1/3
-print("∫₀¹ x² dx (exacta = 0.333333...)")
-for n in [10, 100, 1000, 10000]:
-    aprox = trapecio(lambda x: x**2, 0, 1, n)
-    error = abs(aprox - 1/3)
-    print(f"  n={n:5d}: aprox = {aprox:.10f}, error = {error:.2e}")
-
-# Caso 2: ∫₀^π sin(x) dx = 2
-print("\n∫₀^π sin(x) dx (exacta = 2.0)")
-for n in [10, 100, 1000, 10000]:
-    aprox = trapecio(math.sin, 0, math.pi, n)
-    error = abs(aprox - 2)
-    print(f"  n={n:5d}: aprox = {aprox:.10f}, error = {error:.2e}")
-```
-
-📁 [Solución completa en Python](https://github.com/jjcastroschez/Introduccion-Computacion-Cientifica/blob/main/04_control_flujo_ejecucion/ejercicios/trapecio.py)
-
-</details>
-
----
-
-## 🎯 Mini-reto final
+1. Implementa el método con un bucle `while` cuyo criterio de parada sea **que el último término sea menor que $\varepsilon$**.
+2. Añade un máximo de iteraciones como red de seguridad.
+3. Muestra cuántos términos han hecho falta para alcanzar la tolerancia.
+4. **Compara** tu resultado con `math.e` y calcula el error.
+5. ¿Cuántos términos hacen falta para tener precisión de $10^{-10}$? Pista: con la serie de Taylor de $e$, **muchos menos** que con la serie de Leibniz para $\pi$. ¿Por qué?
 
 > [!IMPORTANT]
-> Si has llegado aquí y has resuelto los anteriores, este es para ti. **No tiene solución publicada**: tendrás que pensarlo por completo tú mismo.
-
-### 📝 Ejercicio reto: Aproximación de $e$ por dos métodos
-
-La constante de Euler $e$ se puede calcular por al menos dos métodos:
-
-* **Serie de Taylor**: $\displaystyle e = \sum_{n=0}^{\infty} \frac{1}{n!}$.
-* **Límite**: $\displaystyle e = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n$.
-
-Escribe un programa que calcule $e$ por **ambos métodos**, comparando para distintos valores de $n$ (digamos $n = 10, 100, 1000, 10\,000, 100\,000$) **el error respecto a `math.e` y el número de operaciones**.
-
-* ¿Cuál de los dos métodos converge **más rápido**?
-* ¿Cuál es **numéricamente más estable**? Pista: el segundo método sufre **cancelación catastrófica** para $n$ muy grandes con `float`.
-
-Documenta tus conclusiones en un Notebook de Jupyter. Esta es la clase de pregunta que te encontrarás en la asignatura de **Análisis Numérico**.
+> Este ejercicio **no tiene solución publicada**. Es un buen ejercicio de fin de tema para autoevaluarte: si lo resuelves sin mirar nada, has interiorizado bien los conceptos. Si te atascas, vuelve a los ejercicios 3 (Leibniz, también es una serie infinita) y 5 (criterio de convergencia con tolerancia).
 
 ---
 

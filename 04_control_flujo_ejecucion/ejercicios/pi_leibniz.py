@@ -1,34 +1,28 @@
 """
-Ejercicio 2.2 — Aproximación de π por la serie de Leibniz.
+Ejercicio 3 — Aproximación de pi por la serie de Leibniz.
 
-    π/4 = 1 - 1/3 + 1/5 - 1/7 + 1/9 - ...
+    pi/4 = 1 - 1/3 + 1/5 - 1/7 + 1/9 - ...
 
-Esta serie converge muy lentamente y es un buen ejemplo para ilustrar
-las limitaciones de un método de aproximación.
+Acumulamos N términos en una variable simple y multiplicamos por 4 al
+final. Es un buen ejemplo de uso de bucle for + signo alternante.
 
 Tema 4 - Introducción a la Computación Científica (ICC).
 """
 
 import math
 
+n = int(input("Número de términos a sumar: "))
 
-def pi_leibniz(n_terminos: int) -> float:
-    """Aproxima π usando los primeros n términos de la serie de Leibniz."""
-    suma = 0.0
-    for k in range(n_terminos):
-        suma += ((-1) ** k) / (2 * k + 1)
-    return suma * 4
+suma = 0.0
+signo = 1   # alternará +1, -1, +1, -1...
+for k in range(n):
+    denominador = 2 * k + 1
+    suma = suma + signo / denominador
+    signo = -signo
 
+pi_aprox = suma * 4
+error = abs(pi_aprox - math.pi)
 
-def main():
-    n = int(input("Número de términos: "))
-    aprox = pi_leibniz(n)
-    error = abs(aprox - math.pi)
-
-    print(f"π aproximado con {n} términos: {aprox:.10f}")
-    print(f"π real:                       {math.pi:.10f}")
-    print(f"Error absoluto:               {error:.2e}")
-
-
-if __name__ == "__main__":
-    main()
+print(f"\nπ aproximado con {n} términos: {pi_aprox:.10f}")
+print(f"π real:                       {math.pi:.10f}")
+print(f"Error absoluto:               {error:.2e}")
