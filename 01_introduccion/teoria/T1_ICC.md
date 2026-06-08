@@ -70,7 +70,7 @@ La ALU y la CU forman la **Unidad Central de Proceso** (CPU, *Central Processing
 * **Registro de Datos de Memoria** (**MDR**): almacena el dato real recien traído de la memoria o a punto de ser enviado. 
 * **Acumulador** (**ACC**): registro principal de la ALU para guardar resultados inmediatos. 
 
-Debido a que la RAM es volátil, se borra al apagar el equipo y por tanto está vacía al arrancarlo, el computador requiere de una **memoria ROM** (*Read-Only Memory*) que contiene el *firmware* o **BIOS** con las instrucciones iniciales para comprobar que todo está bien y arrancar el [sistema operativo](#-sección-5-sistema-operativo-y-terminal). 
+Debido a que la RAM es volátil, se borra al apagar el equipo y, por tanto, está vacía al arrancarlo, el computador requiere de una **memoria ROM** (*Read-Only Memory*) que contiene el *firmware* del sistema, tradicionalmente conocido como **BIOS** y actualmente implementado en la mayoría de los equipos mediante **UEFI** (*Interfaz de Firmware Extensible Unificada*). Este firmware es el primer software que se ejecuta al encender el ordenador, se encarga de inicializar y comprobar los componentes hardware, y actúa como puente entre el hardware y el [sistema operativo](#-sección-5-sistema-operativo-y-terminal) para permitir el arranque del equipo.
 
 Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacidad “limitada” ——ten en cuenta que cuanto más rápida es una memoria, más costosa y pequeña es——, es la necesidad de la existencia de dispositivos de almacenamiento permanente, de gran capacidad pero más lentos, como por ejemplo: discos duros, unidades USB... Estos dispositivos almacenarán los programas y datos con los que va a trabajar el computador.  
 
