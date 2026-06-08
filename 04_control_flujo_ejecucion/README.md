@@ -106,15 +106,15 @@ Al finalizar este tema serás capaz de:
 
 Podrás marcar como completados:
 
-* **Implementar** sentencias condicionales `if`, `if-else` e `if-elif-else` en Python.
-* **Usar** la sentencia `match-case` de Python para decisiones múltiples.
-* **Escribir** bucles `for` con `range()` para repeticiones controladas por contador.
-* **Escribir** bucles `while` para repeticiones controladas por condición.
-* **Simular** el comportamiento `do-while` en Python.
-* **Construir** bucles anidados para recorrer estructuras bidimensionales.
-* **Utilizar** `break`, `continue` y `pass` cuando sea apropiado.
-* **Manejar** excepciones con `try`, `except`, `else` y `finally`.
-* **Aplicar** los principios de la programación estructurada al diseñar programas con flujo controlado.
+- [ ] **Implementar** sentencias condicionales `if`, `if-else` e `if-elif-else` en Python.
+- [ ] **Usar** la sentencia `match-case` de Python para decisiones múltiples.
+- [ ] **Escribir** bucles `for` con `range()` para repeticiones controladas por contador.
+- [ ] **Escribir** bucles `while` para repeticiones controladas por condición.
+- [ ] **Simular** el comportamiento `do-while` en Python.
+- [ ] **Construir** bucles anidados para recorrer estructuras bidimensionales.
+- [ ] **Utilizar** `break`, `continue` y `pass` cuando sea apropiado.
+- [ ] **Manejar** excepciones con `try`, `except`, `else` y `finally`.
+- [ ] **Aplicar** los principios de la programación estructurada al diseñar programas con flujo controlado.
 
 ---
 

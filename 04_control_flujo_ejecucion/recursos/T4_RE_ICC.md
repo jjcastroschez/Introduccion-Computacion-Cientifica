@@ -24,7 +24,7 @@ Cuando un programa tiene un `if`, un `for` anidado o una excepción, el orden en
 
 ### ⭐ Python Tutor (recurso estrella)
 
-[**Python Tutor**](https://pythontutor.com/) es una herramienta web gratuita que ya conociste en el [Tema 3](../../03_variables_tipos_simples/recursos/T3_RE_ICC.md). En este tema cobra **especial relevancia** porque permite:
+**[Python Tutor](https://pythontutor.com/)** es una herramienta web gratuita que ya conociste en el [Tema 3](../../03_variables_tipos_simples/recursos/T3_RE_ICC.md). En este tema cobra **especial relevancia** porque permite:
 
 - Ver una **flecha** que se mueve por las líneas del código indicando dónde está la ejecución.
 - Comprobar **qué rama** del `if-elif-else` se ha tomado en cada momento.
@@ -145,16 +145,6 @@ Para tener a mano la sintaxis sin tener que buscar en la documentación:
 
 ---
 
-## 🎥 Vídeos y canales recomendados (en español)
-
-Para complementar la lectura con explicaciones audiovisuales:
-
-- **[Píldoras Informáticas — Curso de Python](https://www.youtube.com/playlist?list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)**: curso completo y muy accesible. Tiene episodios específicos sobre `if`, `for`, `while` y excepciones.
-- **[Hektor Profe — Python desde cero](https://www.youtube.com/playlist?list=PLU8oAlHdN5BkinrODGXToK9oPAlnJxmW_)**: explicaciones claras y bien estructuradas. Recomendado especialmente el bloque sobre estructuras de control.
-- **[MoureDev — Curso de Python](https://www.youtube.com/playlist?list=PLkVpKYNT_U9_wOQwCx55nFOAUU7B5BlKn)**: estilo moderno y dinámico. Buena introducción a `match-case` y manejo de excepciones.
-
----
-
 ## 🧠 Para practicar (problemas guiados)
 
 La mejor forma de interiorizar el control del flujo es **escribir mucho código con bucles y condicionales**. Estos sitios ofrecen problemas progresivos y autoevaluables:
@@ -206,12 +196,6 @@ La mejor forma de interiorizar el control del flujo es **escribir mucho código 
 - [Exercism Python Track](https://exercism.org/tracks/python)
 - [Codewars](https://www.codewars.com/?language=python)
 - [Project Euler](https://projecteuler.net/)
-
-### Vídeos en español
-
-- [Píldoras Informáticas — Python](https://www.youtube.com/c/P%C3%ADldorasInform%C3%A1ticas)
-- [Hektor Profe](https://www.youtube.com/c/HektorProfe)
-- [MoureDev](https://youtu.be/Kp4Mvapo5kc?si=10UORrfAk90cztZk)
 
 ---
 
