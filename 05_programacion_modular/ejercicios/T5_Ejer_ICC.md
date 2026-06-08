@@ -383,7 +383,9 @@ Ahora vamos un paso más allá: organizamos varias áreas matemáticas en un **p
 
 Define una función de orden superior `aplicar_n_veces(f, x, n)` que aplique `f` al valor `x` un total de `n` veces. Es decir:
 
-$$\mathrm{aplicar\_n\_veces}(f, x, n) = \underbrace{f(f(\ldots f(x) \ldots))}_{n \text{ veces}}$$
+```math
+\mathrm{aplicar\_n\_veces}(f, x, n) = \underbrace{f(f(\ldots f(x) \ldots))}_{n \text{ veces}}
+```
 
 Casos particulares:
 - `aplicar_n_veces(f, x, 0) = x` (no se aplica nada)
