@@ -69,7 +69,7 @@ Python viene con una **biblioteca estándar** enorme y muy bien documentada. Ant
 
 ### ✅ Antes de instalar nada: verifica tu instalación
 
-Lo primero que debes saber es **qué versión de Python estás usando** y **dónde está instalado**:
+Lo primero que debes saber es **qué versión de Python estás usando** y **dónde está instalado**, abre el intérprete de Pytho que uses y ejecuta:
 
 ```python
 import sys
@@ -77,7 +77,7 @@ print(sys.version)        # versión de Python
 print(sys.executable)     # ruta al ejecutable
 ```
 
-Y comprueba que `pip` funciona:
+Y comprueba que `pip` funciona, abre un terminal y ejecuta:
 
 ```bash
 pip --version
@@ -89,8 +89,8 @@ Si te da error, intenta una de estas:
 python -m pip --version
 python3 -m pip --version
 ```
-
-> ⚠️ **Atención usuarios de Mac**: en algunos macOS hay varias versiones de Python coexistiendo, y `pip` a secas puede no apuntar a la versión de Python que usa tu IDLE. **Usa siempre la ruta completa que te haya devuelto `sys.executable`** seguida de `-m pip`:
+> [!WARNING]
+> **Atención usuarios de Mac**: en algunos macOS hay varias versiones de Python coexistiendo, y `pip` a secas puede no apuntar a la versión de Python que usa tu IDLE. **Usa siempre la ruta completa que te haya devuelto `sys.executable`** seguida de `-m pip`:
 >
 > ```bash
 > /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12 -m pip install matplotlib
@@ -102,7 +102,8 @@ python3 -m pip --version
 
 Para instalar paquetes de Python, por ejemplo, en VS Code, abre la **Terminal integrada** y utiliza el gestor `pip`. Asegúrate de tener seleccionado el entorno de Python correcto en la esquina inferior derecha antes de instalar.
 
-> ⚠️ Si instalas el paquete pero tu código sigue arrojando un error de tipo `ModuleNotFoundError`, es probable que VS Code esté usando un entorno de Python distinto al que utilizaste para instalar la librería.
+> [!WARNING]
+> Si instalas el paquete pero tu código sigue arrojando un error de tipo `ModuleNotFoundError`, es probable que VS Code esté usando un entorno de Python distinto al que utilizaste para instalar la librería.
 
 ### 🔧 Los comandos básicos de `pip`
 
@@ -115,8 +116,8 @@ pip list                                      # listar paquetes instalados
 pip show nombre_paquete                       # información detallada de un paquete
 pip search nombre_paquete                     # buscar (puede estar desactivado)
 ```
-
-> 💡 **Truco**: para guardar la lista de paquetes que usa tu proyecto y poder reinstalarla en otro ordenador:
+> [!TIP]
+> **Truco**: para guardar la lista de paquetes que usa tu proyecto y poder reinstalarla en otro ordenador:
 >
 > ```bash
 > pip freeze > requirements.txt          # guardar
@@ -163,7 +164,7 @@ Para empezar, `venv` + `pip` es perfectamente suficiente.
 
 ## 🧮 Paquetes esenciales para un graduado en Matemáticas
 
-Esta es **la lista corta** de paquetes que debes conocer. No hace falta dominarlos todos ya: lo importante es saber **qué hace cada uno** para saber a cuál acudir cuando te encuentres con un problema concreto.
+Esta es **la lista corta** de paquetes que debes conocer. No hace falta dominarlos todos ya: lo importante es saber **qué hace cada uno** para saber a cuál acudir cuando te encuentres con un problema concreto. Intentaremos verlos en mayor detalle en el Tema 9.
 
 ### 🔢 Cálculo numérico
 
