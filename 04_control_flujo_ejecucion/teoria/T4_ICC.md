@@ -310,7 +310,7 @@ A diferencia de C, MatLab o Pascal, **Python no tiene `do-while`**. Esto sorpren
 > ```
 >
 > Aunque más adelante veremos que el `while True` no es el patrón más recomendado desde la perspectica de los principios de la programación estructurada, puede que en algunos casos concretos esté justificado su uso (aunque siempre es evitable).
-
+> Si el bucle es "largo" y la condicion de salida (con el `break`) está oculta o al final o hay muchas, el código pierde legibilidad.
 ---
 
 ## 3️⃣ Anidamiento: bucles dentro de bucles

@@ -1,0 +1,17 @@
+{
+  "nombre": "Integración Monte Carlo de la función seno",
+  "descripcion": "Estimar el valor de la integral de sin(x) entre 0 y pi mediante muestreo aleatorio",
+  "parametros": {
+    "limite_inferior": 0.0,
+    "limite_superior": 3.141592653589793,
+    "n_muestras": 100000,
+    "semilla": 42
+  },
+  "opciones": {
+    "verbose": true,
+    "guardar_muestras": false,
+    "fichero_salida": "resultado.json"
+  },
+  "autor": "estudiante_ejemplo",
+  "version": "1.0"
+}

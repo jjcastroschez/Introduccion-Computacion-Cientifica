@@ -23,9 +23,11 @@
 
 Los computadores son máquinas “universales” que pueden resolver cualquier **problema “computable”**. Es decir, problemas para los cuales existe un algoritmo (un conjunto finito de instrucciones) que permite encontrar una solución correcta en un número finito de pasos y empleando un número finito de recursos.
 
-Para que un computador resuelva un problema concreto, hay que *“especializarlo”*. Esta especialización implica **programarlo** para que ejecute las tareas deseadas.
+Para que un computador resuelva un problema concreto, hay que *“especializarlo”*. Esta especialización implica **programarlo** para que ejecute las tareas deseadas. 
 
-La programación consiste en **comunicar a la máquina las instrucciones** que queremos que ejecute (los programas). Este acto de comunicación, como cualquier otro, requiere del uso de un **lenguaje**.
+La programación consiste en **comunicar a la máquina las instrucciones** que queremos que ejecute (los programas). Las instrucciones que especializan al computador para una tarea concreta es lo que se denomina **programa**.
+
+Este acto de comunicación, como cualquier otro, requiere del uso de un **lenguaje**.
 
 El computador, a nivel físico, solo entiende el **lenguaje máquina**, que nos permite escribir programas que consisten en secuencias de instrucciones para manejar sus componentes físicos, donde cada instrucción es una cadena de ceros y unos que cumplen determinadas reglas, por ejemplo:
 
@@ -54,21 +56,25 @@ Estos programas escritos en lenguaje ensamblador para poder ser ejecutados en el
 ### 🏷️ Componentes de un computador
 Básicamente, un computador es una máquina electrónica programable diseñada para procesar datos de forma automática. Su función principal es recibir información bruta, transformarla mediante operaciones lógicas y matemáticas, y entregar un resultado útil. Es, en esencia, un sistema capaz de seguir instrucciones (software) utilizando componentes físicos (hardware).
 
-Según la arquitectura **John von Neumann**, los componentes hardware fundamentales son:
+Según la arquitectura **John von Neumann** (1945), los cuatro componentes hardware fundamentales son:
 
-* **Unidad Aritmético Lógica** (**ALU**, *Arithmetic and Logic Unit*): funciona como una calculadora con capacidad para operar con datos, tomar decisiones lógicas y producir nuevos resultados. La ALU es el 💪 “músculo” de procesamiento.  
-* **Unidad de Control** (**CU**, *Control Unit*): se encarga de interpretar las instrucciones de los programas y coordinar a los demás componentes (como la ALU o la memoria) para que todo funcione en sincronía. Es el 🤵‍♂️🪄🎶  “director de orquesta” del procesamiento.
-* **Memoria Principal** (**RAM**, *Randon Access Memory*): espacio volátil donde el procesador guarda los datos de los programas activos para acceder a ellos de forma casi instantánea.
-* **Sistemas de Entrada/Salida**: periféricos que permiten la interacción entre el usuario y el computador.
-* **Buses de comunicación**: canales que conectan los distintos componentes.
+* **Unidad Aritmético Lógica** (**ALU**, *Arithmetic and Logic Unit*): funciona como una calculadora con capacidad para operar con datos, tomar decisiones lógicas y producir nuevos resultados. La ALU es el “músculo” de procesamiento 💪 .  
+* **Unidad de Control** (**CU**, *Control Unit*): se encarga de interpretar las instrucciones de los programas y coordinar a los demás componentes (como la ALU o la memoria) para que todo funcione en sincronía. Es el “director de orquesta” del procesamiento 🤵‍♂️🪄🎶 .
+* **Memoria Principal** (**RAM**, *Randon Access Memory*): espacio volátil donde el procesador guarda los datos de los programas activos para acceder a ellos de forma casi instantánea 🗃️⏱️.
+* **Sistemas de Entrada/Salida**: periféricos que permiten la interacción entre el usuario y el computador 🗣️💻.
 
-La ALU y la CU forman la **Unidad Central de Proceso** (CPU, *Central Processing Unit*). Junto a ellas, en la CPU, encontramos los **registros**, que son celdas de memoria de alta velocidad:
+Estos componentes se conectan a través de unos canales o **Buses de comunicación** 🛣️.
+
+La ALU y CU forman la **Unidad Central de Proceso** (CPU, *Central Processing Unit*). Junto a ellas, en la CPU, encontramos los **registros**, que son celdas de memoria de alta velocidad:
 
 * **Contador de Programa** (**PC**): guarda la dirección de memoria de la *próxima* instrucción que se va a ejecutar.
 * **Registro de Instrucción** (**IR**): almacena la instrucción que se está ejecutando en ese momento.
 * **Registro de Dirección de Memoria** (**MAR**): contiene la dirección de donde se van a leer o escibrir datos en la RAM.
 * **Registro de Datos de Memoria** (**MDR**): almacena el dato real recien traído de la memoria o a punto de ser enviado. 
+* **Registros de Propósito General** (**GPR**): son un conjunto de registros que el procesador utiliza libremente para guardar cualquier dato temporal o dirección de memoria con la que esté trabajando en ese instante.
 * **Acumulador** (**ACC**): registro principal de la ALU para guardar resultados inmediatos. 
+
+Posteriormente, y para evitar el problema del **cuello de botella de Von Neumann**, se incorpora a esta arquitectura la **memoria caché** que actúa como puente rápido entre la CPU y la RAM.
 
 Debido a que la RAM es volátil, se borra al apagar el equipo y, por tanto, está vacía al arrancarlo, el computador requiere de una **memoria ROM** (*Read-Only Memory*) que contiene el *firmware* del sistema, tradicionalmente conocido como **BIOS** y actualmente implementado en la mayoría de los equipos mediante **UEFI** (*Interfaz de Firmware Extensible Unificada*). Este firmware es el primer software que se ejecuta al encender el ordenador, se encarga de inicializar y comprobar los componentes hardware, y actúa como puente entre el hardware y el [sistema operativo](#-sección-5-sistema-operativo-y-terminal) para permitir el arranque del equipo.
 
@@ -82,6 +88,8 @@ Otra consecuencia de la volatilidad de la memoria RAM, y también de su capacida
   <img src="../imagenes/arquitectura_JvonNeumann.jpg" alt="Arquitectura Von Neumann">
   <figcaption>Diagrama de bloques de un ordenador básico con CPU uniprocesador (John von Neumann)</figcaption>
 </figure>
+
+Para cerrar este apartado, destacar que existen otras arquitecturas alternativas a la de Von Neumann, la principal es la **arquitectura Harvard** que utiliza memorias separadas para los datos y las instrucciones, cada una con sus buses. Esto permite que el procesador pueda leer instrucciones y acceder a datos al mismo tiempo. En la actualidad casi todos los procesadores modernos (como Intel, AMD o los chips de móviles) emplean una **arquitectura Harvard modificada**, a nivel externo (RAM) funcionan como Von Neumann para ahorrar costes, pero a nivel interno (dentro del chip de la CPU) están divididos en una caché exclusiva para instrucciones y otra para datos, ganando la velocidad del modelo Harvard.
 
 ---
 
@@ -126,15 +134,15 @@ Podemos clasificar los lenguajes de programación según distintos criterios, ca
 
 * **Propósito**: *De propósito general* (sirven para resolver casi cualquier tipo de problema, como Python o C) o *De propósito específico* (sirven para resolver un tipo de problema, como SQL para bases de datos o MATLAB para cálculo numérico).
 
-Incluso se pueden establecer clasificaciones en base a características del lenguaje, como por ejemplo su **sistema de tipado** (i.e. *estático*, *dinámico*, *fuerte*, *débil*), pero de esto hablaremos más adelante... [Tipos de Datos Simples y Variables](../../03_variables_tipos_simples/teoria/03_variables_tipos_simples/teoria/T3_ICC.md). 
+Incluso se pueden establecer clasificaciones en base a características del lenguaje, como por ejemplo su **sistema de tipado** (i.e. *estático*, *dinámico*, *fuerte*, *débil*), pero de esto hablaremos más adelante... [Tipos de Datos Simples y Variables](../../03_variables_tipos_simples/README.md). 
 
 ---
 
 ## ⚙️ Sección 4: Compiladores e Intérpretes
 Recuerda que los computadores, en su nivel más básico, solo entienden impulsos eléctricos (lo que conocemos como código binario: 0 y 1). Para que tus programas escritos en un lenguaje de alto nivel (texto legible) lleguen a la CPU (código máquina), necesitamos un “traductor”:
 
-1. **Compilador**. Traduce el código fuente (el programa escrito usando lenguajes como Python, Java o C++) en código máquina (ceros y unos). 
-2. **Intérprete**. Analiza y ejecuta el código fuente línea a línea en tiempo real (sin generación de código máquina). 
+1. **Compilador**. Traduce el código fuente (el programa escrito usando lenguajes como C o C++) en código máquina (ceros y unos). 
+2. **Intérprete**. Analiza y ejecuta el código fuente (escrito en lenguajes como Python) línea a línea en tiempo real (sin generación de código máquina). 
 
 Para trabajar eficientemente, a la hora de programar emplearemos un **Entorno de Desarrollo Integrado** (**IDE**, *Integrated Development Environment*), que incluye:
 
@@ -158,7 +166,7 @@ Algunos IDE muy usados son: IDLE o PyCharm (para Python) y Visual Studio Code (m
 ---
 
 ## 💻 Sección 5: Sistema Operativo y Terminal
-El software fundamental para el funciomamiento de un computador es el **Sistema Operativo** (SO)[^1]. Un SO es el conjunto de programas (software) que permiten gestionar los recursos del hardware del computador. Además, proporciona interfaces para invocar la ejecución de otros programas. Ejemplos de SO en los computadores personales, son Windows (el más usado a nivel mundial), Linux (de código abierto, es muy usado en la comunidad de software libre), macOS (el SO de lo computadores Apple). Los dipositivos móviles, como computadores que son, también disponen de SO: Android (el más usado) e iOS (el usado por los dispositivos Apple).  
+El software fundamental para el funciomamiento de un computador es el **Sistema Operativo** (SO)[^1]. Un SO es el conjunto de programas (software) que permiten gestionar los recursos del hardware del computador. Además, proporciona interfaces para invocar la ejecución de otros programas. Ejemplos de SO en los computadores personales son: Windows (el más usado a nivel mundial), Linux (de código abierto, es muy usado en la comunidad de software libre) o macOS (el SO de los  computadores Apple). Los dipositivos móviles, como computadores que son, también disponen de SO: Android (el más usado) e iOS (el usado por los dispositivos Apple).  
 
 Cuando programamos, para ganar agilidad y eficiencia en las tareas, a menudo trabajamos en la terminal o consola. Esta, funciona como una **interfaz de línea de comandos (CLI)** para interactuar directamente con el SO. En ella, un intérprete (o shell) procesa nuestras órdenes directas y las ejecuta sin necesidad de emplear una interfaz gráfica.
 
