@@ -171,9 +171,7 @@ Puedes hacerlo a mano o usando herramientas como:
    4. Mostrar la nota final al estudiante. 
   </pre>
   <p>Vamos a detallar mejor el algoritmo, empleando para ello pseudocódigo:</p>
-  <pre>
-  ALGORITMO calculo_nota_pruebas
-
+  <pre>ALGORITMO calculo_nota_pruebas
     Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real)   
     Intermedias: calif1, calif2, calif3 (número real)  
     Salida: notaPruebasProgreso (número real)
@@ -190,16 +188,14 @@ Puedes hacerlo a mano o usando herramientas como:
     9. calif3 ← califTerceraPrueba x 0.10 
     11. notaPruebasProgreso ← calif1 + calif2 + calif3   
     10. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso 
-   FIN
-  </pre>
+  FIN</pre>
   <p>A continuación, muestro el diagrama de flujo del algoritmo propuesto, está realizado con Visual Paradigm:</p>
   <figure>
     <img src="../imagenes/diagramaFlujoProblemaNotas.png" alt="Diagrama de Flujo">
     <figcaption>Diagrama de Flujo para el problema de las notas</figcaption>
   </figure> 
   <p>En este ejercicio, lo ideal para conseguir legibilidad habría sido definir los pesos como constantes; de esta forma, evitamos los números mágicos en el código. Estas constantes serían datos de entrada:<p>
-  <pre>
-  ALGORITMO calculo_nota_pruebas
+  <pre>ALGORITMO calculo_nota_pruebas
 
     Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real), PESO_1PRUEBA (número real), PESO_2PRUEBA (número real), PESO_3PRUEBA (número real)     
     Intermedias: calif1, calif2, calif3 (número real)  
@@ -217,8 +213,7 @@ Puedes hacerlo a mano o usando herramientas como:
     9. calif3 ← califTerceraPrueba x PESO_3PRUEBA
     11. notaPruebasProgreso ← calif1 + calif2 + calif3   
     10. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso 
-   FIN
-  </pre> 
+  FIN</pre> 
 </details>
 
 ### 📝 Ejercicio: "Diseña un algoritmo secuencial (pseudocódigo + diagrama de flujo)"
