@@ -73,9 +73,11 @@ El algoritmo en pseudocódigo será:
 
 ```text
 ALGORITMO calculo_cambio_moneda
+
   Entrada: conv_moneda_dolares, conv_euros_dolares  (número real); cantidad_moneda_extranj, porc_ganancia_banco (número entero)
   Intermedias: cantidad_en_dolares, cantidad_en_euros, cantidad_por_comision (número real)
   Salida: cantidad_cambio_entrega (número real)
+  
 INICIO
      [Entrada de Datos]
   1: ESCRIBIR "Introduce el valor de conversión de la moneda extranjera a cambiar:"

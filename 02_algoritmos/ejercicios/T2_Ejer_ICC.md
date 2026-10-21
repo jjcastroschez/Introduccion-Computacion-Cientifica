@@ -171,54 +171,50 @@ Puedes hacerlo a mano o usando herramientas como:
    4. Mostrar la nota final al estudiante. 
   </pre>
   <p>Vamos a detallar mejor el algoritmo, empleando para ello pseudocódigo:</p>
-  <pre>
-  ALGORITMO calculo_nota_pruebas
-
-    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real)   
-    Intermedias: calif1, calif2, calif3 (número real)  
+  <pre><code>  ALGORITMO calculo_nota_pruebas
+&nbsp;
+    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (números reales)
+    Intermedias: calif1, calif2, calif3 (números reales)
     Salida: notaPruebasProgreso (número real)
-
+&nbsp;
   INICIO
-    1. ESCRIBIR "Dame la calificación de la primera prueba:"   
+    1. ESCRIBIR "Dame la calificación de la primera prueba:"
     2. LEER califPrimeraPrueba
-    3. ESCRIBIR "Dame la calificación de la segunda prueba:"   
+    3. ESCRIBIR "Dame la calificación de la segunda prueba:"
     4. LEER califSegundaPrueba
-    5. ESCRIBIR "Dame la calificación de la tercera prueba:"   
-    6. LEER califTerceraPrueba    
+    5. ESCRIBIR "Dame la calificación de la tercera prueba:"
+    6. LEER califTerceraPrueba
     7. calif1 ← califPrimeraPrueba x 0.10
     8. calif2 ← califSegundaPrueba x 0.15
-    9. calif3 ← califTerceraPrueba x 0.10 
-    11. notaPruebasProgreso ← calif1 + calif2 + calif3   
-    10. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso 
-   FIN
-  </pre>
+    9. calif3 ← califTerceraPrueba x 0.10
+    10. notaPruebasProgreso ← calif1 + calif2 + calif3
+    11. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso
+  FIN</code></pre>
   <p>A continuación, muestro el diagrama de flujo del algoritmo propuesto, está realizado con Visual Paradigm:</p>
   <figure>
     <img src="../imagenes/diagramaFlujoProblemaNotas.png" alt="Diagrama de Flujo">
     <figcaption>Diagrama de Flujo para el problema de las notas</figcaption>
   </figure> 
   <p>En este ejercicio, lo ideal para conseguir legibilidad habría sido definir los pesos como constantes; de esta forma, evitamos los números mágicos en el código. Estas constantes serían datos de entrada:<p>
-  <pre>
-  ALGORITMO calculo_nota_pruebas
-
-    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real), PESO_1PRUEBA (número real), PESO_2PRUEBA (número real), PESO_3PRUEBA (número real)     
-    Intermedias: calif1, calif2, calif3 (número real)  
+<pre><code>  ALGORITMO calculo_nota_pruebas
+&nbsp;
+    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba, PESO_1PRUEBA, PESO_2PRUEBA, PESO_3PRUEBA (números reales)
+    Intermedias: calif1, calif2, calif3 (números reales)
     Salida: notaPruebasProgreso (número real)
-
+&nbsp;
   INICIO
-    1. ESCRIBIR "Dame la calificación de la primera prueba:"   
+    1. ESCRIBIR "Dame la calificación de la primera prueba:"
     2. LEER califPrimeraPrueba
-    3. ESCRIBIR "Dame la calificación de la segunda prueba:"   
+    3. ESCRIBIR "Dame la calificación de la segunda prueba:"
     4. LEER califSegundaPrueba
-    5. ESCRIBIR "Dame la calificación de la tercera prueba:"   
-    6. LEER califTerceraPrueba    
+    5. ESCRIBIR "Dame la calificación de la tercera prueba:"
+    6. LEER califTerceraPrueba
     7. calif1 ← califPrimeraPrueba x PESO_1PRUEBA
     8. calif2 ← califSegundaPrueba x PESO_2PRUEBA
     9. calif3 ← califTerceraPrueba x PESO_3PRUEBA
-    11. notaPruebasProgreso ← calif1 + calif2 + calif3   
-    10. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso 
-   FIN
-  </pre> 
+    10. notaPruebasProgreso ← calif1 + calif2 + calif3
+    11. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso
+  FIN</code></pre>
 </details>
 
 ### 📝 Ejercicio: "Diseña un algoritmo secuencial (pseudocódigo + diagrama de flujo)"
@@ -242,20 +238,19 @@ Diseña un algoritmo que:
   <summary><h4>💡 Un último ejercicio para acostumbrarte a pensar 😜 </h4></summary>
   <p>Mi propuesta para este caso, y debe varia poco de la tuya, es la siguiente.</p>
   <p>Empiezo con la especificación del algoritmo en pseudocódigo:</p>
-  <pre>
-  ALGORITMO conversion_celsius_fahrenheit
+  <pre><code>  ALGORITMO conversion_celsius_fahrenheit
+  &nbsp;
     Entrada: gradosCelsius (número real)  
     Intermedias: -  
     Salida: gradosFahrenheit (número real)
-
+  &nbsp;
   INICIO
     1. ESCRIBIR "Dame la temperatura en Grados Celsius:"   
     2. LEER gradosCelsius
           [Aplicamos la fórmula de conversión]
     3. gradosFahrenheit ← (gradosCelsius × 9/5) + 32   
     4. ESCRIBIR "La temperatura en Grados Fahrenheit es: ", gradosFahrenheit 
-  FIN
-  </pre>
+  FIN</code></pre>
   <p>El diagrama de flujo del algoritmo, realizado con draw.io, es el siguiente:</p>
   <figure>
     <img src="../imagenes/DiagramaFlujoTemperaturas.png" alt="Diagrama de Flujo Conversión temperaturas">
