@@ -133,9 +133,11 @@ El pseudocódigo busca un equilibrio: estructura parecida a un programa, pero **
 ### 📌 Plantilla recomendada
 ```text
 ALGORITMO nombre_algoritmo
+
   Entrada: ...
   Intermedias: ...
   Salida: ...
+  
 INICIO
      [Comentario sobre el paso 1]
   1: ...
@@ -153,9 +155,11 @@ Ahora veamos dos ejemplos simples, aumentaremos la complejidad conforme avancemo
 ### 🧮 Ejemplo: área de un círculo
 ```text
 ALGORITMO calculo_area_circulo
+
   Entrada: radio (número real), pi (número real)
   Intermedias: -
   Salida: area (número real)
+
 INICIO
   1: ESCRIBIR "Introduce el valor del radio del círculo:"
   2: LEER radio
@@ -169,9 +173,11 @@ FIN
 ### 🧮 Ejemplo: media aritmética de dos números
 ```text
 ALGORITMO calculo_media_dos_numeros
+
   Entrada: a (número real), b (número real)
   Intermedias: suma (número real)
   Salida: media (número real)
+
 INICIO
   1: ESCRIBIR "Introduce el primer número:"
   2: LEER a
