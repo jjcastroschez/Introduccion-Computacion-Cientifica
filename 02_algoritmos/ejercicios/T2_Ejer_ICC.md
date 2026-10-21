@@ -71,6 +71,7 @@ A continuación tienes un 📐 *algoritmo para el Cálculo de área del cuadrado
 
 ```text
 ALGORITMO calculo_area_cuadrado
+
   Entrada: lado (número real)  
   Intermedias: —  
   Salida: area (número real)
