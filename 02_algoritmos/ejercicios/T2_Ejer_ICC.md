@@ -77,7 +77,7 @@ ALGORITMO calculo_area_cuadrado
 
 INICIO
   1. ESCRIBIR "Introduce la longitud del lado:"  
-  2. LEER(lado)  
+  2. LEER lado  
   3. area ← lado * lado  
   4. ESCRIBIR "El área es:", area  
 FIN
@@ -174,17 +174,17 @@ Puedes hacerlo a mano o usando herramientas como:
   <pre>
   ALGORITMO calculo_nota_pruebas
 
-    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real)  
+    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real)   
     Intermedias: calif1, calif2, calif3 (número real)  
     Salida: notaPruebasProgreso (número real)
 
   INICIO
     1. ESCRIBIR "Dame la calificación de la primera prueba:"   
-    2. LEER(califPrimeraPrueba)
+    2. LEER califPrimeraPrueba
     3. ESCRIBIR "Dame la calificación de la segunda prueba:"   
-    4. LEER(califSegundaPrueba)
+    4. LEER califSegundaPrueba
     5. ESCRIBIR "Dame la calificación de la tercera prueba:"   
-    6. LEER(califTerceraPrueba)    
+    6. LEER califTerceraPrueba    
     7. calif1 ← califPrimeraPrueba x 0.10
     8. calif2 ← califSegundaPrueba x 0.15
     9. calif3 ← califTerceraPrueba x 0.10 
@@ -197,6 +197,28 @@ Puedes hacerlo a mano o usando herramientas como:
     <img src="../imagenes/diagramaFlujoProblemaNotas.png" alt="Diagrama de Flujo">
     <figcaption>Diagrama de Flujo para el problema de las notas</figcaption>
   </figure> 
+  <p>En este ejercicio, lo ideal para conseguir legibilidad habría sido definir los pesos como constantes; de esta forma, evitamos los números mágicos en el código. Estas constantes serían datos de entrada:<p>
+  <pre>
+  ALGORITMO calculo_nota_pruebas
+
+    Entrada: califPrimeraPrueba, califSegundaPrueba, califTerceraPrueba (número real), PESO_1PRUEBA (número real), PESO_2PRUEBA (número real), PESO_3PRUEBA (número real)     
+    Intermedias: calif1, calif2, calif3 (número real)  
+    Salida: notaPruebasProgreso (número real)
+
+  INICIO
+    1. ESCRIBIR "Dame la calificación de la primera prueba:"   
+    2. LEER califPrimeraPrueba
+    3. ESCRIBIR "Dame la calificación de la segunda prueba:"   
+    4. LEER califSegundaPrueba
+    5. ESCRIBIR "Dame la calificación de la tercera prueba:"   
+    6. LEER califTerceraPrueba    
+    7. calif1 ← califPrimeraPrueba x PESO_1PRUEBA
+    8. calif2 ← califSegundaPrueba x PESO_2PRUEBA
+    9. calif3 ← califTerceraPrueba x PESO_3PRUEBA
+    11. notaPruebasProgreso ← calif1 + calif2 + calif3   
+    10. ESCRIBIR "La calificación obtenida es: ", notaPruebasProgreso 
+   FIN
+  </pre> 
 </details>
 
 ### 📝 Ejercicio: "Diseña un algoritmo secuencial (pseudocódigo + diagrama de flujo)"
@@ -228,7 +250,7 @@ Diseña un algoritmo que:
 
   INICIO
     1. ESCRIBIR "Dame la temperatura en Grados Celsius:"   
-    2. LEER(gradosCelsius)
+    2. LEER gradosCelsius
           [Aplicamos la fórmula de conversión]
     3. gradosFahrenheit ← (gradosCelsius × 9/5) + 32   
     4. ESCRIBIR "La temperatura en Grados Fahrenheit es: ", gradosFahrenheit 

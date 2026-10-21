@@ -79,13 +79,13 @@ ALGORITMO calculo_cambio_moneda
 INICIO
      [Entrada de Datos]
   1: ESCRIBIR "Introduce el valor de conversión de la moneda extranjera a cambiar:"
-  2: LEER(conv_moneda_dolares)
+  2: LEER conv_moneda_dolares
   3: ESCRIBIR "Introduce el valor de conversión del euro:"
-  4: LEER(conv_euros_dolares)
+  4: LEER conv_euros_dolares
   5: ESCRIBIR "Introduce la cantidad de moneda extranjera a cambiar:"
-  6: LEER(cantidad_moneda_extranj) 
+  6: LEER cantidad_moneda_extranj 
   7: ESCRIBIR "Introduce el porcentaje de ganancia del banco:"
-  8: LEER(porc_ganancia_banco) 
+  8: LEER porc_ganancia_banco 
      [Conversión de la moneda extranjera a dolares]
   9: cantidad_en_dolares ← cantidad_moneda_extranj * conv_moneda_dolares 
      [Conversión de los dolares a euros]
@@ -103,19 +103,19 @@ El algoritmo expresado en diagramas de flujo será:
 
 ```mermaid
 flowchart TD    
-    A([Inicio]) --> B[/Escribir: "Introduce el valor de conversión de la moneda extranjera a cambiar:"/]
-    B --> C[/"Leer: conv_moneda_dolares"/]    
-    C --> D[/Escribir: "Introduce el valor de conversión del euro:"/]    
-    D --> E[/"Leer: conv_euros_dolares"/]
-    E --> F[/Escribir: "Introduce la cantidad de moneda extranjera a cambiar:"/]
-    F --> G[/"Leer: cantidad_moneda_extranj"/]
-    G --> H[/Escribir: "Introduce el porcentaje de ganancia del banco:"/]
-    H --> I[/"Leer: porc_ganancia_banco"/]    
+    A([Inicio]) --> B[/Escribir "Introduce el valor de conversión de la moneda extranjera a cambiar:"/]
+    B --> C[/"Leer conv_moneda_dolares"/]    
+    C --> D[/Escribir "Introduce el valor de conversión del euro:"/]    
+    D --> E[/"Leer conv_euros_dolares"/]
+    E --> F[/Escribir "Introduce la cantidad de moneda extranjera a cambiar:"/]
+    F --> G[/"Leer cantidad_moneda_extranj"/]
+    G --> H[/Escribir "Introduce el porcentaje de ganancia del banco:"/]
+    H --> I[/"Leer porc_ganancia_banco"/]    
     I --> J[cantidad_en_dolares ← cantidad_moneda_extranj * conv_moneda_dolares]
     J --> K[cantidad_en_euros ← cantidad_en_dolares / conv_euros_dolares] 
     K --> L[cantidad_por_comision ← cantidad_en_euros *  porc_ganancia_banco/100] 
     L --> M[cantidad_cambio_final ← cantidad_en_euros - cantidad_por_comision]
-    M --> N[/Escribir: "La cantidad a entregar al cliente es:" cantidad_cambio_entrega/]    
+    M --> N[/Escribir "La cantidad a entregar al cliente es:" cantidad_cambio_entrega/]    
     N --> O([Fin])
 ```
 
@@ -136,7 +136,7 @@ La implementación será:
 
 <details>
   <summary><h4>⍰ ¿Crees que realmente es la implementación que corresponde al algoritmo realizado? </h4></summary>
-  <p>No, fíjate que en esta implementación se asume un valor de pi de 3.141592653589793, mientras que en el algoritmo diseñado se deja al usuario que introduzca este valor, aproximándolo como él estime. Además, se implementa la fórmula directamente elevando el radio al cuadrado (como se hace en el lenguaje Python). Tampoco se ofrece la misma salida que se estableció en el algoritmo.</p>
+  <p>No, fíjate que en esta implementación se adopta un valor de pi de 3.141592653589793, ya que se define como una constante; mientras que en el algoritmo diseñado se permite que el usuario introduzca este valor, aproximándolo como estime. Además, la fórmula se implementa directamente elevando el radio al cuadrado (como se hace en Python). Tampoco se ofrece la misma salida que se estableció en el algoritmo.</p>
 </details>
 
 ---

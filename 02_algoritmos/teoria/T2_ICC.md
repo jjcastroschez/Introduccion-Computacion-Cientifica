@@ -158,9 +158,9 @@ ALGORITMO calculo_area_circulo
   Salida: area (número real)
 INICIO
   1: ESCRIBIR "Introduce el valor del radio del círculo:"
-  2: LEER(radio)
+  2: LEER radio
   3: ESCRIBIR "Introduce el valor de pi:"
-  4: LEER(pi)
+  4: LEER pi
      [Calculamos el área del círculo empleando la fórmula]
   5: area ← pi * radio * radio
   6: ESCRIBIR "El área del círculo es:", area
@@ -174,9 +174,9 @@ ALGORITMO calculo_media_dos_numeros
   Salida: media (número real)
 INICIO
   1: ESCRIBIR "Introduce el primer número:"
-  2: LEER(a)
+  2: LEER a
   3: ESCRIBIR "Introduce el segundo número:"
-  4: LEER(b)
+  4: LEER b
      [Usamos un valor intermedio, para mostrar este tipo de dato]
   5: suma ← a + b
   6: media ← suma / 2
@@ -218,10 +218,10 @@ Veamos dos ejemplos simples de diagramas de flujo, que corresponden a los algori
 ### 🧮 Ejemplo: área de un círculo
 ```mermaid
 flowchart TD    
-    A([Inicio]) --> B[/Escribir: "Introduce el valor del radio del círculo:"/]
-    B --> C[/"Leer: radio"/]    
-    C --> D[/Escribir: "Introduce el valor de pi:"/]    
-    D --> E[/"Leer: pi"/]    
+    A([Inicio]) --> B[/Escribir "Introduce el valor del radio del círculo:"/]
+    B --> C[/"Leer radio"/]    
+    C --> D[/Escribir "Introduce el valor de pi:"/]    
+    D --> E[/"Leer pi"/]    
     E --> F[area ← pi * radio * radio]    
     F --> G[/Escribir: "El área del círculo es:", area/]    
     G --> H([Fin])
@@ -229,13 +229,13 @@ flowchart TD
 ### 🧮 Ejemplo: media aritmética de dos números
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[/Escribir: "Introduce el primer número:"/]
-    B --> C[/"Leer: a"/]
-    C --> D[/Escribir: "Introduce el segundo número:"/]
-    D --> E[/"Leer: b"/]
+    A([Inicio]) --> B[/Escribir "Introduce el primer número:"/]
+    B --> C[/"Leer a"/]
+    C --> D[/Escribir "Introduce el segundo número:"/]
+    D --> E[/"Leer b"/]
     E --> F[suma ← a + b]
     F --> G[media ← suma / 2]
-    G --> H[/Escribir: "La media de los dos números es:", media/]
+    G --> H[/Escribir "La media de los dos números es:", media/]
     H --> I([Fin])
 ```
 En próximos temas se aumentará la complejidad de los diagramas, para representar gráficamente construcciones o estructuras más complejas de los lenguajes de programación.
