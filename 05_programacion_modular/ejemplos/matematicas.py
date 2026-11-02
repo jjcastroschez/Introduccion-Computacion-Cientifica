@@ -101,21 +101,19 @@ def raiz_babilonica(a: float, tolerancia: float = 1e-12,
     :requisitos: a >= 0
     :return: Aproximación de √a con la tolerancia indicada.
     """
-    if a < 0:
-        print("No existe raíz real de un negativo.")
-        raiz=None
-    elif a == 0:
-        raiz=0.0
-    else:
-        raiz = a / 2
-        for _ in range(max_iter):
-            raiz_nueva = 0.5 * (raiz + a / raiz)
-            if abs(raiz_nueva - raiz) < tolerancia:
-                raiz=raiz_nueva
-                break
-            raiz = raiz_nueva
-    return raiz # devuelve la mejor aproximación si no convergió
+    if (a < 0) return -1.0;
+    if (a == 0) return 0.0;
 
+    double x = a / 2.0;
+    double x_nuevo;
+    double tol = 1e-12;
+
+    for (int i = 0; i < 100; i++) {
+        x_nuevo = 0.5 * (x + a / x);
+        if (fabs(x_nuevo - x) < tol) return x_nuevo;
+        x = x_nuevo;
+    }
+    return x;
 
 # ---------------------------------------------------------------------
 # Combinatoria
